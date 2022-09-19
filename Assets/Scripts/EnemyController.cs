@@ -22,18 +22,18 @@ public class EnemyController : MonoBehaviour
     public bool isFlying;
     public float flyHeight;
 
-    // Start is called before the first frame update
+
+    public void Setup(Castle newCastle, Path newPath)
+    {
+        theCastle = newCastle;
+        thePath = newPath;
+    }
+
     void Start()
     {
-        if (thePath == null)
-        {
-            thePath = FindObjectOfType<Path>();
-        }
+        if (thePath == null){ thePath = findPath(); }
 
-        if (theCastle == null)
-        {
-            theCastle = FindObjectOfType<Castle>();
-        }
+        if (theCastle == null){ theCastle = findCastle(); }
 
         attackCounter = timeBetweenAttacks;
 
@@ -43,6 +43,7 @@ public class EnemyController : MonoBehaviour
             currentPoint = thePath.points.Length - 1;
         }
     }
+
 
     // Update is called once per frame
     void Update()
@@ -55,43 +56,28 @@ public class EnemyController : MonoBehaviour
 
                 if (!isFlying)
                 {
+                    transform.position = moveToPoint(transform.position, thePath.points[currentPoint].position, false, moveSpeed * Time.deltaTime * speedMod);
 
-                    transform.position = Vector3.MoveTowards(transform.position, thePath.points[currentPoint].position, moveSpeed * Time.deltaTime * speedMod);
-
-                    if (Vector3.Distance(transform.position, thePath.points[currentPoint].position) < .01f)
-                    {
-                        currentPoint = currentPoint + 1;
-                        if (currentPoint >= thePath.points.Length)
-                        {
-                            reachedEnd = true;
-
-                            selectedAttackPoint = Random.Range(0, theCastle.attackPoints.Length);
-                        }
-                    }
+                    checkReachedEnd(transform.position, thePath.points[currentPoint].position, false, moveSpeed, flyHeight);
                 } else
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, thePath.points[currentPoint].position + (Vector3.up * flyHeight), moveSpeed * Time.deltaTime * speedMod);
+                    transform.position = moveToPoint(transform.position, thePath.points[currentPoint].position, true, moveSpeed * Time.deltaTime * speedMod);
 
-                    if (Vector3.Distance(transform.position, thePath.points[currentPoint].position + (Vector3.up * flyHeight)) < .01f)
-                    {
-                        currentPoint = currentPoint + 1;
-                        if (currentPoint >= thePath.points.Length)
-                        {
-                            reachedEnd = true;
-
-                            selectedAttackPoint = Random.Range(0, theCastle.attackPoints.Length);
-                        }
-                    }
+                    checkReachedEnd(transform.position, thePath.points[currentPoint].position, true, moveSpeed, flyHeight);
                 }
             }
             else
             {
                 if (!isFlying)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, theCastle.attackPoints[selectedAttackPoint].position, moveSpeed * Time.deltaTime * speedMod);
+                    transform.position = moveToPoint(transform.position, theCastle.attackPoints[selectedAttackPoint].position, false, moveSpeed * Time.deltaTime * speedMod);
+                    
+                    checkReachedEnd(transform.position, thePath.points[currentPoint].position, false, moveSpeed);
                 } else
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, theCastle.attackPoints[selectedAttackPoint].position + (Vector3.up * flyHeight), moveSpeed * Time.deltaTime * speedMod);
+                    transform.position = moveToPoint(transform.position, theCastle.attackPoints[selectedAttackPoint].position,true, moveSpeed * Time.deltaTime * speedMod,flyHeight);
+
+                    checkReachedEnd(transform.position, thePath.points[currentPoint].position, true, moveSpeed, flyHeight);
                 }
 
                 attackCounter -= Time.deltaTime;
@@ -105,9 +91,62 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void Setup(Castle newCastle, Path newPath)
+    private Vector3 moveToPoint(Vector3 _nextPoint, Vector3 _previousPoint, bool _isFlying, float speed, float _flyHeight = 0)
     {
-        theCastle = newCastle;
-        thePath = newPath;
+        if (_isFlying)
+        {
+            return Vector3.MoveTowards(_nextPoint, _previousPoint + (Vector3.up * _flyHeight), speed);
+        }
+        else
+        {
+            return Vector3.MoveTowards(_nextPoint, _previousPoint, speed);
+        }
     }
+
+    private float distanceToPoint(Vector3 _pointA, Vector3 _pointB, bool _isFlying, float speed, float _flyHeight = 0)
+    {
+        if (_isFlying)
+        {
+            return Vector3.Distance(_pointA, _pointB + (Vector3.up * _flyHeight));
+        }
+        else
+        {
+            return Vector3.Distance(_pointA, _pointB);
+        }
+    }
+
+    private void checkReachedEnd(Vector3 _pointA, Vector3 _pointB, bool _isFlying, float _speed, float _flyHeight = 0)
+    {
+        if (distanceToPoint(_pointA, _pointB, false, _speed, _flyHeight) < .01f)
+        {
+            currentPoint = currentPoint + 1;
+            if (currentPoint >= thePath.points.Length)
+            {
+                reachedEnd = true;
+
+                selectedAttackPoint = Random.Range(0, theCastle.attackPoints.Length);
+            }
+        }
+        else if(distanceToPoint(_pointA, _pointB, true, _speed, _flyHeight) < .01f)
+        {
+            currentPoint = currentPoint + 1;
+            if (currentPoint >= thePath.points.Length)
+            {
+                reachedEnd = true;
+
+                selectedAttackPoint = Random.Range(0, theCastle.attackPoints.Length);
+            }
+        }
+    }
+
+    private Path findPath()
+    {
+        return FindObjectOfType<Path>();
+    }
+
+    private Castle findCastle()
+    {
+        return FindObjectOfType<Castle>();
+    }
+    
 }
