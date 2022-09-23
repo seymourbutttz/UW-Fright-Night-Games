@@ -22,6 +22,8 @@ public class EnemyController : MonoBehaviour
     public bool isFlying;
     public float flyHeight;
 
+    public GameObject[] obstacles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,11 @@ public class EnemyController : MonoBehaviour
         if (theCastle == null)
         {
             theCastle = FindObjectOfType<Castle>();
+        }
+
+        if(obstacles.Length == 0)
+        {
+            obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
         }
 
         attackCounter = timeBetweenAttacks;

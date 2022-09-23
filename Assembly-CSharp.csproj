@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{519FD92E-C905-BDD4-1727-2B1B74FF6A39}</ProjectGuid>
+    <ProjectGuid>{B5069929-CB40-4ADE-4AA1-F6F38DEA0510}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Castle.cs" />
+    <Compile Include="Assets\WebWall.cs" />
     <Compile Include="Assets\Scripts\LevelSelectController.cs" />
     <Compile Include="Assets\Scripts\Towers\ProjectileTower.cs" />
     <Compile Include="Assets\Scripts\Towers\Projectile.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\Towers\BombTower.cs" />
     <Compile Include="Assets\Scripts\EnemyHealthController.cs" />
     <Compile Include="Assets\Scripts\AudioManagerLoader.cs" />
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\RemoveParentAtStart.cs" />
     <Compile Include="Assets\Scripts\Towers\TowerButton.cs" />
     <Compile Include="Assets\Scripts\Towers\SlowdownTower.cs" />

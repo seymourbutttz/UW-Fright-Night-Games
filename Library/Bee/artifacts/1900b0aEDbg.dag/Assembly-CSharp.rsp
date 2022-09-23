@@ -120,8 +120,8 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"D:/UnityProjects/Udemy Tower Defence/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"D:/UnityProjects/Udemy Tower Defence/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/Users/Owner/source/repos/UW-Fright-Night-Games/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/Owner/source/repos/UW-Fright-Night-Games/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -355,6 +355,7 @@
 "Assets/Scripts/LevelSelectController.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MoneyManager.cs"
+"Assets/Scripts/Obstacle.cs"
 "Assets/Scripts/Path.cs"
 "Assets/Scripts/RemoveParentAtStart.cs"
 "Assets/Scripts/SimpleEnemySpawner.cs"
@@ -370,6 +371,7 @@
 "Assets/Scripts/Towers/TowerUpgradeController.cs"
 "Assets/Scripts/Towers/TowerUpgradePanel.cs"
 "Assets/Scripts/UIController.cs"
+"Assets/WebWall.cs"
 -langversion:9.0
 
 /deterministic
