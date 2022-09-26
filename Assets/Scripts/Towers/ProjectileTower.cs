@@ -14,12 +14,19 @@ public class ProjectileTower : MonoBehaviour
     private Transform target;
     public Transform launcherModel;
 
-    public GameObject shotEffect;
+    //public GameObject shotEffect;
+
+    //Upgrade Test - Matt
+    public GameObject[] model;
+    //public GameObject Model1;
+    //public GameObject Model2;
 
     // Start is called before the first frame update
     void Start()
     {
         theTower = GetComponent<Tower>();
+        //TEST - MATT
+        model[1].SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,7 +48,7 @@ public class ProjectileTower : MonoBehaviour
             firePoint.LookAt(target);
 
             Instantiate(projectile, firePoint.position, firePoint.rotation);
-            Instantiate(shotEffect, firePoint.position, firePoint.rotation);
+            //Instantiate(shotEffect, firePoint.position, firePoint.rotation);
         }
         if (theTower.enemiesUpdated)
         {
