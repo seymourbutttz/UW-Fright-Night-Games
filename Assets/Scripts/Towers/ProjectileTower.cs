@@ -5,9 +5,16 @@ using UnityEngine;
 public class ProjectileTower : MonoBehaviour
 {
     private Tower theTower;
-
+    
+    //Upgrade Test - Matt
+    //Array of models for tower GameObject
+    public GameObject[] model; //Array of models for tower object
+    public GameObject[] projectiles; //Array of projectile models for tower object.
+    
+    [HideInInspector]
     public GameObject projectile;
     public Transform firePoint;
+    public Transform firePointTwo; //new firepoint for range upgrades
     //public float timeBetweenShots = 1f;
     private float shotCounter;
 
@@ -16,17 +23,19 @@ public class ProjectileTower : MonoBehaviour
 
     //public GameObject shotEffect;
 
-    //Upgrade Test - Matt
-    public GameObject[] model;
-    //public GameObject Model1;
-    //public GameObject Model2;
-
     // Start is called before the first frame update
     void Start()
     {
         theTower = GetComponent<Tower>();
         //TEST - MATT
-        model[1].SetActive(false);
+        foreach (GameObject gameObject in model)
+        {
+            gameObject.SetActive(false);
+        }
+        model[0].SetActive(true);
+        projectiles[0].SetActive(true);
+        projectiles[1].SetActive(false);
+        projectile = projectiles[0];
     }
 
     // Update is called once per frame

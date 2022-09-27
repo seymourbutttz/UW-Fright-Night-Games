@@ -16,11 +16,7 @@ public class TowerUpgradeController : MonoBehaviour
     [TextArea]
     public string fireRateText;
     //visual tower update test - Matt
-    //private float rangeNew;
-    //private float fireRateNew;
-    //private int newCost;
-    //private Tower towerUpgrade;
-    //private Transform currentPos;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +28,19 @@ public class TowerUpgradeController : MonoBehaviour
     {
         theTower.range = rangeUpgrades[currentRangeUpgrade].amount;
         currentRangeUpgrade++;
+        if (currentRangeUpgrade <= 3)
+        {
+            theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade - 1].SetActive(false);
+            theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade].SetActive(true);
+            if(currentRangeUpgrade == 2)
+            {
+                theTower.GetComponent<ProjectileTower>().projectiles[1].SetActive(true);
+                theTower.GetComponent<ProjectileTower>().projectile = theTower.GetComponent<ProjectileTower>().projectiles[1];
+                theTower.GetComponent<ProjectileTower>().firePoint.transform.position = theTower.GetComponent<ProjectileTower>().firePointTwo.transform.position;
+                theTower.GetComponent<ProjectileTower>().projectiles[0].SetActive(false);
+            }
+        }
+        
         //visual tower update test - matt. Changes Tower visual on second upgrade
         //if(currentRangeUpgrade == 2 && GetComponent<ProjectileTower>().upgradeLevelOneModel == null)
         //{
