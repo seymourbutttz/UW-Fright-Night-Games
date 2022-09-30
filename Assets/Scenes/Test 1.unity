@@ -6402,11 +6402,7 @@ Transform:
   - {fileID: 1894968543}
   - {fileID: 159696786}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 5
-=======
   m_RootOrder: 17
->>>>>>> dev
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422001190
 GameObject:
@@ -10364,13 +10360,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -21.776367
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
     - target: {fileID: 6591708524205632454, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
->>>>>>> dev
     - target: {fileID: 6591708524225509569, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -21.776367
@@ -10465,17 +10458,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8492344930071035219, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
-      propertyPath: projectile1
-      value: 
-      objectReference: {fileID: 100000, guid: 9b7789bbc487bdb4cb704035cff22684, type: 3}
-    - target: {fileID: 8492344930071035219, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
-      propertyPath: projectile2
-      value: 
-      objectReference: {fileID: 3163549427675777781, guid: 108d0b1d367fd0849a3039692082b651, type: 3}
     - target: {fileID: 8492344930071035220, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
       propertyPath: m_Name
-      value: Pumpkin Tower
+      value: Cannon Tower
       objectReference: {fileID: 0}
     - target: {fileID: 8492344930071035220, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
       propertyPath: m_IsActive
@@ -10483,11 +10468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8492344930071035221, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 4
-=======
       value: 11
->>>>>>> dev
       objectReference: {fileID: 0}
     - target: {fileID: 8492344930071035221, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
       propertyPath: m_LocalPosition.x
