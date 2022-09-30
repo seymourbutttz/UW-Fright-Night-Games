@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.2/staging' branch; Version is '2021.2.17f1 (efb8f635e7b1) revision 15710454'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 24518 MB
+Built from '2021.3/staging' branch; Version is '2021.3.9f1 (ad3870b89536) revision 11352176'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'en' Physical Memory: 16255 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Unity.exe
+F:\Program Files\UnityEditors\2021.3.9f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
+C:/Users/Owner/source/repos/UW-Fright-Night-Games
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59876
-Successfully changed project path to: C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
-C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
+61003
+Successfully changed project path to: C:/Users/Owner/source/repos/UW-Fright-Night-Games
+C:/Users/Owner/source/repos/UW-Fright-Night-Games
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,106 +47,118 @@ C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 43.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 37.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.2.17f1 (efb8f635e7b1)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games/Assets
+Initialize engine version: 2021.3.9f1 (ad3870b89536)
+[Subsystems] Discovering subsystems at path F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Owner/source/repos/UW-Fright-Night-Games/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   NVIDIA
-    VRAM:     8088 MB
-    Driver:   31.0.15.1694
+    VRAM:     8043 MB
+    Driver:   31.0.15.1640
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Mono path[0] = 'F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.018351 seconds.
+Register platform support module: F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: F:/Program Files/UnityEditors/2021.3.9f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.025290 seconds.
 Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 38.38 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 27.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.837 seconds
+- Completed reload, in  0.771 seconds
 Domain Reload Profiling:
-	ReloadAssembly (838ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (771ms)
+		BeginReloadAssembly (149ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (554ms)
-			LoadAssemblies (106ms)
+		EndReloadAssembly (458ms)
+			LoadAssemblies (138ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (135ms)
+			SetupTypeCache (108ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (310ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (242ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (60ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (38ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (193ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
+				RefreshPlugins (27ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004719 seconds.
+Registered in 0.018088 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.244 seconds
+- Completed reload, in  1.198 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1245ms)
-		BeginReloadAssembly (170ms)
+	ReloadAssembly (1200ms)
+		BeginReloadAssembly (171ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (906ms)
-			LoadAssemblies (112ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (864ms)
+			LoadAssemblies (156ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (283ms)
+			SetupTypeCache (230ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (415ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (407ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (278ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (15ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (36ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1398 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (268.6 KB). Loaded Objects now: 1870.
-Memory consumption went from 70.9 MB to 70.6 MB.
-Total: 3.623800 ms (FindLiveObjects: 0.271900 ms CreateObjectMapping: 0.074300 ms MarkObjects: 3.091000 ms  DeleteObjects: 0.185000 ms)
+Unloading 1550 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (252.1 KB). Loaded Objects now: 2019.
+Memory consumption went from 73.4 MB to 73.1 MB.
+Total: 2.948000 ms (FindLiveObjects: 0.208700 ms CreateObjectMapping: 0.098600 ms MarkObjects: 2.459300 ms  DeleteObjects: 0.179500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,13 +172,265 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 35949.741362 seconds.
-  path: Assets/CartoonHalloween/MODELS/Windmill.FBX
-  artifactKey: Guid(6134cad3c7b25054e9eb85f2c7dbae52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonHalloween/MODELS/Windmill.FBX using Guid(6134cad3c7b25054e9eb85f2c7dbae52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d5297947ca8eb577d328b4084661d4d') in 0.194866 seconds 
+  Time since last request: 11310.691957 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Alien_Texture.png
+  artifactKey: Guid(39edf2559289ab8489a943265461d7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Alien_Texture.png using Guid(39edf2559289ab8489a943265461d7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bada3e1e4f2a906e9a761e937a02811') in 0.139474 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 159.180867 seconds.
-  path: Assets/CartoonHalloween/MODELS/Windmill.FBX
-  artifactKey: Guid(6134cad3c7b25054e9eb85f2c7dbae52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CartoonHalloween/MODELS/Windmill.FBX using Guid(6134cad3c7b25054e9eb85f2c7dbae52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039a5021413cfbe5e5e98a733e0026a0') in 0.035424 seconds 
+  Time since last request: 0.000037 seconds.
+  path: Assets/CartoonHalloween/Texture/La cay 03 .png
+  artifactKey: Guid(56bffa251f21bf7489c2a19bef196290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/La cay 03 .png using Guid(56bffa251f21bf7489c2a19bef196290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10aebd147365397d3cb323a3e5f2c543') in 0.023247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Cactus_Texture.png
+  artifactKey: Guid(478d3baa87d78044f8b0285d166c2be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Cactus_Texture.png using Guid(478d3baa87d78044f8b0285d166c2be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b57c5acbb66d77d2136cd828ac0f4f69') in 0.014941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Title.asset
+  artifactKey: Guid(5f7f8e12b4e4b934bba220968881027e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Title.asset using Guid(5f7f8e12b4e4b934bba220968881027e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240ec85dbed2b6ea63e9c18eadcff8fc') in 0.246514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Chicken_Texture.png
+  artifactKey: Guid(a97304894e8936f458b34cbf09946867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Chicken_Texture.png using Guid(a97304894e8936f458b34cbf09946867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abe4e6a8dfa371876318945289a9f8f') in 0.021075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/CartoonHalloween/Texture/Leap_01.png
+  artifactKey: Guid(e91d7f47a86e3fd42b82b4b36e55c66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Leap_01.png using Guid(e91d7f47a86e3fd42b82b4b36e55c66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d48e9af802dc25430f32b2d5bff3b6e') in 0.016425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Bee_Texture.png
+  artifactKey: Guid(68dd26a0dd03563499e539f8604bf260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Bee_Texture.png using Guid(68dd26a0dd03563499e539f8604bf260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae157af8ef3de385704f70b7248d8cb') in 0.019002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/CartoonHalloween/Texture/Lily_DF.png
+  artifactKey: Guid(cdb40511e29e90848961f5990707bcde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Lily_DF.png using Guid(cdb40511e29e90848961f5990707bcde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '157e4626c98825a9e89957b34adf8850') in 0.011918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Cthulhu_Texture.png
+  artifactKey: Guid(d52a3076abed6574eb1887bb204b6b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Cthulhu_Texture.png using Guid(d52a3076abed6574eb1887bb204b6b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0049b9253faa63b1132f3724e78798d4') in 0.018157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/HalloweenNight-vmyPD SDF.asset
+  artifactKey: Guid(3d35d5b5ccaf5894d8d32546f1a93f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/HalloweenNight-vmyPD SDF.asset using Guid(3d35d5b5ccaf5894d8d32546f1a93f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567ebc10cf9f0061916dd8dcad1fd7e0') in 0.031029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f85b6e46e081a867726a9c58c993c04') in 0.023063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - UI Outline.asset
+  artifactKey: Guid(cdce18a9440e87e4eb19edfed28ebfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - UI Outline.asset using Guid(cdce18a9440e87e4eb19edfed28ebfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b61012fd027f9cebac3d9b99c6b49f6') in 0.037524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Cyclops_Texture.png
+  artifactKey: Guid(2b53808a7d8dea3498ba7e186dc5ec6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Cyclops_Texture.png using Guid(2b53808a7d8dea3498ba7e186dc5ec6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab3122d1d7855b7a7236b4d09bd6802') in 0.012826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Ghost_Texture.png
+  artifactKey: Guid(39a0c010b52b03b468fbdb4d051a691c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Ghost_Texture.png using Guid(39a0c010b52b03b468fbdb4d051a691c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad65b4f96dede0bed60314fe2a826fa7') in 0.019480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CartoonHalloween/Texture/House_03_Diff.png
+  artifactKey: Guid(2fa3ab58fc46bd6479d5767d53ac5638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_03_Diff.png using Guid(2fa3ab58fc46bd6479d5767d53ac5638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6fafe06cecdfc46fbe91a3d90e50a1') in 0.020947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbffb0b1ecd24f7a03f95df8fe2f0a21') in 0.036343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Bat_Texture.png
+  artifactKey: Guid(ff8ebe62af2785a4c836c55328011b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Bat_Texture.png using Guid(ff8ebe62af2785a4c836c55328011b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73372ae0f8ecf59865e19da549d20287') in 0.017638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/CartoonHalloween/Texture/House_07_Diff.png
+  artifactKey: Guid(838978703cacf244da573eade3ba65c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_07_Diff.png using Guid(838978703cacf244da573eade3ba65c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c5690093fcf5a7e902ab6e204f844d') in 0.021730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Crab_Texture.png
+  artifactKey: Guid(d8dbee57eaf75044697ba534f6be1160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Crab_Texture.png using Guid(d8dbee57eaf75044697ba534f6be1160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1b638bf4ceb0ed97711e2931139fc0') in 0.017070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Demon_Texture.png
+  artifactKey: Guid(e7240f4c35411fa48b09f21a70e8a196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Demon_Texture.png using Guid(e7240f4c35411fa48b09f21a70e8a196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b1e3709c137bb0d9f683b42fa50d01') in 0.019385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/CartoonHalloween/Texture/Gate_Diff.png
+  artifactKey: Guid(c7293981e77070d47a0b2c5e9faa9a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Gate_Diff.png using Guid(c7293981e77070d47a0b2c5e9faa9a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140c533f58838f3ec0c5c50cc5c905c9') in 0.017010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - UI Outline Black.asset
+  artifactKey: Guid(6877fd2d6af150e44b21b7616321b0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - UI Outline Black.asset using Guid(6877fd2d6af150e44b21b7616321b0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9495983027c86426b15e163f1c0cf283') in 0.035392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CartoonHalloween/Texture/House_08.png
+  artifactKey: Guid(5c3de8c41641f6a459b7b0d3642b1b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_08.png using Guid(5c3de8c41641f6a459b7b0d3642b1b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30071265ce77d1e02c2c170824a8c9e2') in 0.022133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Deer_Texture.png
+  artifactKey: Guid(a28f6d4ffc449a84fbe41975862186f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Deer_Texture.png using Guid(a28f6d4ffc449a84fbe41975862186f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1eacd11a394a3b0cd83c33ee2311c4e') in 0.018758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Alien_Tall_Texture.png
+  artifactKey: Guid(9aab5dc2edc00844fb6c99e09f617332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/Alien_Tall_Texture.png using Guid(9aab5dc2edc00844fb6c99e09f617332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c01dc87ed093e9ee60b4a6a70c37e73') in 0.015903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/CartoonHalloween/Texture/Leap_02.png
+  artifactKey: Guid(a121c43ed40addc42b504addf6406c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Leap_02.png using Guid(a121c43ed40addc42b504addf6406c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6a412c73898d426caca85d22db8217') in 0.020173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/GreenDemon_Texture.png
+  artifactKey: Guid(94d5cb9230e03154ab764c61bdcc166c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Models/Quaternius - Cute Animated Monsters/Textures/GreenDemon_Texture.png using Guid(94d5cb9230e03154ab764c61bdcc166c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d216f1660cd90ad1f80f45f41c516ab') in 0.023439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CartoonHalloween/Texture/House_04.png
+  artifactKey: Guid(484d659759da06c488c10e73b5c93580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_04.png using Guid(484d659759da06c488c10e73b5c93580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474ac58ce9cc8dfb48909beb5af23e3b') in 0.022716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/CartoonHalloween/Texture/House_01_Diff.png
+  artifactKey: Guid(86f5466800c800a419e1c2c60275bfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_01_Diff.png using Guid(86f5466800c800a419e1c2c60275bfc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22296cbe7a91621e3f38ba990d69f0f') in 0.013971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/CartoonHalloween/Texture/Bat_DF.png
+  artifactKey: Guid(e776c34919a17e24e905f23cba538e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Bat_DF.png using Guid(e776c34919a17e24e905f23cba538e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40c63e0a2debcf62b9391858e0039b6') in 0.020090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CartoonHalloween/Texture/Dracula_Coffin.png
+  artifactKey: Guid(876743a4393c1a546addf91a7614b61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Dracula_Coffin.png using Guid(876743a4393c1a546addf91a7614b61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497aff138bfcb2a16c19d94de0d49809') in 0.017933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/CartoonHalloween/Texture/House_09.png
+  artifactKey: Guid(1c2f6b2bb21a0ee4cbdabaa5fa3b22c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_09.png using Guid(1c2f6b2bb21a0ee4cbdabaa5fa3b22c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da16272a1245d169fa1ac841547d65c5') in 0.021728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/CartoonHalloween/Texture/Bui cay.png
+  artifactKey: Guid(282ae83bae22e8744abf6d5f773a1d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Bui cay.png using Guid(282ae83bae22e8744abf6d5f773a1d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd970cb6ea473b57008e820b06f5bab70') in 0.048852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94df8394826241d58351c11cde9d0efc') in 0.016705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/CartoonHalloween/Texture/HalloweenRoad.png
+  artifactKey: Guid(154cf6227a40da74192d57469bcee4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/HalloweenRoad.png using Guid(154cf6227a40da74192d57469bcee4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cc0ed4c49b0a86647e32b02db52647') in 0.025097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/CartoonHalloween/Texture/House_05_Diff.png
+  artifactKey: Guid(9876e6cb2e8ff474288b5ed39438f772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_05_Diff.png using Guid(9876e6cb2e8ff474288b5ed39438f772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe73f5ca679ce74f88d2e3a05072c071') in 0.021072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/CartoonHalloween/Texture/Grave_DF.png
+  artifactKey: Guid(4dac854e65091b2469a4bf81a5eb91d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Grave_DF.png using Guid(4dac854e65091b2469a4bf81a5eb91d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b791104ce1f30c7c930b715d59c6dc2') in 0.018829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/CartoonHalloween/Texture/Grave_Wall_DF.png
+  artifactKey: Guid(f4db467d2cf2962479911d87d38402e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Grave_Wall_DF.png using Guid(f4db467d2cf2962479911d87d38402e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e110348bac5b75ea4fc3316bca51fd5b') in 0.015589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/CartoonHalloween/Texture/House_02_Diff.png
+  artifactKey: Guid(d7413c738e9d6fa4a91804f57b877fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_02_Diff.png using Guid(d7413c738e9d6fa4a91804f57b877fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb3b810b285c97691103417910e23016') in 0.022902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/CartoonHalloween/Texture/Caudron.png
+  artifactKey: Guid(d8fc78382dcf09949bf6c016edfa6033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/Caudron.png using Guid(d8fc78382dcf09949bf6c016edfa6033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f086e3d5e3c64f9641f400e8b21178') in 0.018554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CartoonHalloween/Texture/House_10.png
+  artifactKey: Guid(342332dcdb3682a449223f23666a281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_10.png using Guid(342332dcdb3682a449223f23666a281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058ee1855f3ace624594b95c5d1ae450') in 0.018432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/HalloweenNight-vmyPD.ttf
+  artifactKey: Guid(7b54befda95a9e747b7789fc06ece5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/HalloweenNight-vmyPD.ttf using Guid(7b54befda95a9e747b7789fc06ece5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f340f0e2e7bf8e0c9169f30a8c6b99') in 0.027457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/CartoonHalloween/Texture/House_06_Diff .png
+  artifactKey: Guid(64ec06506005d4f4cb4a3162dd5750fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonHalloween/Texture/House_06_Diff .png using Guid(64ec06506005d4f4cb4a3162dd5750fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e75838041aee512059bd220dbaaba41') in 0.018327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.415276 seconds.
+  path: Assets/Tower Defense Assets/Sprites/UI/UI_Block.png
+  artifactKey: Guid(711ee51ffc3b9be40a322954431875b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense Assets/Sprites/UI/UI_Block.png using Guid(711ee51ffc3b9be40a322954431875b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7aba3d97dd11e0b6660f9f3cf8bc4a8') in 0.091134 seconds 
