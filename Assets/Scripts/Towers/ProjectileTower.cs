@@ -5,21 +5,36 @@ using UnityEngine;
 public class ProjectileTower : MonoBehaviour
 {
     private Tower theTower;
-
+    
+    //Array of models for tower GameObject
+    public GameObject[] model; //Array of models for tower object
+    public GameObject[] projectiles; //Array of projectile models for tower object.
+    
+    [HideInInspector]
     public GameObject projectile;
     public Transform firePoint;
+    public Transform firePointTwo; //new firepoint for range upgrades
     //public float timeBetweenShots = 1f;
     private float shotCounter;
 
     private Transform target;
     public Transform launcherModel;
 
-    public GameObject shotEffect;
+    //public GameObject shotEffect;
 
     // Start is called before the first frame update
     void Start()
     {
         theTower = GetComponent<Tower>();
+        //TEST - MATT
+        //foreach (GameObject gameObject in model)
+        //{
+           // gameObject.SetActive(false);
+        //}
+        //model[0].SetActive(true);
+        projectiles[0].SetActive(true);
+        projectiles[1].SetActive(false);
+        projectile = projectiles[0];
     }
 
     // Update is called once per frame
@@ -41,7 +56,7 @@ public class ProjectileTower : MonoBehaviour
             firePoint.LookAt(target);
 
             Instantiate(projectile, firePoint.position, firePoint.rotation);
-            Instantiate(shotEffect, firePoint.position, firePoint.rotation);
+            //Instantiate(shotEffect, firePoint.position, firePoint.rotation);
         }
         if (theTower.enemiesUpdated)
         {

@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\EnemyHealthController.cs" />
     <Compile Include="Assets\Scripts\AudioManagerLoader.cs" />
     <Compile Include="Assets\Scripts\RemoveParentAtStart.cs" />
+    <Compile Include="Assets\Scripts\OnValueChangedText.cs" />
     <Compile Include="Assets\Scripts\Towers\TowerButton.cs" />
     <Compile Include="Assets\Scripts\Towers\SlowdownTower.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
