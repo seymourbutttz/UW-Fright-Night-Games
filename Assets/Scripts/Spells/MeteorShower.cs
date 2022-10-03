@@ -7,7 +7,7 @@ public class MeteorShower : MonoBehaviour
     
     public Meteors meteor; //prefab to spawn
     
-    public Transform[] spawnPointOne; //array of spawn points
+    public Transform[] spawnPoints; //array of spawn points
     public float timeBetweenMeteors; //time between meteor spawns
     private float spawnCounter; 
 
@@ -29,28 +29,14 @@ public class MeteorShower : MonoBehaviour
             if (spawnCounter <= 0)
             {
                 spawnCounter = timeBetweenMeteors;
-                //foreach(Transform spawnPoint in spawnPointOne)
-                //{
-                    //Instantiate(meteor, spawnPoint);
-                //}
-                
-                for(int i = 0; i < spawnPointOne.Length; i++)
-                {
-                    Debug.Log(i);
-                    Instantiate(meteor, spawnPointOne[i]);
-                    i++;                    
-                }
-
-                for (int i = 1; i < spawnPointOne.Length; i++)
-                {
-                    Debug.Log(i);
-                    Instantiate(meteor, spawnPointOne[i]);
-                    i++;
-                }
-
+                Instantiate(meteor, spawnPoints[Random.Range(0, spawnPoints.Length)]);
+                            
                 spawnCounter = timeBetweenMeteors;
                 amountToSpawn--;
             }
+        } else
+        {
+            Destroy(gameObject);
         }
     }
 }

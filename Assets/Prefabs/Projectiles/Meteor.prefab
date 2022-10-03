@@ -50,7 +50,8 @@ MonoBehaviour:
   rigidBody: {fileID: 7857592368527514482}
   dropSpeed: 13
   impact: {fileID: 7771196411356021909, guid: fe2b348cef394a3409e5f04d8e0838ee, type: 3}
-  damageAmount: 10
+  damageAmount: 5
+  blastRadius: 1.5
 --- !u!135 &7857592368527514477
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62,8 +63,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.2, z: 0}
+  m_Radius: 0.6
+  m_Center: {x: 0, y: 0.3, z: -0.19}
 --- !u!54 &7857592368527514482
 Rigidbody:
   m_ObjectHideFlags: 0
