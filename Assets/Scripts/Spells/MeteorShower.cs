@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeteorShower : MonoBehaviour
 {
-    
+
     public Meteors meteor; //prefab to spawn
     
     public Transform[] spawnPoints; //array of spawn points

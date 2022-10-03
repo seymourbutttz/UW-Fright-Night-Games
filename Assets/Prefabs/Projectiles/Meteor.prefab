@@ -51,7 +51,7 @@ MonoBehaviour:
   dropSpeed: 13
   impact: {fileID: 7771196411356021909, guid: fe2b348cef394a3409e5f04d8e0838ee, type: 3}
   damageAmount: 5
-  blastRadius: 1.5
+  blastRadius: 1.25
 --- !u!135 &7857592368527514477
 SphereCollider:
   m_ObjectHideFlags: 0

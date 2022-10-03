@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 9175
+  controlID: 19
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 9167
+  controlID: 135
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,8 +165,8 @@ MonoBehaviour:
     y: 0
     width: 1242
     height: 505
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -191,8 +191,8 @@ MonoBehaviour:
     y: 505
     width: 1242
     height: 442
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 9176
+  controlID: 95
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 355
     height: 305
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -620,9 +620,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.482077, y: 0.06360769, z: -0.4910903}
+    m_Target: {x: 1.221673, y: -1.6885362, z: 2.396237}
     speed: 2
-    m_Value: {x: 2.482077, y: 0.06360769, z: -0.4910903}
+    m_Value: {x: 1.221673, y: -1.6885362, z: 2.396237}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -673,9 +673,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.39401853, y: 0.000000036905217, z: 0.00000004488434, w: 0.91910255}
   m_Size:
-    m_Target: 4.000203
+    m_Target: 5.040116
     speed: 2
-    m_Value: 4.000203
+    m_Value: 5.040116
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -730,7 +730,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -253616
+  m_LastSelectedObjectID: -4904
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -789,10 +789,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 73}
-      m_SelectedIDs: 5021fcff
-      m_LastClickedID: -253616
-      m_ExpandedIDs: 2021fcff5021fcff9e60fcff6462fcffa666fcff948efcffde92fcff8497fcffee98fcff0c99fcffbc9dfcffa09efcffc09efcff1ca2fcffa4a9fcfffeaafcff0eaffcff80f0fcffa0f0fcff48f2fcff7af6fcffc80efdfffc15fdff7e19fdffbe3dfdff3cb7fdff76b7fdff3cb8fdff86b8fdff3cb9fdff86b9fdff84e1feff5a77ffffe2f4ffffe8f4ffff5ef5ffff02f7ffff38fbffff364b0000c0cb0200e8e002008ee20200
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 885a0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 9aeefcffca86fdffc09dfdffb2a8fdffb8b9fdff6cc5fdffcacbfdff36d0fdff7ed6fdffd2d6fdff80d8fdff1ee0fdff02e8fdff10f1fdff12fbfdfff410feffd818feff381dfeff10b2fffffae9ffff76eeffff1cf9ffff405c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -857,36 +857,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Owner\Documents\GitHub\UW-Fright-Night-Games
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 06590000
-    m_LastClickedID: 22790
-    m_ExpandedIDs: 0000000000590000045900000659000008590000dc59000000ca9a3b
+    m_SelectedIDs: 4a5a0000
+    m_LastClickedID: 23114
+    m_ExpandedIDs: 00000000245a0000265a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Towers
+      m_OriginalName: Towers
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 26474
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -900,7 +900,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000005900000259000004590000065900000859000000ca9a3b
+    m_ExpandedIDs: 00000000245a0000265a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -931,18 +931,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 00000000ca5100006851000080580000c011000066500000bc250100b0250100de4f0000baebfeff0c510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: MeteorTest
+      m_OriginalName: MeteorTest
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 23166
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:

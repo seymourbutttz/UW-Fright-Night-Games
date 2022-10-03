@@ -19,6 +19,8 @@ public class SpellManager : MonoBehaviour
 
     public LayerMask whatIsPlacement;
 
+    public float topSafePercent = 12f; //top 15% of screen
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,12 +34,30 @@ public class SpellManager : MonoBehaviour
         if (isPlacing)
         {
             indicator.position = GetGridPosition(); //assigns indicator position to mouse position
-
-            if(Input.GetMouseButtonDown(0)) //places spell after mouse click
+            if (Input.mousePosition.y > Screen.height * (1f - (topSafePercent / 100f))) //wont allow placement above in button area
             {
-                isPlacing = false;
-                Instantiate(activeSpell, indicator.position, activeSpell.transform.rotation); //generates a copy of spell
-                indicator.gameObject.SetActive(false); //removes indicator once spell is placed
+                indicator.gameObject.SetActive(false); //deactivates spell indicator
+            }else
+            {
+                indicator.gameObject.SetActive(true); //activates spell indicator
+                UIController.instance.notEnoughMoneyWarning.SetActive(MoneyManager.instance.currentMoney < activeSpell.cost);
+
+                if (Input.GetMouseButtonDown(0)) //places spell after mouse click
+                {
+                    if (MoneyManager.instance.SpendMoney(activeSpell.cost))
+                    {
+                        isPlacing = false;
+                        
+
+                        Instantiate(activeSpell, indicator.position, activeSpell.transform.rotation); //generates a copy of spell
+
+                        indicator.gameObject.SetActive(false);//removes indicator once spell is placed
+
+                        UIController.instance.notEnoughMoneyWarning.SetActive(false);
+
+                        //AudioManager.instance.PlaySFX(8);
+                    } 
+                }
             }
         }
     }
@@ -49,7 +69,11 @@ public class SpellManager : MonoBehaviour
 
         Destroy(indicator.gameObject);
         Spells placeSpell = Instantiate(activeSpell); //creates a copy of the meteor shower so we can see where it will be placed
-        placeSpell.GetComponent<MeteorShower>().enabled = false;
+        //placeSpell.enabled = false;
+        if (placeSpell.GetComponent<MeteorShower>())
+        {
+            placeSpell.GetComponent<MeteorShower>().enabled = false;
+        }
         indicator = placeSpell.transform;
         
     }
