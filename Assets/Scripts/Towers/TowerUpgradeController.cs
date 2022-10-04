@@ -15,14 +15,7 @@ public class TowerUpgradeController : MonoBehaviour
     public bool hasFirerateUpgrade = true;
     [TextArea]
     public string fireRateText;
-<<<<<<< HEAD
-    //visual tower update test - Matt
-    
-=======
-        
->>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
 
-    // Start is called before the first frame update
     void Start()
     {
         theTower = GetComponent<Tower>();
@@ -32,7 +25,6 @@ public class TowerUpgradeController : MonoBehaviour
     {
         theTower.range = rangeUpgrades[currentRangeUpgrade].amount;
         currentRangeUpgrade++;
-<<<<<<< HEAD
         if (currentRangeUpgrade <= 3)
         {
             theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade - 1].SetActive(false);
@@ -59,16 +51,9 @@ public class TowerUpgradeController : MonoBehaviour
             
         //}
         //End Test
-=======
         if (currentRangeUpgrade <= 3 && theTower.tag == "ProjectileTower") //if statement controlling visible model for projectile tower.
         {
             ProjectileUpgrade();
-        }
-        
->>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
-        if(currentRangeUpgrade >= rangeUpgrades.Length)
-        {
-            hasRangeUpgrade = false;
         }
     }
 
@@ -81,9 +66,6 @@ public class TowerUpgradeController : MonoBehaviour
             hasFirerateUpgrade = false;
         }
     }
-
-<<<<<<< HEAD
-=======
     //Function controlling projectile tower model upgrades.
     public void ProjectileUpgrade()
     {
@@ -97,8 +79,6 @@ public class TowerUpgradeController : MonoBehaviour
             theTower.GetComponent<ProjectileTower>().projectiles[0].SetActive(false);
         }
     }
-
->>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
 }
 
 [System.Serializable]
