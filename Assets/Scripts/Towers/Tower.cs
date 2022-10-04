@@ -30,6 +30,7 @@ public class Tower : MonoBehaviour
         checkCounter = checkTime;
 
         upgrader = GetComponent<TowerUpgradeController>();
+
     }
 
     // Update is called once per frame
