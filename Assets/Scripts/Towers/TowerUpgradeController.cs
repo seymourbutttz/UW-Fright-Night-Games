@@ -15,8 +15,12 @@ public class TowerUpgradeController : MonoBehaviour
     public bool hasFirerateUpgrade = true;
     [TextArea]
     public string fireRateText;
+<<<<<<< HEAD
     //visual tower update test - Matt
     
+=======
+        
+>>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +32,7 @@ public class TowerUpgradeController : MonoBehaviour
     {
         theTower.range = rangeUpgrades[currentRangeUpgrade].amount;
         currentRangeUpgrade++;
+<<<<<<< HEAD
         if (currentRangeUpgrade <= 3)
         {
             theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade - 1].SetActive(false);
@@ -54,6 +59,13 @@ public class TowerUpgradeController : MonoBehaviour
             
         //}
         //End Test
+=======
+        if (currentRangeUpgrade <= 3 && theTower.tag == "ProjectileTower") //if statement controlling visible model for projectile tower.
+        {
+            ProjectileUpgrade();
+        }
+        
+>>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
         if(currentRangeUpgrade >= rangeUpgrades.Length)
         {
             hasRangeUpgrade = false;
@@ -70,6 +82,23 @@ public class TowerUpgradeController : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+=======
+    //Function controlling projectile tower model upgrades.
+    public void ProjectileUpgrade()
+    {
+        theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade - 1].SetActive(false); //deactivates the current visible tower model
+        theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade].SetActive(true); //activates the new tower model
+        if (currentRangeUpgrade == 2) //if statement to change the projectile model and firepoint position for a taller tower
+        {
+            theTower.GetComponent<ProjectileTower>().projectiles[1].SetActive(true);
+            theTower.GetComponent<ProjectileTower>().projectile = theTower.GetComponent<ProjectileTower>().projectiles[1];
+            theTower.GetComponent<ProjectileTower>().firePoint.transform.position = theTower.GetComponent<ProjectileTower>().firePointTwo.transform.position;
+            theTower.GetComponent<ProjectileTower>().projectiles[0].SetActive(false);
+        }
+    }
+
+>>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
 }
 
 [System.Serializable]

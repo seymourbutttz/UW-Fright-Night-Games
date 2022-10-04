@@ -15,7 +15,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
 --- !u!4 &4010060638549045362
 Transform:
   m_ObjectHideFlags: 0
@@ -80,7 +84,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
 --- !u!4 &7123719690064543895
 Transform:
   m_ObjectHideFlags: 0
@@ -258,7 +266,11 @@ GameObject:
   - component: {fileID: -2966632691034344044}
   m_Layer: 8
   m_Name: Pumpkin Tower
+<<<<<<< HEAD
   m_TagString: Untagged
+=======
+  m_TagString: ProjectileTower
+>>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,7 +435,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
 --- !u!4 &4004815270226541322
 Transform:
   m_ObjectHideFlags: 0

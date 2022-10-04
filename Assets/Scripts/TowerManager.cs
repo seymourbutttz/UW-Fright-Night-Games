@@ -67,6 +67,11 @@ public class TowerManager : MonoBehaviour
 
                         AudioManager.instance.PlaySFX(8);
                     }
+                }else if (Input.GetMouseButtonDown(1))
+                {
+                    isPlacing = false;
+                    indicator.gameObject.SetActive(false);//removes indicator once spell is placed
+                    UIController.instance.notEnoughMoneyWarning.SetActive(false); //removes not enough money warning if active
                 }
             }
         }
