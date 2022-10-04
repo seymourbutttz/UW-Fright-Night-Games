@@ -355,6 +355,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f65026e846243c04aa58042337085f20, type: 3}
   m_PrefabInstance: {fileID: 1649243612}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &46211250 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1194349799, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
+  m_PrefabInstance: {fileID: 6591708523448204130}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9150217f71dfa3e498fc2fbd6027536b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &56246797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9256,6 +9267,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
+--- !u!1 &1927538749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7529579257503120950, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
+  m_PrefabInstance: {fileID: 6591708523448204130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1928062157
 GameObject:
   m_ObjectHideFlags: 0
@@ -10842,6 +10858,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1194349799, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
+      propertyPath: upgradeTowerButton
+      value: 
+      objectReference: {fileID: 1927538749}
     - target: {fileID: 5778695423741003168, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -11134,6 +11154,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -21.776367
       objectReference: {fileID: 0}
+    - target: {fileID: 7529579257503120944, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 46211250}
+    - target: {fileID: 7529579257503120944, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpgradeTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529579257503120944, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TowerUpgradePanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529579257503120944, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9217672439159406271, guid: 222fe1be734f1b448bf5aaa672878d88, type: 3}
       propertyPath: m_fontSize
       value: 41.45
@@ -11288,6 +11324,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2966632691034344044, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
+      propertyPath: rangeUpgrades.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2966632691034344044, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
+      propertyPath: rangeUpgrades.Array.data[3].cost
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: -2966632691034344044, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
+      propertyPath: towerUpgrades.Array.data[0].speed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2966632691034344044, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
+      propertyPath: towerUpgrades.Array.data[1].speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2966632691034344044, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
+      propertyPath: rangeUpgrades.Array.data[3].amount
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8492344930071035220, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
       propertyPath: m_Name
       value: Pumpkin Tower

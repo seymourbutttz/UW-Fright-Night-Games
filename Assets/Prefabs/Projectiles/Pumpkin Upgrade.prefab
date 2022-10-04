@@ -16,12 +16,12 @@ GameObject:
   - component: {fileID: -3823351975329508453}
   - component: {fileID: -2737677024607126425}
   m_Layer: 11
-  m_Name: Pumpkin
+  m_Name: Pumpkin Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   theRB: {fileID: -3823351975329508453}
   moveSpeed: 10
   impactEffect: {fileID: 3872692991217085041, guid: 5eb936832ce87b945a20871682c466dc, type: 3}
-  damageAmount: 10
+  damageAmount: 15
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 0

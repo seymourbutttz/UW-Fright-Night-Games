@@ -13,6 +13,12 @@ public class TowerUpgradeController : MonoBehaviour
     public UpgradeStage[] firerateUpgrades;
     public int currentFirerateUpgrade;
     public bool hasFirerateUpgrade = true;
+
+    //Tower Upgrade Test - Matt
+    public UpgradeStage[] towerUpgrades; //available tower upgrade cost, and changes
+    public int currentTowerUpgrade; //current tower upgrade level
+    public bool hasTowerUpgrade; //does the tower have another upgrade available?
+
     [TextArea]
     public string fireRateText;
         
@@ -21,6 +27,27 @@ public class TowerUpgradeController : MonoBehaviour
     void Start()
     {
         theTower = GetComponent<Tower>();
+    }
+
+    public void UpgradeTower()
+    {
+        //UpgradeRange();
+        //UpgradeFireRate();
+
+        theTower.range = towerUpgrades[currentTowerUpgrade].range; //assign range upgrade
+        theTower.fireRate = towerUpgrades[currentTowerUpgrade].speed; //assign time between projectiles or affect amount
+
+        if(theTower.tag == "ProjectileTower")
+        {
+            ProjectileUpgrade(); //change tower/projectile models
+        }
+        currentTowerUpgrade++;
+
+        if(currentTowerUpgrade >= towerUpgrades.Length)
+        {
+            hasTowerUpgrade = false; //no tower upgrades available.
+        }
+
     }
 
     public void UpgradeRange()
@@ -51,15 +78,24 @@ public class TowerUpgradeController : MonoBehaviour
     //Function controlling projectile tower model upgrades.
     public void ProjectileUpgrade()
     {
-        theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade - 1].SetActive(false); //deactivates the current visible tower model
-        theTower.GetComponent<ProjectileTower>().model[currentRangeUpgrade].SetActive(true); //activates the new tower model
-        if (currentRangeUpgrade == 2) //if statement to change the projectile model and firepoint position for a taller tower
+        theTower.GetComponent<ProjectileTower>().model[currentTowerUpgrade].SetActive(false); //deactivates the current visible tower model
+        theTower.GetComponent<ProjectileTower>().model[currentTowerUpgrade + 1].SetActive(true); //activates the new tower model
+        
+        theTower.GetComponent<ProjectileTower>().projectiles[currentTowerUpgrade].SetActive(false); //deactivates current projectile
+        theTower.GetComponent<ProjectileTower>().projectiles[currentTowerUpgrade + 1].SetActive(true); //activates new projectile
+        theTower.GetComponent<ProjectileTower>().projectile = theTower.GetComponent<ProjectileTower>().projectiles[currentTowerUpgrade + 1]; //assigns new projectile to deal more damage
+        if(currentTowerUpgrade == 0) //changes firepoint position with larger model.
         {
-            theTower.GetComponent<ProjectileTower>().projectiles[1].SetActive(true);
-            theTower.GetComponent<ProjectileTower>().projectile = theTower.GetComponent<ProjectileTower>().projectiles[1];
             theTower.GetComponent<ProjectileTower>().firePoint.transform.position = theTower.GetComponent<ProjectileTower>().firePointTwo.transform.position;
-            theTower.GetComponent<ProjectileTower>().projectiles[0].SetActive(false);
         }
+        
+        //if (currentRangeUpgrade == 2) //if statement to change the projectile model and firepoint position for a taller tower
+        //{
+        //    theTower.GetComponent<ProjectileTower>().projectiles[1].SetActive(true);
+        //    theTower.GetComponent<ProjectileTower>().projectile = theTower.GetComponent<ProjectileTower>().projectiles[1];
+            
+        //    theTower.GetComponent<ProjectileTower>().projectiles[0].SetActive(false);
+        //}
     }
 
 }
@@ -68,5 +104,7 @@ public class TowerUpgradeController : MonoBehaviour
 public class UpgradeStage
 {
     public float amount;
-    public int cost;
+    public float range; //tower range
+    public float speed; //tower speed
+    public int cost; //cost of tower upgrade
 }

@@ -5,7 +5,7 @@ using TMPro;
 
 public class TowerUpgradePanel : MonoBehaviour
 {
-    public GameObject rangeButton, firerateButton;
+    public GameObject rangeButton, firerateButton, upgradeTowerButton;
     public TMP_Text rangeText, firerateText;
 
     public void SetupPanel()
@@ -88,5 +88,14 @@ public class TowerUpgradePanel : MonoBehaviour
                 UIController.instance.notEnoughMoneyWarning.SetActive(true);
             }
         }
+    }
+
+    public void UpgradeTower()
+    {
+        TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
+
+        upgrader.UpgradeTower();
+
+        //Debug.Log("tower upgrade");
     }
 }
