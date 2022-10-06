@@ -6,15 +6,15 @@ public class TowerUpgradeController : MonoBehaviour
 {
     private Tower theTower;
 
-    public UpgradeStage[] rangeUpgrades;
-    public int currentRangeUpgrade;
-    public bool hasRangeUpgrade = true;
+    //public UpgradeStage[] rangeUpgrades;
+    //public int currentRangeUpgrade;
+    //public bool hasRangeUpgrade = true;
 
-    public UpgradeStage[] firerateUpgrades;
-    public int currentFirerateUpgrade;
-    public bool hasFirerateUpgrade = true;
+    //public UpgradeStage[] firerateUpgrades;
+    //public int currentFirerateUpgrade;
+    //public bool hasFirerateUpgrade = true;
 
-    //Tower Upgrade Test - Matt
+    //Tower Upgrade variables
     public UpgradeStage[] towerUpgrades; //available tower upgrade cost, and changes
     public int currentTowerUpgrade; //current tower upgrade level
     public bool hasTowerUpgrade; //does the tower have another upgrade available?
@@ -31,9 +31,6 @@ public class TowerUpgradeController : MonoBehaviour
 
     public void UpgradeTower()
     {
-        //UpgradeRange();
-        //UpgradeFireRate();
-
         theTower.range = towerUpgrades[currentTowerUpgrade].range; //assign range upgrade
         theTower.fireRate = towerUpgrades[currentTowerUpgrade].speed; //assign time between projectiles or affect amount
 
@@ -50,30 +47,30 @@ public class TowerUpgradeController : MonoBehaviour
 
     }
 
-    public void UpgradeRange()
-    {
-        theTower.range = rangeUpgrades[currentRangeUpgrade].amount;
-        currentRangeUpgrade++;
-        if (currentRangeUpgrade <= 3 && theTower.tag == "ProjectileTower") //if statement controlling visible model for projectile tower.
-        {
-            ProjectileUpgrade();
-        }
+    //public void UpgradeRange()
+    //{
+    //    theTower.range = rangeUpgrades[currentRangeUpgrade].amount;
+    //    currentRangeUpgrade++;
+    //    if (currentRangeUpgrade <= 3 && theTower.tag == "ProjectileTower") //if statement controlling visible model for projectile tower.
+    //    {
+    //        ProjectileUpgrade();
+    //    }
         
-        if(currentRangeUpgrade >= rangeUpgrades.Length)
-        {
-            hasRangeUpgrade = false;
-        }
-    }
+    //    if(currentRangeUpgrade >= rangeUpgrades.Length)
+    //    {
+    //        hasRangeUpgrade = false;
+    //    }
+    //}
 
-    public void UpgradeFireRate()
-    {
-        theTower.fireRate = firerateUpgrades[currentFirerateUpgrade].amount;
-        currentFirerateUpgrade++;
-        if(currentFirerateUpgrade >= firerateUpgrades.Length)
-        {
-            hasFirerateUpgrade = false;
-        }
-    }
+    //public void UpgradeFireRate()
+    //{
+    //    theTower.fireRate = firerateUpgrades[currentFirerateUpgrade].amount;
+    //    currentFirerateUpgrade++;
+    //    if(currentFirerateUpgrade >= firerateUpgrades.Length)
+    //    {
+    //        hasFirerateUpgrade = false;
+    //    }
+    //}
 
     //Function controlling projectile tower model upgrades.
     public void ProjectileUpgrade()
@@ -88,22 +85,14 @@ public class TowerUpgradeController : MonoBehaviour
         {
             theTower.GetComponent<ProjectileTower>().firePoint.transform.position = theTower.GetComponent<ProjectileTower>().firePointTwo.transform.position;
         }
-        
-        //if (currentRangeUpgrade == 2) //if statement to change the projectile model and firepoint position for a taller tower
-        //{
-        //    theTower.GetComponent<ProjectileTower>().projectiles[1].SetActive(true);
-        //    theTower.GetComponent<ProjectileTower>().projectile = theTower.GetComponent<ProjectileTower>().projectiles[1];
-            
-        //    theTower.GetComponent<ProjectileTower>().projectiles[0].SetActive(false);
-        //}
     }
 
 }
 
 [System.Serializable]
-public class UpgradeStage
+public class UpgradeStage //array of upgrades
 {
-    public float amount;
+    //public float amount;
     public float range; //tower range
     public float speed; //tower speed
     public int cost; //cost of tower upgrade

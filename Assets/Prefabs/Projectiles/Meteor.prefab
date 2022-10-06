@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 7857592368527514482}
-  dropSpeed: 13
+  dropSpeed: 14
   impact: {fileID: 7771196411356021909, guid: fe2b348cef394a3409e5f04d8e0838ee, type: 3}
   damageAmount: 5
   blastRadius: 1.25

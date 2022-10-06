@@ -5,36 +5,29 @@ using TMPro;
 
 public class TowerUpgradePanel : MonoBehaviour
 {
-    public GameObject rangeButton, firerateButton, upgradeTowerButton;
-    public TMP_Text rangeText, firerateText;
-
+    public GameObject  upgradeTowerButton; //, firerateButton, rangeButton, 
+    public TMP_Text upgradeText; //rangeText, firerateText
+    
     public void SetupPanel()
     {
-        if(TowerManager.instance.selectedTower.upgrader.hasRangeUpgrade)
+
+        if (TowerManager.instance.selectedTower.upgrader.hasTowerUpgrade)
         {
             TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
-            rangeText.text = "Upgrade\nRange\n(" + upgrader.rangeUpgrades[upgrader.currentRangeUpgrade].cost + "G)";
+            upgradeText.text = "Upgrade\nTower\n(" + upgrader.towerUpgrades[upgrader.currentTowerUpgrade].cost + "G)";
 
-            rangeButton.SetActive(true);
-        } else
-        {
-            rangeButton.SetActive(false);
+            upgradeTowerButton.SetActive(true);
         }
-
-        if(TowerManager.instance.selectedTower.upgrader.hasFirerateUpgrade)
+        else
         {
-            TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
-            firerateText.text = upgrader.fireRateText + "(" + upgrader.firerateUpgrades[upgrader.currentFirerateUpgrade].cost + "G)";
-
-            firerateButton.SetActive(true);
-        } else
-        {
-            firerateButton.SetActive(false);
+            upgradeTowerButton.SetActive(false);
         }
     }
 
     public void RemoveTower()
     {
+        TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
+
         MoneyManager.instance.SpendMoney(-50);
 
         Destroy(TowerManager.instance.selectedTower.gameObject);
@@ -44,38 +37,16 @@ public class TowerUpgradePanel : MonoBehaviour
         AudioManager.instance.PlaySFX(9);
     }
 
-    public void UpgradeRange()
+
+    public void UpgradeTower()
     {
         TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
 
-        if (upgrader.hasRangeUpgrade)
+        if (upgrader.hasTowerUpgrade)
         {
-            if(MoneyManager.instance.SpendMoney(upgrader.rangeUpgrades[upgrader.currentRangeUpgrade].cost))
+            if (MoneyManager.instance.SpendMoney(upgrader.towerUpgrades[upgrader.currentTowerUpgrade].cost))
             {
-                upgrader.UpgradeRange();
-
-                SetupPanel();
-
-                UIController.instance.notEnoughMoneyWarning.SetActive(false);
-
-                AudioManager.instance.PlaySFX(10);
-            } else
-            {
-                UIController.instance.notEnoughMoneyWarning.SetActive(true);
-            }
-
-        }
-    }
-
-    public void UpgradeFireRate()
-    {
-        TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
-
-        if(upgrader.hasFirerateUpgrade)
-        {
-            if (MoneyManager.instance.SpendMoney(upgrader.firerateUpgrades[upgrader.currentFirerateUpgrade].cost))
-            {
-                upgrader.UpgradeFireRate();
+                upgrader.UpgradeTower();
 
                 SetupPanel();
 
@@ -88,14 +59,5 @@ public class TowerUpgradePanel : MonoBehaviour
                 UIController.instance.notEnoughMoneyWarning.SetActive(true);
             }
         }
-    }
-
-    public void UpgradeTower()
-    {
-        TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
-
-        upgrader.UpgradeTower();
-
-        //Debug.Log("tower upgrade");
     }
 }
