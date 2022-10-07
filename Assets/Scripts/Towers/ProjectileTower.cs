@@ -26,12 +26,7 @@ public class ProjectileTower : MonoBehaviour
     void Start()
     {
         theTower = GetComponent<Tower>();
-        //TEST - MATT
-        //foreach (GameObject gameObject in model)
-        //{
-           // gameObject.SetActive(false);
-        //}
-        //model[0].SetActive(true);
+        
         projectiles[0].SetActive(true);
         projectiles[1].SetActive(false);
         projectile = projectiles[0];
