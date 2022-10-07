@@ -211,15 +211,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f4ba942a13d27468bced4094ec8160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerUpgrades:
-  - range: 4
-    speed: 2
-    cost: 250
-  - range: 5
-    speed: 1
-    cost: 275
-  currentTowerUpgrade: 0
-  hasTowerUpgrade: 1
+  rangeUpgrades:
+  - amount: 3.5
+    cost: 50
+  - amount: 4
+    cost: 100
+  - amount: 4.5
+    cost: 150
+  currentRangeUpgrade: 0
+  hasRangeUpgrade: 1
+  firerateUpgrades:
+  - amount: 2
+    cost: 100
+  - amount: 1.75
+    cost: 200
+  - amount: 1.5
+    cost: 300
+  currentFirerateUpgrade: 0
+  hasFirerateUpgrade: 1
   fireRateText: 'Upgrade
 
     Fire Rate

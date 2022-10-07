@@ -49,10 +49,7 @@ public class BombTower : MonoBehaviour
                 bombCounter = theTower.fireRate;
 
                 Bomb newBomb = Instantiate(theBomb, spawnPoint.position, Quaternion.identity);
-                if (target != null)
-                {
-                    newBomb.targetPoint = target.position;
-                }
+                newBomb.targetPoint = target.position;
             }
         }
     }
