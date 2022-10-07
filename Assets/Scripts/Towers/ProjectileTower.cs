@@ -32,6 +32,12 @@ public class ProjectileTower : MonoBehaviour
             gameObject.SetActive(false);
         }
         model[0].SetActive(true);
+
+        //foreach (GameObject gameObject in model)
+        //{
+           // gameObject.SetActive(false);
+        //}
+        //model[0].SetActive(true);
         projectiles[0].SetActive(true);
         projectiles[1].SetActive(false);
         projectile = projectiles[0];
