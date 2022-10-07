@@ -30,6 +30,7 @@ public class ProjectileTower : MonoBehaviour
     void Start()
     {
         theTower = GetComponent<Tower>();
+<<<<<<< HEAD
         //TEST - MATT
 <<<<<<< HEAD
         foreach (GameObject gameObject in model)
@@ -44,6 +45,9 @@ public class ProjectileTower : MonoBehaviour
         //}
         //model[0].SetActive(true);
 >>>>>>> 85656eca0fc0cd89ebef3746e93b184d82c86f59
+=======
+        
+>>>>>>> 2ad54e8495f346e00b2905d851be98ed02a28cb8
         projectiles[0].SetActive(true);
         projectiles[1].SetActive(false);
         projectile = projectiles[0];

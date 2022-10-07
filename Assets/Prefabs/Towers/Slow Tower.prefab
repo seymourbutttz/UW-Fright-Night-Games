@@ -147,24 +147,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f4ba942a13d27468bced4094ec8160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeUpgrades:
-  - amount: 3.5
-    cost: 50
-  - amount: 4
-    cost: 100
-  - amount: 4.5
-    cost: 150
-  currentRangeUpgrade: 0
-  hasRangeUpgrade: 1
-  firerateUpgrades:
-  - amount: 0.45
-    cost: 100
-  - amount: 0.4
+  towerUpgrades:
+  - range: 4
+    speed: 0.25
+    cost: 175
+  - range: 5
+    speed: 0.1
     cost: 200
-  - amount: 0.35
-    cost: 300
-  currentFirerateUpgrade: 0
-  hasFirerateUpgrade: 1
+  currentTowerUpgrade: 0
+  hasTowerUpgrade: 1
   fireRateText: 'Upgrade
 
     Slow Zone
