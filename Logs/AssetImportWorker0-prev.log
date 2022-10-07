@@ -15,7 +15,7 @@ C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61247
+52051
 Successfully changed project path to: C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
 C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/Owner/Documents/GitHub/UW-Fright-Night-Games
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 56.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 60.19 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.17f1 (efb8f635e7b1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Resources/UnitySubsystems
@@ -63,90 +63,90 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.016708 seconds.
+Registered in 0.019447 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 40.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.886 seconds
+- Completed reload, in  1.225 seconds
 Domain Reload Profiling:
-	ReloadAssembly (887ms)
-		BeginReloadAssembly (122ms)
+	ReloadAssembly (1226ms)
+		BeginReloadAssembly (322ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (590ms)
-			LoadAssemblies (118ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (617ms)
+			LoadAssemblies (317ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (152ms)
+			SetupTypeCache (149ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (327ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (347ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (41ms)
+				RefreshPlugins (54ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (202ms)
-				ProcessInitializeOnLoadMethodAttributes (66ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004613 seconds.
+Registered in 0.006944 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 50.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.396 seconds
+- Completed reload, in  1.556 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1397ms)
-		BeginReloadAssembly (168ms)
+	ReloadAssembly (1557ms)
+		BeginReloadAssembly (199ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (1056ms)
-			LoadAssemblies (119ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1175ms)
+			LoadAssemblies (138ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (336ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (460ms)
+			SetupTypeCache (303ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (635ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (306ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
-				AfterProcessingInitializeOnLoad (18ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (407ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (19ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1423 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (269.4 KB). Loaded Objects now: 1893.
-Memory consumption went from 127.7 MB to 127.5 MB.
-Total: 4.103600 ms (FindLiveObjects: 0.207700 ms CreateObjectMapping: 0.060000 ms MarkObjects: 3.637200 ms  DeleteObjects: 0.196800 ms)
+Unloading 1610 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (1.7 MB). Loaded Objects now: 2078.
+Memory consumption went from 141.5 MB to 139.8 MB.
+Total: 4.645400 ms (FindLiveObjects: 0.186600 ms CreateObjectMapping: 0.068700 ms MarkObjects: 3.938400 ms  DeleteObjects: 0.449900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,31 +160,30 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 8911.442468 seconds.
-  path: Assets/Prefabs/Level Essentials/UI Canvas 1.prefab
-  artifactKey: Guid(4779e3ea51126d64eb537e3b62c5182d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Level Essentials/UI Canvas 1.prefab using Guid(4779e3ea51126d64eb537e3b62c5182d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac1afba985efdb38bc5f45a9fc348ef') in 0.211135 seconds 
+  Time since last request: 11956.475813 seconds.
+  path: Assets/GroundLayer.terrainlayer
+  artifactKey: Guid(d0ffbfcea297a49408ae6bb9d3f7d25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GroundLayer.terrainlayer using Guid(d0ffbfcea297a49408ae6bb9d3f7d25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '476a16bab4e47a975b1738febfb2b075') in 0.123550 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.111463 seconds.
-  path: Assets/Prefabs/Level Essentials/UI Canvas.prefab
-  artifactKey: Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Level Essentials/UI Canvas.prefab using Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95c531c45b7cd0b9bb025c6043bb06c') in 0.117516 seconds 
+  Time since last request: 0.000058 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(6822612926397e84cb5ef1b13c16d4b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(6822612926397e84cb5ef1b13c16d4b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Tree1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree Tree2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree Tree3 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree Grass1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+The tree Grass2 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ -> (artifact id: 'da363d5d3c0d8dcff4f51e06e7aa1f94') in 0.107692 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.811841 seconds.
-  path: Assets/Prefabs/Level Essentials/UI Canvas.prefab
-  artifactKey: Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Level Essentials/UI Canvas.prefab using Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11632110edb1abb2d0a5be4d37b07895') in 0.098432 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/PathLayer.terrainlayer
+  artifactKey: Guid(b0d479da77a9e0d489e23bfa9c832212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PathLayer.terrainlayer using Guid(b0d479da77a9e0d489e23bfa9c832212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa59a6f34060be5a48aac0352c436f6') in 0.019739 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 68.995773 seconds.
-  path: Assets/Prefabs/Level Essentials/UI Canvas.prefab
-  artifactKey: Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Level Essentials/UI Canvas.prefab using Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6dde4d075c09f71fb39d48cfad5edb') in 0.093352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 208.952613 seconds.
-  path: Assets/Prefabs/Level Essentials/UI Canvas.prefab
-  artifactKey: Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Level Essentials/UI Canvas.prefab using Guid(222fe1be734f1b448bf5aaa672878d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9889d43ec7b7e7683a7fc71d3ce9b96') in 0.098644 seconds 
+  Time since last request: 6.812100 seconds.
+  path: Assets/Scenes/Test 1.unity
+  artifactKey: Guid(3fd1d622052dd6b43ae192418c1787aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test 1.unity using Guid(3fd1d622052dd6b43ae192418c1787aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af7be2b980c18a88cc5c3699ac2cc95') in 0.006443 seconds 
