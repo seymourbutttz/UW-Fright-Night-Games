@@ -230,10 +230,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd8bae15f1359448b9956729685aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.4
+  moveSpeed: 0.8
   speedMod: 1
   timeBetweenAttacks: 0.75
-  damagePerAttack: 2
+  damagePerAttack: 1
+  isFlying: 0
+  flyHeight: 0
 --- !u!136 &9030745462081170982
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -260,9 +262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f2a71f68768c4ba6459c420de00ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 40
+  totalHealth: 80
   healthBar: {fileID: 8389988730356431560}
-  moneyOnDeath: 60
+  moneyOnDeath: 30
 --- !u!1 &3063372878327792817
 GameObject:
   m_ObjectHideFlags: 0
