@@ -10,12 +10,14 @@ public class EnemyController : MonoBehaviour
 
     private Path thePath;
     private int currentPoint;
-    private bool reachedEnd;
+    [HideInInspector]
+    public bool reachedEnd;
 
     public float timeBetweenAttacks, damagePerAttack;
     private float attackCounter;
 
-    private Castle theCastle;
+    [HideInInspector]
+    public Castle theCastle;
 
     private int selectedAttackPoint;
 
