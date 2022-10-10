@@ -17,7 +17,7 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(targetHealth);
+        //Debug.Log(targetHealth);
 
         reachedDestination = GetComponent<EnemyController>().reachedEnd;
         targetHealth = GetComponent<EnemyController>().theCastle.currentHealth;

@@ -56,7 +56,7 @@ public class LevelManager : MonoBehaviour
             bool wavesComplete = true;
             foreach (EnemyWaveSpawner wavespawn in waveSpawners)
             {
-                if(wavespawn.wavesToSpawn.Count > 0)
+                if(wavespawn.wavesToSpawn.Count > 0 || wavespawn.bossToSpawn.Count > 0) //end level after all waves are complete
                 {
                     wavesComplete = false;
                 }

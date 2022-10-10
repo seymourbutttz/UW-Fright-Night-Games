@@ -5251,6 +5251,7 @@ MonoBehaviour:
     timeBetweenSpawns: 1
     timeToNextWave: 0
     shouldDisplayWave: 1
+  bossToSpawn: []
   waitForFirstSpawn: 2
   spawnPoint: {fileID: 8479615035271668479}
   theCastle: {fileID: 0}
