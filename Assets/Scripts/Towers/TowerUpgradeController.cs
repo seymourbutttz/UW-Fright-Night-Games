@@ -47,31 +47,6 @@ public class TowerUpgradeController : MonoBehaviour
 
     }
 
-    //public void UpgradeRange()
-    //{
-    //    theTower.range = rangeUpgrades[currentRangeUpgrade].amount;
-    //    currentRangeUpgrade++;
-    //    if (currentRangeUpgrade <= 3 && theTower.tag == "ProjectileTower") //if statement controlling visible model for projectile tower.
-    //    {
-    //        ProjectileUpgrade();
-    //    }
-        
-    //    if(currentRangeUpgrade >= rangeUpgrades.Length)
-    //    {
-    //        hasRangeUpgrade = false;
-    //    }
-    //}
-
-    //public void UpgradeFireRate()
-    //{
-    //    theTower.fireRate = firerateUpgrades[currentFirerateUpgrade].amount;
-    //    currentFirerateUpgrade++;
-    //    if(currentFirerateUpgrade >= firerateUpgrades.Length)
-    //    {
-    //        hasFirerateUpgrade = false;
-    //    }
-    //}
-
     //Function controlling projectile tower model upgrades.
     public void ProjectileUpgrade()
     {

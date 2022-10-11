@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
     [HideInInspector]
     public float speedMod = 1f;
 
+    public bool isSlowed = false; //states weather or not the enemy is slowed.
+
     private Path thePath;
     private int currentPoint;
     [HideInInspector]
