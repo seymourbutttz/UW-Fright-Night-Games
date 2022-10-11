@@ -17,6 +17,12 @@ public class ObjectPool : MonoBehaviour
     void Start()
     {
         pooledObjects = new List<GameObject>();
+        SpawnObjects(amountToPool);
+    }
+
+
+    public void SpawnObjects(int amount)
+    {
         GameObject tmp;
         for (int i = 0; i < amountToPool; i++)
         {
@@ -25,5 +31,23 @@ public class ObjectPool : MonoBehaviour
             tmp.SetActive(false);
             pooledObjects.Add(tmp);
         }
+    }
+
+    public void SpawnObject()
+    {
+        GameObject tmp;
+        for (int i = 0; i < pooledObjects.Count; i++)
+        {
+            if (!pooledObjects[i].activeSelf)
+            {
+                pooledObjects[i].SetActive(true);
+            }
+        }
+    }
+
+    public void DestroyObject(GameObject obj)
+    {
+        obj.SetActive(false);
+        obj.transform.position = gameObject.transform.position;
     }
 }

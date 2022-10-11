@@ -5,26 +5,29 @@ using UnityEngine.AI;
 
 public class SampleNavMeshPlayerController : MonoBehaviour
 {
-    public Camera cam;
 
     public NavMeshAgent agent;
-    public Transform point;
+    private Transform point;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = cam.ScreenPointToRay(point.position);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                agent.SetDestination(hit.point);
-            }
+        point = GameObject.FindGameObjectWithTag("EndPoint").transform;
+        //Ray ray = Camera.main.ScreenPointToRay(point.position);
+        agent.SetDestination(point.position);
 
-            if (transform.position == point.position)
-            {
-                gameObject.SetActive(false);
-            }
+        if (transform.position == point.position)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("ping!");
+        if (other.tag == "EndPoint")
+        {
+            ObjectPool.SharedInstance.DestroyObject(gameObject);
+            ObjectPool.SharedInstance.SpawnObject();
         }
     }
 }
