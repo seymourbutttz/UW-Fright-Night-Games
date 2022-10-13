@@ -4309,6 +4309,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].timeBetweenSpawns
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].BossOrder.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].BossOrder.Array.data[0]
+      value: 
+      objectReference: {fileID: 7077963272440005962, guid: a2429eaffa927624db6b721bf95d762c, type: 3}
     - target: {fileID: 8479615034904542322, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: currentMoney
       value: 9999

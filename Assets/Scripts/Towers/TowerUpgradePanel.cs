@@ -35,7 +35,7 @@ public class TowerUpgradePanel : MonoBehaviour
         if (theTower.tag == "SlowTower")
         {
             theTower.GetComponent<SpiderTower>().RemoveSlowEffect(); //calls ResetEnemy function when slow tower is removed.
-            Debug.Log("Hello Matt");
+            //Debug.Log("Hello Matt");
         }
 
         MoneyManager.instance.SpendMoney(-50);
