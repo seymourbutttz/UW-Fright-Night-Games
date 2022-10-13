@@ -11,6 +11,8 @@ public class EnemyHealthController : MonoBehaviour
 
     public int moneyOnDeath = 50;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +33,25 @@ public class EnemyHealthController : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         totalHealth -= damageAmount;
-        if(totalHealth <= 0)
+        if (totalHealth <= 0)
         {
             totalHealth = 0;
-
-            Destroy(gameObject);
+            float deathAnimation = 5;
+            //test matt
+            if (gameObject.tag == "Boss")
+            {
+                Debug.Log("entered if statement");
+                gameObject.GetComponent<EnemyController>().damagePerAttack = 0;
+                gameObject.GetComponent<EnemyController>().moveSpeed = 0;
+                deathAnimation -= Time.deltaTime;
+                Debug.Log(deathAnimation);
+                
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
 
             MoneyManager.instance.GiveMoney(moneyOnDeath);
 

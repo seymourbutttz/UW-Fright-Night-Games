@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Enemy" && !hasDamaged)
+        if(other.tag == "Enemy" || other.tag == "Boss" && !hasDamaged)
         {
             other.GetComponent<EnemyHealthController>().TakeDamage(damageAmount);
             hasDamaged = true;
