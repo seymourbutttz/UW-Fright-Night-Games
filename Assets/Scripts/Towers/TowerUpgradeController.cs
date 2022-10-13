@@ -6,14 +6,6 @@ public class TowerUpgradeController : MonoBehaviour
 {
     private Tower theTower;
 
-    //public UpgradeStage[] rangeUpgrades;
-    //public int currentRangeUpgrade;
-    //public bool hasRangeUpgrade = true;
-
-    //public UpgradeStage[] firerateUpgrades;
-    //public int currentFirerateUpgrade;
-    //public bool hasFirerateUpgrade = true;
-
     //Tower Upgrade variables
     public UpgradeStage[] towerUpgrades; //available tower upgrade cost, and changes
     public int currentTowerUpgrade; //current tower upgrade level
@@ -34,9 +26,12 @@ public class TowerUpgradeController : MonoBehaviour
         theTower.range = towerUpgrades[currentTowerUpgrade].range; //assign range upgrade
         theTower.fireRate = towerUpgrades[currentTowerUpgrade].speed; //assign time between projectiles or affect amount
 
-        if(theTower.tag == "ProjectileTower")
+        if (theTower.tag == "ProjectileTower")
         {
             ProjectileUpgrade(); //change tower/projectile models
+        }else if (theTower.tag == "SlowTower")
+        {
+            SlowUpgrade();
         }
         currentTowerUpgrade++;
 
@@ -60,6 +55,13 @@ public class TowerUpgradeController : MonoBehaviour
         {
             theTower.GetComponent<ProjectileTower>().firePoint.transform.position = theTower.GetComponent<ProjectileTower>().firePointTwo.transform.position;
         }
+    }
+
+    //Function controlling projectile tower model upgrades.
+    public void SlowUpgrade()
+    {
+        theTower.GetComponent<SpiderTower>().model[currentTowerUpgrade].SetActive(false); //deactivates the current visible tower model
+        theTower.GetComponent<SpiderTower>().model[currentTowerUpgrade + 1].SetActive(true); //activates the new tower model
     }
 
 }

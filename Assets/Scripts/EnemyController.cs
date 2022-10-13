@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     public float speedMod = 1f;
 
     public bool isSlowed = false; //states weather or not the enemy is slowed.
+    public GameObject slowEffect; //prefab that gets activated when enemy is slowed.
 
     private Path thePath;
     private int currentPoint;
