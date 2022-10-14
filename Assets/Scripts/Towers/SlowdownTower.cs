@@ -20,6 +20,7 @@ public class SlowdownTower : MonoBehaviour
         foreach(EnemyController enemy in theTower.enemiesInRange)
         {
             enemy.speedMod = theTower.fireRate;
+            Debug.Log("slowed");
         }
 
         effectRing.localScale = new Vector3(theTower.range, 1f, theTower.range);

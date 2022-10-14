@@ -7,6 +7,8 @@ public class TowerUpgradePanel : MonoBehaviour
 {
     public GameObject  upgradeTowerButton; //, firerateButton, rangeButton, 
     public TMP_Text upgradeText; //rangeText, firerateText
+
+    private Tower theTower;
     
     public void SetupPanel()
     {
@@ -27,6 +29,14 @@ public class TowerUpgradePanel : MonoBehaviour
     public void RemoveTower()
     {
         TowerUpgradeController upgrader = TowerManager.instance.selectedTower.upgrader;
+        theTower = TowerManager.instance.selectedTower.GetComponent<Tower>();
+
+        //resets slow effect if tower is a slow tower
+        if (theTower.tag == "SlowTower")
+        {
+            theTower.GetComponent<SpiderTower>().RemoveSlowEffect(); //calls ResetEnemy function when slow tower is removed.
+            //Debug.Log("Hello Matt");
+        }
 
         MoneyManager.instance.SpendMoney(-50);
 
