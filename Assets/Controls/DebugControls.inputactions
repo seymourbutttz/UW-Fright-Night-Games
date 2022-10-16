@@ -1,0 +1,46 @@
+{
+    "name": "DebugControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "9e16486e-e118-49d9-adfe-eeaecc801335",
+            "actions": [
+                {
+                    "name": "ToggleDebug",
+                    "type": "Button",
+                    "id": "3e7655c9-831a-49e7-b1e7-9b112cd2db16",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b79b2a8f-e19b-4e9b-b2b1-af26ef5a0750",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player Input",
+                    "action": "ToggleDebug",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Player Input",
+            "bindingGroup": "Player Input",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
