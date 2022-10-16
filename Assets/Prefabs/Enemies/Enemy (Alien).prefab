@@ -449,8 +449,10 @@ MonoBehaviour:
   speedMod: 1
   isSlowed: 0
   slowEffect: {fileID: 8655926885479364971}
+  reachedEnd: 0
   timeBetweenAttacks: 0.5
   damagePerAttack: 1
+  theCastle: {fileID: 0}
   isFlying: 0
   flyHeight: 0
 --- !u!136 &1537677437967467486
