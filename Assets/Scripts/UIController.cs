@@ -28,6 +28,9 @@ public class UIController : MonoBehaviour
 
     public TMP_Text waveText;
 
+    //debug script canvas
+    public GameObject statScreen;
+
     // Start is called before the first frame update
     void Start()
     {
