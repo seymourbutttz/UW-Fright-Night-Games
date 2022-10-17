@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Spells\Spells.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Path.cs" />
+    <Compile Include="Assets\Scripts\SetStats.cs" />
     <Compile Include="Assets\Scripts\SimpleEnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Towers\TowerUpgradeController.cs" />
     <Compile Include="Assets\Scripts\TowerManager.cs" />
