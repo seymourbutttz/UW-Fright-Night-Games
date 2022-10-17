@@ -13,6 +13,8 @@ public class MeteorShower : MonoBehaviour
 
     public int amountToSpawn = 15; //amount of meteors to spwan
 
+    public GameObject meteorModel; //prefab of meteor
+
     // Start is called before the first frame update
     void Start()
     {

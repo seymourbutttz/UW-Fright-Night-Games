@@ -91,6 +91,7 @@ MonoBehaviour:
   - {fileID: 6969320544222258952}
   timeBetweenMeteors: 0.35
   amountToSpawn: 25
+  meteorModel: {fileID: 7857592368527514483, guid: 806457b9ccb4a3f4a8d873f3c443b84c, type: 3}
 --- !u!114 &-1621578226787545870
 MonoBehaviour:
   m_ObjectHideFlags: 0

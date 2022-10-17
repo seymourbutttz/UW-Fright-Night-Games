@@ -12,11 +12,13 @@ public class MoneyManager : MonoBehaviour
     }
 
     public int currentMoney;
+    public int startingMoney;
 
     // Start is called before the first frame update
     void Start()
     {
         UIController.instance.goldText.text = currentMoney.ToString();
+        startingMoney = currentMoney;
     }
 
     // Update is called once per frame
