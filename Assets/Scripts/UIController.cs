@@ -13,7 +13,10 @@ public class UIController : MonoBehaviour
         instance = this;
     }
 
-    public TMP_Text goldText;
+    public TMP_Text goldText, canonText;
+
+    public GameObject pumpTower; //prefab to reference for cost
+
     public GameObject notEnoughMoneyWarning;
 
     public GameObject levelCompleteScreen, levelFailScreen;
@@ -34,7 +37,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        canonText.text = "Canon" + "\n" + "Tower" + "\n" + "(" + pumpTower.GetComponent<Tower>().cost + "G)";
     }
 
     // Update is called once per frame

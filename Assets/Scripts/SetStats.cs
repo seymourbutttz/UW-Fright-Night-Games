@@ -8,6 +8,7 @@ public class SetStats : MonoBehaviour
 {
     public GameObject projectileTower, spiderTower;
     public GameObject spell1, spell2;
+    public EnemieStats[] enemies;
     public TMP_InputField startingGold, pumpTowCost, pumpTowRng, pumpTowFR, pumpTowBD, pumpTowL2C, pumpTowL2R, pumpTowL2FR, pumpTowL2D, pumpTowL3C, pumpTowL3R, pumpTowL3FR, pumpTowL3D;
     public TMP_InputField spidTowCost, spidTowRng, spidTowFR, spidTowL2C, spidTowL2R, spidTowL2FR, spidTowL3C, spidTowL3R, spidTowL3FR;
     public TMP_InputField meteorCost, meteorSpnRt, meteorDmg, meteorBR, meteorSpnQ, meteorDrop;
@@ -19,6 +20,7 @@ public class SetStats : MonoBehaviour
         SetPumpkinTower();
         SetSpiderTower();
         SetSpells();
+        SetEnemies();
     }
 
     //// Update is called once per frame
@@ -74,4 +76,23 @@ public class SetStats : MonoBehaviour
         meteorSpnQ.text = spell1.GetComponent<MeteorShower>().amountToSpawn.ToString(); //amount of meteors to spawn
         meteorDrop.text = spell1.GetComponent<MeteorShower>().meteorModel.GetComponent<Meteors>().dropSpeed.ToString(); //meteor drop speed
     }
+
+    public void SetEnemies()
+    {
+        foreach(EnemieStats stat in enemies)
+        {
+            stat.speed.text = stat.enemy.GetComponent<EnemyController>().moveSpeed.ToString(); //speed text
+            stat.attackTime.text = stat.enemy.GetComponent<EnemyController>().timeBetweenAttacks.ToString(); //attack time
+            stat.damage.text = stat.enemy.GetComponent<EnemyController>().damagePerAttack.ToString(); //enemy damage
+            stat.health.text = stat.enemy.GetComponent<EnemyHealthController>().totalHealth.ToString(); //enemy health
+            stat.goldWorth.text = stat.enemy.GetComponent<EnemyHealthController>().moneyOnDeath.ToString(); //gold awarded on death
+        }
+    }
+}
+
+[System.Serializable]
+public class EnemieStats
+{
+    public GameObject enemy;
+    public TMP_InputField speed, attackTime, damage, health, goldWorth;
 }
