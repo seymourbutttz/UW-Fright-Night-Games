@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\Towers\TowerUpgradePanel.cs" />
     <Compile Include="Assets\Scripts\Towers\Bomb.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\ChangeStats.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
