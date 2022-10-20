@@ -97,11 +97,11 @@ GameObject:
   - component: {fileID: 3163549427675777786}
   m_Layer: 11
   m_Name: Pumpkin Seed
-  m_TagString: Untagged
+  m_TagString: Seed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3163549427675777785
 Transform:
   m_ObjectHideFlags: 0

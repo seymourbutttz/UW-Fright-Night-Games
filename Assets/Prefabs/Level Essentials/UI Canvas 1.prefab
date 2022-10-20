@@ -28402,7 +28402,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42669235118329146}
+        m_TargetAssemblyTypeName: ChangeStats, Assembly-CSharp
+        m_MethodName: pumpkinRange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -41318,7 +41330,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42669235118329146}
+        m_TargetAssemblyTypeName: ChangeStats, Assembly-CSharp
+        m_MethodName: pumpkinRate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -42938,7 +42962,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42669235118329146}
+        m_TargetAssemblyTypeName: ChangeProjTowStats, Assembly-CSharp
+        m_MethodName: pumpkinBaseDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -51583,7 +51619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldText: {fileID: 21837468568642307}
-  canonText: {fileID: 9035664896122391949}
+  pumpkinText: {fileID: 9035664896122391949}
   pumpTower: {fileID: 8492344930071035220, guid: 93843032fd83444458f4f3b69f261c93, type: 3}
   notEnoughMoneyWarning: {fileID: 6591708523335820181}
   levelCompleteScreen: {fileID: 6591708524225509570}
@@ -57815,7 +57851,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42669235118329146}
+        m_TargetAssemblyTypeName: ChangeProjTowStats, Assembly-CSharp
+        m_MethodName: pumpkinRange2
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -59478,6 +59526,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pumpkinText: {fileID: 9035664896122391949}
+  projectile1: {fileID: 3163549427675777781, guid: 5ecf291426791a14a84a42ca6859c330, type: 3}
+  projectile2: {fileID: 100000, guid: 9b7789bbc487bdb4cb704035cff22684, type: 3}
+  projectile3: {fileID: 100000, guid: 1b053b83c62416a44863e3a49c7ac2bb, type: 3}
 --- !u!1 &7768846883864004124
 GameObject:
   m_ObjectHideFlags: 0
@@ -70655,7 +70706,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42669235118329146}
+        m_TargetAssemblyTypeName: ChangeProjTowStats, Assembly-CSharp
+        m_MethodName: pumpkinCost2
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -71679,6 +71742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apply Changes
       objectReference: {fileID: 0}
+    - target: {fileID: 2635084915880286533, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_text
       value: Apply Changes
@@ -71843,11 +71910,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_text
-      value: 
+      value: 'Pumpkin
+
+        Tower'
       objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_fontAsset

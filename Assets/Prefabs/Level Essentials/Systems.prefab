@@ -4991,7 +4991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dce5cb974f1e7b846a6e5c2e2766d1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMoney: 500
+  currentMoney: 250
+  startingMoney: 250
 --- !u!1 &8479615035271668478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5253,10 +5254,12 @@ MonoBehaviour:
     shouldDisplayWave: 1
   bossToSpawn: []
   waitForFirstSpawn: 2
+  timeToBossWave: 0
   spawnPoint: {fileID: 8479615035271668479}
   theCastle: {fileID: 0}
   thePath: {fileID: 0}
   shouldSpawn: 1
+  bossSpawn: 0
   waveDisplayTime: 3
 --- !u!1 &8479615036720742008
 GameObject:
