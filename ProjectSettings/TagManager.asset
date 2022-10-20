@@ -9,6 +9,8 @@ TagManager:
   - Boss
   - SlowTower
   - Seed
+  - Pumpkin
+  - PumpkinUpgrade
   layers:
   - Default
   - TransparentFX

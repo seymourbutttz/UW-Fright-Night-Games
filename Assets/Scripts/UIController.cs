@@ -13,9 +13,9 @@ public class UIController : MonoBehaviour
         instance = this;
     }
 
-    public TMP_Text goldText, pumpkinText;
+    public TMP_Text goldText, pumpkinText, meteorText;
 
-    public GameObject pumpTower; //prefab to reference for cost
+    public GameObject pumpTower, meteorShower; //prefab to reference for cost
 
     public GameObject notEnoughMoneyWarning;
 
@@ -38,6 +38,7 @@ public class UIController : MonoBehaviour
     void Start()
     {
         pumpkinText.text = "Pumpkin" + "\n" + "Tower" + "\n" + "(" + pumpTower.GetComponent<Tower>().cost + "G)";
+        meteorText.text = "Meteor" + "\n" + "Shower" + "\n" + "(" + meteorShower.GetComponent<Spells>().cost + "G)";
     }
 
     // Update is called once per frame
