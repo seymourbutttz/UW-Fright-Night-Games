@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -2737677024607126425}
   m_Layer: 11
   m_Name: Pumpkin Upgrade
-  m_TagString: Untagged
+  m_TagString: PumpkinUpgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
