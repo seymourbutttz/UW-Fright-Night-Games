@@ -90,6 +90,7 @@ public class SetStats : MonoBehaviour
     }
 }
 
+//array of enemy stats to be used for balance controller
 [System.Serializable]
 public class EnemieStats
 {

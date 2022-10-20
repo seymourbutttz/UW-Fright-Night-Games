@@ -13,7 +13,7 @@ public class UIController : MonoBehaviour
         instance = this;
     }
 
-    public TMP_Text goldText, canonText;
+    public TMP_Text goldText, pumpkinText;
 
     public GameObject pumpTower; //prefab to reference for cost
 
@@ -37,7 +37,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canonText.text = "Canon" + "\n" + "Tower" + "\n" + "(" + pumpTower.GetComponent<Tower>().cost + "G)";
+        pumpkinText.text = "Pumpkin" + "\n" + "Tower" + "\n" + "(" + pumpTower.GetComponent<Tower>().cost + "G)";
     }
 
     // Update is called once per frame
