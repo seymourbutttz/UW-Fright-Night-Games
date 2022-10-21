@@ -67,17 +67,23 @@
     <Compile Include="Assets\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Towers\ProjectileTower.cs" />
     <Compile Include="Assets\Scripts\Towers\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Balancers\ChangeSpidTowStats.cs" />
     <Compile Include="Assets\Scripts\MoneyManager.cs" />
     <Compile Include="Assets\Scripts\Towers\Tower.cs" />
     <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieFree.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeZombie.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeCactus.cs" />
     <Compile Include="Assets\Scripts\Spells\Spells.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeYeti.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Path.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeSkeletonBoss.cs" />
     <Compile Include="Assets\Scripts\Balancers\SetStats.cs" />
     <Compile Include="Assets\Scripts\SimpleEnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Towers\TowerUpgradeController.cs" />
     <Compile Include="Assets\Scripts\TowerManager.cs" />
     <Compile Include="Assets\Scripts\EnemyWaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeFlyingSkull.cs" />
     <Compile Include="Assets\Scripts\Balancers\StatController.cs" />
     <Compile Include="Assets\Scripts\LevelSelectButton.cs" />
     <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCameraLogic.cs" />
@@ -90,6 +96,7 @@
     <Compile Include="Assets\Scripts\Spells\Meteors.cs" />
     <Compile Include="Assets\Scripts\SimpleRotate.cs" />
     <Compile Include="Assets\Scripts\Towers\BombTower.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeCyclops.cs" />
     <Compile Include="Assets\Scripts\Spells\MeteorShower.cs" />
     <Compile Include="Assets\Scripts\EnemyHealthController.cs" />
     <Compile Include="Assets\Scripts\AudioManagerLoader.cs" />
@@ -100,15 +107,8 @@
     <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Scripts\Towers\TowerUpgradePanel.cs" />
     <Compile Include="Assets\Scripts\Towers\Bomb.cs" />
-    <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeCyclops.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeYeti.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeCactus.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeFlyingSkull.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeZombie.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeSkeletonBoss.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeZombieBoss.cs" />
-    <Compile Include="Assets\Scripts\Balancers\ChangeSpidTowStats.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
