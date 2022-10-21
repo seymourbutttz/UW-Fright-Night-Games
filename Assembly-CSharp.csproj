@@ -57,9 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Castle.cs" />
+    <Compile Include="Assets\Scripts\Balancers\SpellStatController.cs" />
     <Compile Include="Assets\Scripts\Towers\SpiderTower.cs" />
     <Compile Include="Assets\Scripts\LevelSelectController.cs" />
     <Compile Include="Assets\Scripts\AnimationController.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeAlien.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellButton.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellManager.cs" />
     <Compile Include="Assets\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Balancers\ChangeProjTowStats.cs" />
     <Compile Include="Assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCharacterControl.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeTallAlien.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Spells\Meteors.cs" />
     <Compile Include="Assets\Scripts\SimpleRotate.cs" />
@@ -98,9 +101,14 @@
     <Compile Include="Assets\Scripts\Towers\TowerUpgradePanel.cs" />
     <Compile Include="Assets\Scripts\Towers\Bomb.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Balancers\SpellStatController.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeTallAlien.cs" />
-    <Compile Include="Assets\Scripts\Balancers\changeAlien.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeCyclops.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeYeti.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeCactus.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeFlyingSkull.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeZombie.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeSkeletonBoss.cs" />
+    <Compile Include="Assets\Scripts\Balancers\changeZombieBoss.cs" />
+    <Compile Include="Assets\Scripts\Balancers\ChangeSpidTowStats.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

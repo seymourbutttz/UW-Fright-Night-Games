@@ -22,16 +22,20 @@ public class SpiderTower : MonoBehaviour
     private float checkCounter; //prevents constant list checking
     public float checkTime = .2f; //time to check
 
+    private bool balance; 
+
     
     // Start is called before the first frame update
     void Start()
     {
         theTower = GetComponent<Tower>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        balance = ChangeSpidTowStats.instance.rateStatChange; //checks to see if a base slow rate has been changed
         slowEnemy();
 
         //deactivates web object on enemy once it leaves the tower range
@@ -58,14 +62,15 @@ public class SpiderTower : MonoBehaviour
         //aims the spider at each enemy it "shoots" at. Also activates the web model on each enemy.
         foreach (EnemyController enemy in theTower.enemiesInRange)
         {
-            if (!enemy.isSlowed) //makes sure the slow effect does not stack between Towers
+            if (!enemy.isSlowed || balance) //makes sure the slow effect does not stack between Towers
             {
+                balance = false; //resets variable for changing of stats
                 target = enemy.transform; //enemy position               
                 enemy.speedMod = theTower.fireRate; //slows enemy
                 enemy.slowEffect.SetActive(true); //activates slow effect on enemy
                 slowedEnemies.Add(enemy); //adds slowed enemy to a list of slowed enemies
                 enemy.isSlowed = true; //marks the enemy as slowed
-                Debug.Log(slowedEnemies.Count);
+                //Debug.Log(slowedEnemies.Count);
             } else if (GetComponentInParent<TowerUpgradeController>().currentTowerUpgrade == 1)
             {
                 enemy.speedMod = theTower.fireRate; //changes enemy speed once tower is upgraded to level 2
