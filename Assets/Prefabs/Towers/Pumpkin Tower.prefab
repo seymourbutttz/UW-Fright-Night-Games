@@ -268,7 +268,7 @@ MonoBehaviour:
   checkTime: 0.2
   enemiesUpdated: 0
   rangeModel: {fileID: 8085714271689303795}
-  cost: 100
+  cost: 2
   upgrader: {fileID: 0}
 --- !u!114 &8492344930071035219
 MonoBehaviour:

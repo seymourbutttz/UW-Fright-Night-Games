@@ -13,7 +13,10 @@ public class UIController : MonoBehaviour
         instance = this;
     }
 
-    public TMP_Text goldText;
+    public TMP_Text goldText, pumpkinText, spiderText, meteorText;
+
+    public GameObject pumpTower, spiderTower, meteorShower; //prefab to reference for cost
+
     public GameObject notEnoughMoneyWarning;
 
     public GameObject levelCompleteScreen, levelFailScreen;
@@ -28,10 +31,15 @@ public class UIController : MonoBehaviour
 
     public TMP_Text waveText;
 
+    //debug script canvas
+    public GameObject statScreen;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        pumpkinText.text = "Pumpkin" + "\n" + "Tower" + "\n" + "(" + pumpTower.GetComponent<Tower>().cost + "G)"; //labels tower button with gold cost
+        spiderText.text = "Spider" + "\n" + "Tower" + "\n" + "(" + spiderTower.GetComponent<Tower>().cost + "G)";  //labels tower button with gold cost
+        meteorText.text = "Meteor" + "\n" + "Shower" + "\n" + "(" + meteorShower.GetComponent<Spells>().cost + "G)"; //labels spell button with gold cost
     }
 
     // Update is called once per frame
