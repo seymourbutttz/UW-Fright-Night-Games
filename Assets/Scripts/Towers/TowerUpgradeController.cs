@@ -31,7 +31,10 @@ public class TowerUpgradeController : MonoBehaviour
             ProjectileUpgrade(); //change tower/projectile models
         }else if (theTower.tag == "SlowTower")
         {
-            SlowUpgrade();
+            SlowUpgrade(); //change spider model
+        }else if(theTower.tag == "BombTower")
+        {
+            BombUpgrade(); //change tower/bomb models
         }
         currentTowerUpgrade++;
 
@@ -57,11 +60,19 @@ public class TowerUpgradeController : MonoBehaviour
         }
     }
 
-    //Function controlling projectile tower model upgrades.
+    //Function controlling spider tower model upgrades.
     public void SlowUpgrade()
     {
         theTower.GetComponent<SpiderTower>().model[currentTowerUpgrade].SetActive(false); //deactivates the current visible tower model
         theTower.GetComponent<SpiderTower>().model[currentTowerUpgrade + 1].SetActive(true); //activates the new tower model
+    }
+
+    //function controlling bomb tower upgrades
+    public void BombUpgrade()
+    {
+        theTower.GetComponent<BombTower>().models[currentTowerUpgrade].SetActive(false); //deactivates the current visible tower model
+        theTower.GetComponent<BombTower>().models[currentTowerUpgrade + 1].SetActive(true); //activates the new tower model
+        theTower.GetComponent<BombTower>().activeBomb = theTower.GetComponent<BombTower>().theBombs[currentTowerUpgrade + 1]; //changes bomb prefab to adjust damage
     }
 
 }

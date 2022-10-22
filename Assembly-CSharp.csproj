@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\Towers\Bomb.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeZombieBoss.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Balancers\ChangeBombTowStats.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

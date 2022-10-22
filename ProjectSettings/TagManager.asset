@@ -11,6 +11,10 @@ TagManager:
   - Seed
   - Pumpkin
   - PumpkinUpgrade
+  - BombTower
+  - Bomb1
+  - Bomb2
+  - Bomb3
   layers:
   - Default
   - TransparentFX

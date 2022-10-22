@@ -9,7 +9,12 @@ public class BombTower : MonoBehaviour
     //public float timeBetweenBombs;
     private float bombCounter;
 
-    public Bomb theBomb;
+    public GameObject[] models; //array of different models to display at variouis tower levels
+    public Bomb[] theBombs; //array of bomb models
+    public GameObject shotEffect; //effect to show a bomb shooting from tower
+
+    [HideInInspector] 
+    public Bomb activeBomb; //active bomb for tower level
 
     public Transform spawnPoint;
 
@@ -21,6 +26,7 @@ public class BombTower : MonoBehaviour
         theTower = GetComponent<Tower>();
 
         bombCounter = theTower.fireRate;
+        activeBomb = theBombs[0];
     }
 
     // Update is called once per frame
@@ -48,11 +54,16 @@ public class BombTower : MonoBehaviour
 
                 bombCounter = theTower.fireRate;
 
-                Bomb newBomb = Instantiate(theBomb, spawnPoint.position, Quaternion.identity);
                 if (target != null)
                 {
+                    Bomb newBomb = Instantiate(activeBomb, spawnPoint.position, Quaternion.identity);
+                    Instantiate(shotEffect, spawnPoint.position, Quaternion.identity);
                     newBomb.targetPoint = target.position;
                 }
+                //else
+                //{
+                //    Destroy(newBomb);
+                //}
             }
         }
     }

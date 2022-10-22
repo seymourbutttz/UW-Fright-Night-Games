@@ -5,14 +5,8 @@ using TMPro;
 
 public class ChangeSpidTowStats : MonoBehaviour
 {
-    public static ChangeSpidTowStats instance;
-    public void Awake()
-    {
-        instance = this;
-    }
+ 
     public TMP_Text spiderText; //text on spider tower button
-    [HideInInspector]
-    public bool rateStatChange = false; //lets the spider tower script know if a rate balance has taken place at a base level
 
     //change spider tower cost
     public void spiderCost(string cost) //take in text input from stat controller
@@ -40,11 +34,11 @@ public class ChangeSpidTowStats : MonoBehaviour
     {
         float.TryParse(rate, out float Rate);
         GetComponentInParent<SetStats>().spiderTower.GetComponent<Tower>().fireRate = Rate;
-        rateStatChange = true; //notifies the system that a base level rate change has occured
 
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject tower in spiderTowers)
         {
+            tower.GetComponent<SpiderTower>().balance = true;//notifies the system that a base level rate change has occured
             tower.GetComponent<Tower>().fireRate = Rate; //assigns the new fire rate value to each tower in active session
         }
     }
