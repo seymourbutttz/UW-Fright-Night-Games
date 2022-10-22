@@ -32,7 +32,7 @@ public class Meteors : MonoBehaviour
         foreach (Collider col in collidersInRange) //looks at all colliders within range
         {
             //Debug.Log(col.tag);
-            if (col.tag == "Enemy") //if collider is an enemy the enemy takes damage
+            if (col.tag == "Enemy" || col.tag == "Boss") //if collider is an enemy the enemy takes damage
             {
                 col.GetComponent<EnemyHealthController>().TakeDamage(damageAmount);
                 //Debug.Log(col.GetComponent<EnemyHealthController>().healthBar.value);

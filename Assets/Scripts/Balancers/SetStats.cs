@@ -6,11 +6,12 @@ using TMPro;
 
 public class SetStats : MonoBehaviour
 {
-    public GameObject projectileTower, spiderTower;
-    public GameObject spell1, spell2;
-    public EnemieStats[] enemies;
+    public GameObject projectileTower, spiderTower, bombTower; //tower prefabs
+    public GameObject spell1, spell2; //spell prefabs
+    public EnemieStats[] enemies; //list of enemies
     public TMP_InputField startingGold, pumpTowCost, pumpTowRng, pumpTowFR, pumpTowBD, pumpTowL2C, pumpTowL2R, pumpTowL2FR, pumpTowL2D, pumpTowL3C, pumpTowL3R, pumpTowL3FR, pumpTowL3D;
     public TMP_InputField spidTowCost, spidTowRng, spidTowFR, spidTowL2C, spidTowL2R, spidTowL2FR, spidTowL3C, spidTowL3R, spidTowL3FR;
+    public TMP_InputField bombTowCost, bombTowRng, bombTowFR, bombTowBD, bombTowL2C, bombTowL2R, bombTowL2FR, bombTowL2D, bombTowL3C, bombTowL3R, bombTowL3FR, bombTowL3D, bombTowL1BR, bombTowL2BR, bombTowL3BR;
     public TMP_InputField meteorCost, meteorSpnRt, meteorDmg, meteorBR, meteorSpnQ, meteorDrop;
 
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class SetStats : MonoBehaviour
         startingGold.GetComponent<TMP_InputField>().text = MoneyManager.instance.startingMoney.ToString();
         SetPumpkinTower();
         SetSpiderTower();
+        SetBombTower();
         SetSpells();
         SetEnemies();
     }
@@ -60,6 +62,26 @@ public class SetStats : MonoBehaviour
         spidTowL3FR.text = spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed.ToString(); //level 3 speed mod
     }
 
+    //sets default text for bomb tower panel. Takes current prefab values and displays them in stat window.
+    public void SetBombTower()
+    {
+        bombTowCost.text = bombTower.GetComponent<Tower>().cost.ToString(); //cost
+        bombTowRng.text = bombTower.GetComponent<Tower>().range.ToString(); //range
+        bombTowFR.text = bombTower.GetComponent<Tower>().fireRate.ToString(); //fire rate
+        bombTowBD.text = bombTower.GetComponent<BombTower>().theBombs[0].GetComponent<Bomb>().damageAmount.ToString(); //base damage
+        bombTowL2C.text = bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost.ToString(); //level 2 cost
+        bombTowL2R.text = bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range.ToString(); //level 2 range
+        bombTowL2FR.text = bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed.ToString(); //level 2 fire rate
+        bombTowL2D.text = bombTower.GetComponent<BombTower>().theBombs[1].GetComponent<Bomb>().damageAmount.ToString(); //level 2 damage
+        bombTowL3C.text = bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost.ToString(); //level 3 cost
+        bombTowL3R.text = bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range.ToString(); //level 3 range
+        bombTowL3FR.text = bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed.ToString(); //level 3 fire rate
+        bombTowL3D.text = bombTower.GetComponent<BombTower>().theBombs[2].GetComponent<Bomb>().damageAmount.ToString(); //level 3 damage
+        bombTowL1BR.text = bombTower.GetComponent<BombTower>().theBombs[0].GetComponent<Bomb>().explodeRange.ToString(); //level 1 blast radius
+        bombTowL2BR.text = bombTower.GetComponent<BombTower>().theBombs[1].GetComponent<Bomb>().explodeRange.ToString(); //level 2 blast radius
+        bombTowL3BR.text = bombTower.GetComponent<BombTower>().theBombs[2].GetComponent<Bomb>().explodeRange.ToString(); //level 3 blast radius
+    }
+    
     //sets default text for shock tower panel. takes current prefab values and displays them in stat window.
     public void SetShockTower()
     {

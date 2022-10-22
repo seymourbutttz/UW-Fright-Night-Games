@@ -11,11 +11,12 @@ public class UIController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        //Debug.Log("hello");
     }
 
-    public TMP_Text goldText, pumpkinText, spiderText, meteorText;
+    public TMP_Text goldText, pumpkinText, spiderText, bombText, meteorText;
 
-    public GameObject pumpTower, spiderTower, meteorShower; //prefab to reference for cost
+    public GameObject pumpTower, spiderTower, bombTower, meteorShower; //prefab to reference for cost
 
     public GameObject notEnoughMoneyWarning;
 
@@ -39,6 +40,7 @@ public class UIController : MonoBehaviour
     {
         pumpkinText.text = "Pumpkin" + "\n" + "Tower" + "\n" + "(" + pumpTower.GetComponent<Tower>().cost + "G)"; //labels tower button with gold cost
         spiderText.text = "Spider" + "\n" + "Tower" + "\n" + "(" + spiderTower.GetComponent<Tower>().cost + "G)";  //labels tower button with gold cost
+        bombText.text = "Bomb" + "\n" + "Tower" + "\n" + "(" + bombTower.GetComponent<Tower>().cost + "G)";  //labels tower button with gold cost
         meteorText.text = "Meteor" + "\n" + "Shower" + "\n" + "(" + meteorShower.GetComponent<Spells>().cost + "G)"; //labels spell button with gold cost
     }
 

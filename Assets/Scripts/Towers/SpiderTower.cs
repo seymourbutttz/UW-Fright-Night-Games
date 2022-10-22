@@ -21,8 +21,8 @@ public class SpiderTower : MonoBehaviour
 
     private float checkCounter; //prevents constant list checking
     public float checkTime = .2f; //time to check
-
-    private bool balance; 
+    [HideInInspector]
+    public bool balance = false; //denotes if a balance change has been made
 
     
     // Start is called before the first frame update
@@ -35,7 +35,7 @@ public class SpiderTower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        balance = ChangeSpidTowStats.instance.rateStatChange; //checks to see if a base slow rate has been changed
+        //balance = ChangeSpidTowStats.instance.rateStatChange; //checks to see if a base slow rate has been changed
         slowEnemy();
 
         //deactivates web object on enemy once it leaves the tower range
@@ -64,7 +64,7 @@ public class SpiderTower : MonoBehaviour
         {
             if (!enemy.isSlowed || balance) //makes sure the slow effect does not stack between Towers
             {
-                balance = false; //resets variable for changing of stats
+                //balance = false; //resets variable for changing of stats
                 target = enemy.transform; //enemy position               
                 enemy.speedMod = theTower.fireRate; //slows enemy
                 enemy.slowEffect.SetActive(true); //activates slow effect on enemy
