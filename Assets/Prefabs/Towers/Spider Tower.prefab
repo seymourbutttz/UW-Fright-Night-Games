@@ -133,7 +133,7 @@ MonoBehaviour:
   fireRate: 0.5
   whatIsEnemy:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 4160
   enemiesInRange: []
   checkTime: 0.2
   enemiesUpdated: 0
@@ -201,6 +201,7 @@ MonoBehaviour:
   - {fileID: 6930691845496484729}
   - {fileID: 6678088036147854399}
   checkTime: 0.2
+  balance: 0
 --- !u!1 &6440877876198188564
 GameObject:
   m_ObjectHideFlags: 0
