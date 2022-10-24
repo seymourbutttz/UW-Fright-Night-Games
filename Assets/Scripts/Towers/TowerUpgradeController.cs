@@ -81,7 +81,7 @@ public class TowerUpgradeController : MonoBehaviour
         theTower.GetComponent<BombTower>().activeBomb = theTower.GetComponent<BombTower>().theBombs[currentTowerUpgrade + 1]; //changes bomb prefab to adjust damage
     }
 
-    //function controlling shock tower model upgrades
+    //function controlling shock tower model upgrades (model and damage)
     public void ShockUpgrade()
     {
         if(currentTowerUpgrade == 0)
@@ -93,7 +93,8 @@ public class TowerUpgradeController : MonoBehaviour
         {
             theTower.GetComponent<ShockTower>().models[currentTowerUpgrade + 1].SetActive(true); //activates next tower model
         }
-        
+
+        theTower.GetComponent<ShockTower>().DPS = theTower.GetComponent<ShockTower>().DPSUpgrades[currentTowerUpgrade];
     }
 
 }

@@ -113,6 +113,9 @@ MonoBehaviour:
   sourceModels:
   - {fileID: 5268485136922176688}
   DPS: 10
+  DPSUpgrades:
+  - 20
+  - 30
   shockEffect: {fileID: 0}
 --- !u!136 &8438866508044497452
 CapsuleCollider:
@@ -142,10 +145,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerUpgrades:
   - range: 4
-    speed: 1
+    speed: 0
     cost: 300
   - range: 5
-    speed: 0.5
+    speed: 0
     cost: 325
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1

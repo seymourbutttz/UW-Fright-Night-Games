@@ -15,9 +15,10 @@ public class ShockTower : MonoBehaviour
     private Transform source;
 
     public float DPS; //damage per second
+    public float[] DPSUpgrades; //upgraded dps values
 
     public GameObject shockEffect; //visual effect for shocking enemy
-    private Transform target;
+    private Transform target; //target location
     private EnemyController targetEnemy; //target enemy
 
 
@@ -58,11 +59,11 @@ public class ShockTower : MonoBehaviour
             }
         }
 
-        attackEnemy(); //damages enemy for dps
+        damageEnemy(); //damages enemy for dps
     }
 
     //handles enemy damage for shock tower
-    public void attackEnemy()
+    public void damageEnemy()
     {
         //if statement rotating source of effect
         if (target != null)
