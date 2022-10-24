@@ -9,7 +9,7 @@ public class ShockTower : MonoBehaviour
     private Tower theTower; //tower object
 
     public GameObject[] models; //upgrade levels
-    public Transform[] firePoints; //array of sources for chock effect
+    public Transform firePoint; //source for shock effect
     public Transform[] sourceModels; //array of sorce effect models (used to rotate shock effect)
     
     private Transform source;

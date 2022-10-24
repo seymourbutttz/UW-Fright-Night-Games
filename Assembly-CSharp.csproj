@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Path.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeSkeletonBoss.cs" />
+    <Compile Include="Assets\Scripts\Towers\ShockTower.cs" />
     <Compile Include="Assets\Scripts\Balancers\SetStats.cs" />
     <Compile Include="Assets\Scripts\SimpleEnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Towers\TowerUpgradeController.cs" />
@@ -110,7 +111,6 @@
     <Compile Include="Assets\Scripts\Towers\Bomb.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeZombieBoss.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Towers\ShockTower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
