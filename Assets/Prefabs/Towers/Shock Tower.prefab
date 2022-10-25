@@ -112,11 +112,13 @@ MonoBehaviour:
   firePoint: {fileID: 5268485137720740211}
   sourceModels:
   - {fileID: 5268485136922176688}
-  DPS: 10
+  DPS: 5
   DPSUpgrades:
-  - 20
-  - 30
+  - 7
+  - 10
   shockEffect: {fileID: 0}
+  chainDamage1: 0.8
+  chainDamage2: 0.5
 --- !u!136 &8438866508044497452
 CapsuleCollider:
   m_ObjectHideFlags: 0
