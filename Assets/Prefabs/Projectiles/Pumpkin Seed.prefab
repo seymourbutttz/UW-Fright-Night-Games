@@ -101,7 +101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3163549427675777785
 Transform:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   theRB: {fileID: 3163549427675777786}
   moveSpeed: 10
   impactEffect: {fileID: 3872692991217085041, guid: 5eb936832ce87b945a20871682c466dc, type: 3}
-  damageAmount: 1
+  damageAmount: 2
 --- !u!135 &3163549427675777787
 SphereCollider:
   m_ObjectHideFlags: 0
