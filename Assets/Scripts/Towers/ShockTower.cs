@@ -19,8 +19,8 @@ public class ShockTower : MonoBehaviour
 
     public GameObject shockEffect; //visual effect for shocking enemy
     private Transform target; //target location
-    private EnemyController targetEnemy; //target enemy
-    private EnemyController enemy2, enemy3; //additional enemies
+    private GameObject targetEnemy = null; //target enemy
+    private GameObject enemy2, enemy3; //additional enemies
 
     //[HideInInspector]
     //public List<EnemyController> enemiesInRange = new List<EnemyController>(); //list of enemies within range
@@ -38,7 +38,6 @@ public class ShockTower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         //if statement looking for closest enemy and assigning it to current enemy
         if (theTower.enemiesUpdated)
         {
@@ -49,12 +48,17 @@ public class ShockTower : MonoBehaviour
                 {
                     if (enemy != null)
                     {
+                        if (targetEnemy)
+                        {
+                            enemy2 = targetEnemy;
+                            Debug.Log("Second Target");
+                        }
                         float distance = Vector3.Distance(transform.position, enemy.transform.position);
                         if (distance < minDistance)
                         {
                             minDistance = distance;
                             target = enemy.transform;
-                            targetEnemy = enemy; //assigns current enemy object
+                            targetEnemy = enemy.gameObject; //assigns current enemy object
                         }
                     }
                 }
@@ -63,6 +67,7 @@ public class ShockTower : MonoBehaviour
             {
                 target = null;
                 targetEnemy = null;
+                Debug.Log("no target");
             }
         }
         damageEnemy(); //damages enemy for dps
@@ -80,14 +85,14 @@ public class ShockTower : MonoBehaviour
             }else if (theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 1) //attacks closest enemy and next two closest enemies at reduced damage
             {
                 SingleEnemyAttack();
-                //ChainAttack();
+                ChainAttack();
                 
             }
             else if (theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //attacks closest enemy and next four closest enemies at reduced damage
             {
                 SingleEnemyAttack();
-                //ChainAttack();
-                //SecondChainAttack();
+                ChainAttack();
+                SecondChainAttack();
             }
             
         }
@@ -104,9 +109,12 @@ public class ShockTower : MonoBehaviour
     //deals damage to enemies attached to first chain of tower
     public void ChainAttack()
     {
-        enemy2.GetComponent<EnemyHealthController>().TakeDamage(DPS * chainDamage1 * Time.deltaTime);
-        Debug.Log(theTower.enemiesInRange.Count);
-        Debug.Log(targetEnemy.GetComponent<EnemyHealthController>().totalHealth + ", " + enemy2.GetComponent<EnemyHealthController>().totalHealth);
+        if (enemy2)
+        {
+            enemy2.GetComponent<EnemyHealthController>().TakeDamage(DPS * chainDamage1 * Time.deltaTime);
+            Debug.Log(theTower.enemiesInRange.Count);
+            Debug.Log(targetEnemy.GetComponent<EnemyHealthController>().totalHealth + ", " + enemy2.GetComponent<EnemyHealthController>().totalHealth);
+        }
     }
 
     //deals damage to enemies attached to the second chain of tower
