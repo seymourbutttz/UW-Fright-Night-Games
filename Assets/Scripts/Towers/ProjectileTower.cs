@@ -11,7 +11,7 @@ public class ProjectileTower : MonoBehaviour
     public GameObject[] projectiles; //Array of projectile models for tower object.
     
     [HideInInspector]
-    public GameObject projectile;
+    public GameObject activeProjectile;
     public Transform firePoint;
     public Transform firePointTwo; //new firepoint for range upgrades
     //public float timeBetweenShots = 1f;
@@ -26,10 +26,10 @@ public class ProjectileTower : MonoBehaviour
     void Start()
     {
         theTower = GetComponent<Tower>();
-        
+        //shotCounter = theTower.fireRate;
         projectiles[0].SetActive(true);
-        projectiles[1].SetActive(false);
-        projectile = projectiles[0];
+        //projectiles[1].SetActive(false);
+        activeProjectile = projectiles[0];
     }
 
     // Update is called once per frame
@@ -42,16 +42,16 @@ public class ProjectileTower : MonoBehaviour
 
             launcherModel.rotation = Quaternion.Euler(0f, launcherModel.rotation.eulerAngles.y, 0f);
         }
-
+        Debug.Log(shotCounter);
         shotCounter -= Time.deltaTime;
         if(shotCounter <= 0 && target != null)
         {
             shotCounter = theTower.fireRate;
 
             firePoint.LookAt(target);
-
-            Instantiate(projectile, firePoint.position, firePoint.rotation);
+            Instantiate(activeProjectile, firePoint.position, firePoint.rotation);
             //Instantiate(shotEffect, firePoint.position, firePoint.rotation);
+            Debug.Log("Shot fired");
         }
         if (theTower.enemiesUpdated)
         {
