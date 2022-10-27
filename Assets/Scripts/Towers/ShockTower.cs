@@ -48,11 +48,7 @@ public class ShockTower : MonoBehaviour
                 {
                     if (enemy != null)
                     {
-                        if (targetEnemy)
-                        {
-                            enemy2 = targetEnemy;
-                            Debug.Log("Second Target");
-                        }
+                        MultipleTargets(); //assigns multiple targets
                         float distance = Vector3.Distance(transform.position, enemy.transform.position);
                         if (distance < minDistance)
                         {
@@ -67,7 +63,8 @@ public class ShockTower : MonoBehaviour
             {
                 target = null;
                 targetEnemy = null;
-                Debug.Log("no target");
+                enemy2 = null;
+                enemy3 = null;
             }
         }
         damageEnemy(); //damages enemy for dps
@@ -86,7 +83,6 @@ public class ShockTower : MonoBehaviour
             {
                 SingleEnemyAttack();
                 ChainAttack();
-                
             }
             else if (theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //attacks closest enemy and next four closest enemies at reduced damage
             {
@@ -94,8 +90,99 @@ public class ShockTower : MonoBehaviour
                 ChainAttack();
                 SecondChainAttack();
             }
-            
         }
+    }
+
+    //assign multiple targets
+    public void MultipleTargets()
+    {
+        if (targetEnemy) //checks to make sure the target enemy is not null
+        {
+            if (theTower.enemiesInRange.Count < 2) { //if the amount of enemies in range is 1, secondary and tertiary targets become null
+                enemy2 = null;
+                enemy3 = null;
+                //Debug.Log(theTower.enemiesInRange.Count);
+                if (!enemy2 && !enemy3) { Debug.Log("2 & 3 null"); }
+            }else if (theTower.enemiesInRange.Count == 2) //if the number of enemies within range is 2, it will attack the closest at full damage and the furthest at secondary damage
+            {
+                List<float> dist = new List<float>(); //list of enemy distances to tower
+                List<GameObject> enemies = new List<GameObject>(); //list of enemy objects
+                foreach (EnemyController enemy in theTower.enemiesInRange) //for each enemy check distance and add distances/enemy objects to respective lists
+                {
+                    dist.Add(Vector3.Distance(transform.position, enemy.transform.position)); //distance from tower
+                    enemies.Add(enemy.gameObject); //enemy associated with distance
+                }
+                if(dist[0] > dist[1]) //compares distances and assigns closest
+                {
+                    enemy2 = enemies[0];
+                }
+                else
+                {
+                    enemy2 = enemies[1];
+                }
+                enemy3 = null; //nullifies 3rd enemy
+                dist.Clear();
+                enemies.Clear();
+                Debug.Log("3 null");
+            }else if (theTower.enemiesInRange.Count >= 3) //assigns tertiary target if tower is at level 3 and 3 enemies exist
+            {
+                List<GameObject> targets = IdentifyTwo();
+                enemy2 = targets[0];
+                enemy3 = targets[1];
+                targets.Clear();
+                Debug.Log("2 & 3 assigned");
+            }
+        }
+    }
+
+    //identifies 2 enemies closest to target
+    private List<GameObject> IdentifyTwo()
+    {
+        List<GameObject> closestTwo = new List<GameObject>(); //array to return
+
+        int index1 = 0; //location of enemies in list
+
+        List<float> Dist = new List<float>(); //list of enemy distances to tower
+        List<GameObject> Enemies = new List<GameObject>(); //list of enemy objects
+        foreach (EnemyController enemy in theTower.enemiesInRange) //for each enemy check distance and add distances/enemy objects to respective lists
+        {
+            Dist.Add(Vector3.Distance(transform.position, enemy.transform.position)); //distance from tower
+            Enemies.Add(enemy.gameObject); //enemy associated with distance
+        }
+        float closest = Dist[0];
+        for(int i = 1; i < Dist.Count; i++) //identifies closest enemy
+        {
+            if (Dist[i] < closest) 
+            {
+                closest = Dist[i];
+                index1 = i;
+            }
+        }
+        Dist.RemoveAt(index1); Enemies.RemoveAt(index1);//removes closest from lists
+        index1 = 0; closest = Dist[0];
+        for (int i = 1; i < Dist.Count; i++) //identifies second closest enemy
+        {
+            if (Dist[i] < closest)
+            {
+                closest = Dist[i];
+                index1 = i;
+            }
+        }
+        closestTwo.Add(Enemies[index1]); //assigns to list
+        Dist.RemoveAt(index1); Enemies.RemoveAt(index1);
+        index1 = 0; closest = Dist[0];
+        for (int i = 1; i < Dist.Count; i++) //identifies 3rd closest enemy
+        {
+            if (Dist[i] < closest)
+            {
+                closest = Dist[i];
+                index1 = i;
+            }
+        }
+        closestTwo.Add(Enemies[index1]); //assigns to list
+        Dist.Clear();
+        Enemies.Clear();
+        return closestTwo;
     }
 
     //attacks single enemy
@@ -106,7 +193,7 @@ public class ShockTower : MonoBehaviour
         targetEnemy.GetComponent<EnemyHealthController>().TakeDamage(DPS * Time.deltaTime); //attacks enemy
     }
 
-    //deals damage to enemies attached to first chain of tower
+    //deals damage to enemy attached to first chain of tower
     public void ChainAttack()
     {
         if (enemy2)
@@ -117,12 +204,13 @@ public class ShockTower : MonoBehaviour
         }
     }
 
-    //deals damage to enemies attached to the second chain of tower
+    //deals damage to enemy attached to the second chain of tower
     public void SecondChainAttack()
     {
-        if (theTower.enemiesInRange.Count > 3)
+        if (enemy3)
         {
             enemy3.GetComponent<EnemyHealthController>().TakeDamage(DPS * chainDamage2 * Time.deltaTime);
+            Debug.Log(targetEnemy.GetComponent<EnemyHealthController>().totalHealth + ", " + enemy2.GetComponent<EnemyHealthController>().totalHealth + ", " + enemy3.GetComponent<EnemyHealthController>().totalHealth);
         }
     }
 }
