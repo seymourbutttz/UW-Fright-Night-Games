@@ -35,7 +35,10 @@ public class ChangeProjTowStats : MonoBehaviour
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject tower in pumpkinTowers)
         {
-            tower.GetComponent<Tower>().range = Range; //assigns the new range value to each tower in active session
+            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
+            {
+                tower.GetComponent<Tower>().range = Range; //assigns the new range value to each tower in active session
+            }
         }
     }
 
@@ -48,7 +51,10 @@ public class ChangeProjTowStats : MonoBehaviour
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject tower in pumpkinTowers)
         {
-            tower.GetComponent<Tower>().fireRate = Rate; //assigns the new fire rate value to each tower in active session
+            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
+            {
+                tower.GetComponent<Tower>().fireRate = Rate; //assigns the new fire rate value to each tower in active session
+            }
         }
     }
 
