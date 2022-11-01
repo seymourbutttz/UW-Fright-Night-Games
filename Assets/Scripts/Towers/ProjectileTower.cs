@@ -28,7 +28,6 @@ public class ProjectileTower : MonoBehaviour
         theTower = GetComponent<Tower>();
         
         projectiles[0].SetActive(true);
-        projectiles[1].SetActive(false);
         projectile = projectiles[0];
     }
 

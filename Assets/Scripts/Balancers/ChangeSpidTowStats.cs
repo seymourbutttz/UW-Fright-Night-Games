@@ -25,7 +25,10 @@ public class ChangeSpidTowStats : MonoBehaviour
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject tower in spiderTowers)
         {
-            tower.GetComponent<Tower>().range = Range; //assigns the new range value to each tower in active session
+            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
+            {
+                tower.GetComponent<Tower>().range = Range; //assigns the new range value to each tower in active session
+            }
         }
     }
 
@@ -38,8 +41,11 @@ public class ChangeSpidTowStats : MonoBehaviour
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject tower in spiderTowers)
         {
-            tower.GetComponent<SpiderTower>().balance = true;//notifies the system that a base level rate change has occured
-            tower.GetComponent<Tower>().fireRate = Rate; //assigns the new fire rate value to each tower in active session
+            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
+            {
+                tower.GetComponent<SpiderTower>().balance = true;//notifies the system that a base level rate change has occured
+                tower.GetComponent<Tower>().fireRate = Rate; //assigns the new fire rate value to each tower in active session
+            }
         }
     }
 
