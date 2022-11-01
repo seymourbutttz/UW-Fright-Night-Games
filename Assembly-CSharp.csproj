@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\LevelSelectController.cs" />
     <Compile Include="Assets\Scripts\AnimationController.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeAlien.cs" />
+    <Compile Include="Assets\Scripts\Towers\LineAnimator.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellButton.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellManager.cs" />
     <Compile Include="Assets\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
@@ -112,7 +113,6 @@
     <Compile Include="Assets\Scripts\Towers\Bomb.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeZombieBoss.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Towers\LineAnimator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -119,10 +119,10 @@ MonoBehaviour:
   DPS: 5
   DPSUpgrades:
   - 10
-  - 10
+  - 15
   shockEffect: {fileID: 0}
-  chainDamage1: 1
-  chainDamage2: 1
+  chainDamage1: 0.5
+  chainDamage2: 0.25
 --- !u!136 &8438866508044497452
 CapsuleCollider:
   m_ObjectHideFlags: 0

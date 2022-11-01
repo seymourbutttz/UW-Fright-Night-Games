@@ -11,7 +11,7 @@ public class SetStats : MonoBehaviour
     public EnemieStats[] enemies; //list of enemies
     public TMP_InputField startingGold, pumpTowCost, pumpTowRng, pumpTowFR, pumpTowBD, pumpTowL2C, pumpTowL2R, pumpTowL2FR, pumpTowL2D, pumpTowL3C, pumpTowL3R, pumpTowL3FR, pumpTowL3D;
     public TMP_InputField spidTowCost, spidTowRng, spidTowFR, spidTowL2C, spidTowL2R, spidTowL2FR, spidTowL3C, spidTowL3R, spidTowL3FR;
-    public TMP_InputField shockTowCost, shockTowRng, shockTowDPS, shockTowL2C, shockTowL2R, shockTowL2DPS, shockTowL3C, shockTowL3R, shockTowL3DPS;
+    public TMP_InputField shockTowCost, shockTowRng, shockTowDPS, shockTowL2C, shockTowL2R, shockTowL2DPS, shockTowL3C, shockTowL3R, shockTowL3DPS, shockTowChain1, shockTowChain2;
     public TMP_InputField bombTowCost, bombTowRng, bombTowFR, bombTowBD, bombTowL2C, bombTowL2R, bombTowL2FR, bombTowL2D, bombTowL3C, bombTowL3R, bombTowL3FR, bombTowL3D, bombTowL1BR, bombTowL2BR, bombTowL3BR;
     public TMP_InputField meteorCost, meteorSpnRt, meteorDmg, meteorBR, meteorSpnQ, meteorDrop;
 
@@ -90,6 +90,8 @@ public class SetStats : MonoBehaviour
         shockTowL3C.text = shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost.ToString(); //level 3 cost
         shockTowL3R.text = shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range.ToString(); //level 3 range
         shockTowL3DPS.text = shockTower.GetComponent<ShockTower>().DPSUpgrades[1].ToString(); //level 3 dps
+        shockTowChain1.text = shockTower.GetComponent<ShockTower>().chainDamage1.ToString(); //chain 1 percentage
+        shockTowChain2.text = shockTower.GetComponent<ShockTower>().chainDamage2.ToString(); //chain 2 percentage
     }
 
     //sets default spell values in spells panel. takes current prefab values and displays them in stat window
