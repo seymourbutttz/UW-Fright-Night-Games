@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PT_Pine_Tree_Trunk_Mat
-  m_Shader: {fileID: 4800000, guid: 270965b004462ae41bd125bc783c0fa6, type: 3}
+  m_Shader: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _CUSTOMWIND1_ON _CUSTOMWIND_ON _WINDTRUNKMASKONOFF_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -39,6 +39,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,11 +67,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _BumpScale: 1
     - _CUSTOMCOLORSTINTING: 0
     - _CUSTOMWIND: 1
     - _CUSTOMWIND1: 1
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -101,12 +107,15 @@ Material:
     - _WindDensity1: 0.2
     - _WindMovement: 10
     - _WindMovement1: 0.5
+    - _WindQuality: 0
     - _WindStrength: 1
     - _WindStrength1: 0.3
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.745283, g: 0.34100214, b: 0.34100214, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColor: {r: 0.08490568, g: 0.05234205, b: 0.04846032, a: 1}
-    - _TopColor: {r: 0.4811321, g: 0.4036026, b: 0.2382966, a: 1}
+    - _GroundColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _TopColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
