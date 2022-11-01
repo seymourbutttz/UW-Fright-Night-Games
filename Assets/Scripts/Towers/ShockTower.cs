@@ -14,6 +14,9 @@ public class ShockTower : MonoBehaviour
     
     private Transform source;
 
+    public bool useElectricity = false; //shoot electricity
+    public LineRenderer lineRenderer;
+
     public float DPS; //damage per second
     public float[] DPSUpgrades; //upgraded dps values
 
@@ -33,6 +36,7 @@ public class ShockTower : MonoBehaviour
     {
         theTower = GetComponent<Tower>();
         source = sourceModels[0]; //base source
+        lineRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -65,6 +69,10 @@ public class ShockTower : MonoBehaviour
                 targetEnemy = null;
                 enemy2 = null;
                 enemy3 = null;
+                if (lineRenderer.enabled)
+                {
+                    lineRenderer.enabled = false;
+                }
             }
         }
         damageEnemy(); //damages enemy for dps
@@ -79,16 +87,19 @@ public class ShockTower : MonoBehaviour
             if(theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0) //attacks a single enemy
             {
                 SingleEnemyAttack();
+                Electricity();
             }else if (theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 1) //attacks closest enemy and next two closest enemies at reduced damage
             {
                 SingleEnemyAttack();
                 ChainAttack();
+                Electricity();
             }
             else if (theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //attacks closest enemy and next four closest enemies at reduced damage
             {
                 SingleEnemyAttack();
                 ChainAttack();
                 SecondChainAttack();
+                Electricity();
             }
         }
     }
@@ -191,6 +202,7 @@ public class ShockTower : MonoBehaviour
         source.rotation = Quaternion.Slerp(source.rotation, Quaternion.LookRotation(target.position - transform.position), 5f * Time.deltaTime); //rotates towards enemy
         source.rotation = Quaternion.Euler(0f, source.rotation.eulerAngles.y, 0f); //slowly rotates doesnt snap
         targetEnemy.GetComponent<EnemyHealthController>().TakeDamage(DPS * Time.deltaTime); //attacks enemy
+        //Electricity();
     }
 
     //deals damage to enemy attached to first chain of tower
@@ -211,6 +223,37 @@ public class ShockTower : MonoBehaviour
         {
             enemy3.GetComponent<EnemyHealthController>().TakeDamage(DPS * chainDamage2 * Time.deltaTime);
             Debug.Log(targetEnemy.GetComponent<EnemyHealthController>().totalHealth + ", " + enemy2.GetComponent<EnemyHealthController>().totalHealth + ", " + enemy3.GetComponent<EnemyHealthController>().totalHealth);
+        }
+    }
+
+
+    //generates electricity effect.
+    public void Electricity()
+    {
+        if (!lineRenderer.enabled)
+        {
+            lineRenderer.enabled = true; //enables line renderer
+        }
+        lineRenderer.SetPosition(0, firePoint.position); //sets starting position
+        lineRenderer.SetPosition(1, targetEnemy.transform.position); //sets end position
+
+        if (enemy2 && theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 1) //creates chain from enemy1 to enemy2
+        {
+            lineRenderer.positionCount = 4;
+            lineRenderer.SetPosition(2, targetEnemy.transform.position);
+            lineRenderer.SetPosition(3, enemy2.transform.position);
+        }
+        else if(enemy3 && theTower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //creates chain from enemy2 to enemy3
+        {
+            lineRenderer.positionCount = 6;
+            lineRenderer.SetPosition(2, targetEnemy.transform.position);
+            lineRenderer.SetPosition(3, enemy2.transform.position);
+            lineRenderer.SetPosition(4, enemy2.transform.position);
+            lineRenderer.SetPosition(5, enemy3.transform.position);
+        }
+        else
+        {
+            lineRenderer.positionCount = 2;
         }
     }
 }
