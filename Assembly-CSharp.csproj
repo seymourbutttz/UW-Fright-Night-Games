@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\LevelSelectController.cs" />
     <Compile Include="Assets\Scripts\AnimationController.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeAlien.cs" />
+    <Compile Include="Assets\Scripts\Towers\LineAnimator.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellButton.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellManager.cs" />
     <Compile Include="Assets\Polytope Studio\Lowpoly Medieval Demos\Environment_Free\MouseLook.cs" />
@@ -79,7 +80,9 @@
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Path.cs" />
     <Compile Include="Assets\Scripts\Balancers\changeSkeletonBoss.cs" />
+    <Compile Include="Assets\Scripts\Towers\ShockTower.cs" />
     <Compile Include="Assets\Scripts\Balancers\SetStats.cs" />
+    <Compile Include="Assets\Scripts\Balancers\ChangeShockTowStats.cs" />
     <Compile Include="Assets\Scripts\SimpleEnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Towers\TowerUpgradeController.cs" />
     <Compile Include="Assets\Scripts\TowerManager.cs" />
