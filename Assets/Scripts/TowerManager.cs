@@ -15,6 +15,7 @@ public class TowerManager : MonoBehaviour
 
     public Transform indicator;
     public bool isPlacing;
+    public GameObject noPlace;
 
     public LayerMask whatIsPlacement, whatIsObstacle;
 
