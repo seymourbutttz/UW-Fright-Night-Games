@@ -15,6 +15,7 @@ public class TowerManager : MonoBehaviour
 
     public Transform indicator;
     public bool isPlacing;
+    public GameObject noPlace;
 
     public LayerMask whatIsPlacement, whatIsObstacle;
 
@@ -39,7 +40,7 @@ public class TowerManager : MonoBehaviour
             indicator.position = GetGridPosition();
 
             RaycastHit hit;
-            if(Input.mousePosition.y > Screen.height * (1f - (topSafePercent/ 100f)))
+            if(Input.mousePosition.y < Screen.height - (Screen.height * (1f - (topSafePercent/ 100f))))
             {
                 indicator.gameObject.SetActive(false);
             } else if (Physics.Raycast(indicator.position + new Vector3(0f, -2f, 0f), Vector3.up, out hit, 10f, whatIsObstacle))
