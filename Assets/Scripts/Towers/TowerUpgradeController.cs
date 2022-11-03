@@ -29,12 +29,18 @@ public class TowerUpgradeController : MonoBehaviour
         if (theTower.tag == "ProjectileTower")
         {
             ProjectileUpgrade(); //change tower/projectile models
-        }else if (theTower.tag == "SlowTower")
+        }
+        else if (theTower.tag == "SlowTower")
         {
             SlowUpgrade(); //change spider model
-        }else if(theTower.tag == "BombTower")
+        }
+        else if (theTower.tag == "BombTower")
         {
             BombUpgrade(); //change tower/bomb models
+        }
+        else if (theTower.tag == "ShockTower")
+        {
+            ShockUpgrade(); //change shock tower model
         }
         currentTowerUpgrade++;
 
@@ -67,12 +73,28 @@ public class TowerUpgradeController : MonoBehaviour
         theTower.GetComponent<SpiderTower>().model[currentTowerUpgrade + 1].SetActive(true); //activates the new tower model
     }
 
-    //function controlling bomb tower upgrades
+    //function controlling bomb tower model upgrades
     public void BombUpgrade()
     {
         theTower.GetComponent<BombTower>().models[currentTowerUpgrade].SetActive(false); //deactivates the current visible tower model
         theTower.GetComponent<BombTower>().models[currentTowerUpgrade + 1].SetActive(true); //activates the new tower model
         theTower.GetComponent<BombTower>().activeBomb = theTower.GetComponent<BombTower>().theBombs[currentTowerUpgrade + 1]; //changes bomb prefab to adjust damage
+    }
+
+    //function controlling shock tower model upgrades (model and damage)
+    public void ShockUpgrade()
+    {
+        if(currentTowerUpgrade == 0)
+        {
+            theTower.GetComponent<ShockTower>().models[currentTowerUpgrade].SetActive(false); //deactiveates the current visible model
+            theTower.GetComponent<ShockTower>().models[currentTowerUpgrade + 1].SetActive(true); //activates new model
+        }
+        else
+        {
+            theTower.GetComponent<ShockTower>().models[currentTowerUpgrade + 1].SetActive(true); //activates next tower model
+        }
+
+        theTower.GetComponent<ShockTower>().DPS = theTower.GetComponent<ShockTower>().DPSUpgrades[currentTowerUpgrade];
     }
 
 }

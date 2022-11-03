@@ -3543,6 +3543,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644400449245018003, guid: 4779e3ea51126d64eb537e3b62c5182d, type: 3}
+      propertyPath: towerToPlace
+      value: 
+      objectReference: {fileID: 5268485137428662981, guid: d7570fb6b6415284884eda9908897b1a, type: 3}
     - target: {fileID: 6591708522659887338, guid: 4779e3ea51126d64eb537e3b62c5182d, type: 3}
       propertyPath: m_Name
       value: UI Canvas 1
@@ -3629,6 +3633,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6591708522659887342, guid: 4779e3ea51126d64eb537e3b62c5182d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7963730240396644887, guid: 4779e3ea51126d64eb537e3b62c5182d, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4302,7 +4310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: bossToSpawn.Array.data[0].timeBetweenSpawns
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: bossToSpawn.Array.data[0].BossOrder.Array.size

@@ -134,7 +134,7 @@ MonoBehaviour:
   fireRate: 1.5
   whatIsEnemy:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 4160
   enemiesInRange: []
   checkTime: 0.25
   enemiesUpdated: 0

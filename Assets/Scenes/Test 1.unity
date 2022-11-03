@@ -11605,6 +11605,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7963730240396644887, guid: 4779e3ea51126d64eb537e3b62c5182d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8859924852301121318, guid: 4779e3ea51126d64eb537e3b62c5182d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -70
@@ -11665,6 +11669,10 @@ PrefabInstance:
     - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: bossSpawn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: timeToBossWave
@@ -11783,6 +11791,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[1]
+      value: 
+      objectReference: {fileID: 1651822543923723070, guid: 9a9c88ca29882754d93f37859a9502b3, type: 3}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[3]
       value: 
       objectReference: {fileID: 1651822543923723070, guid: 9a9c88ca29882754d93f37859a9502b3, type: 3}
@@ -11793,7 +11805,11 @@ PrefabInstance:
     - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[5]
       value: 
-      objectReference: {fileID: 1651822543923723070, guid: 9a9c88ca29882754d93f37859a9502b3, type: 3}
+      objectReference: {fileID: 5529061383960285989, guid: 8261825cafc663147b69d5d4ea816a66, type: 3}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[6]
+      value: 
+      objectReference: {fileID: 5529061383960285989, guid: 8261825cafc663147b69d5d4ea816a66, type: 3}
     - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: wavesToSpawn.Array.data[1].enemySpawnOrder.Array.data[4]
       value: 
@@ -11958,6 +11974,10 @@ PrefabInstance:
       propertyPath: thePath
       value: 
       objectReference: {fileID: 1418825956}
+    - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: theCastle
       value: 

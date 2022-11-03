@@ -14,9 +14,9 @@ public class UIController : MonoBehaviour
         //Debug.Log("hello");
     }
 
-    public TMP_Text goldText, pumpkinText, spiderText, bombText, meteorText;
+    public TMP_Text goldText, pumpkinText, spiderText, bombText, shockText, meteorText;
 
-    public GameObject pumpTower, spiderTower, bombTower, meteorShower; //prefab to reference for cost
+    public GameObject pumpTower, spiderTower, bombTower, shockTower, meteorShower; //prefab to reference for cost
 
     public GameObject notEnoughMoneyWarning;
 
@@ -42,6 +42,7 @@ public class UIController : MonoBehaviour
         spiderText.text = "Spider" + "\n" + "Tower" + "\n" + "(" + spiderTower.GetComponent<Tower>().cost + "G)";  //labels tower button with gold cost
         bombText.text = "Bomb" + "\n" + "Tower" + "\n" + "(" + bombTower.GetComponent<Tower>().cost + "G)";  //labels tower button with gold cost
         meteorText.text = "Meteor" + "\n" + "Shower" + "\n" + "(" + meteorShower.GetComponent<Spells>().cost + "G)"; //labels spell button with gold cost
+        shockText.text = "Shock" + "\n" + "Tower" + "\n" + "(" + shockTower.GetComponent<Tower>().cost + "G)"; //labels shock button with gold cost;
     }
 
     // Update is called once per frame
