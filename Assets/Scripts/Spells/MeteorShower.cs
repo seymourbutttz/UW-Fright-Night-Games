@@ -14,6 +14,7 @@ public class MeteorShower : MonoBehaviour
     public int amountToSpawn = 15; //amount of meteors to spwan
 
     public GameObject meteorModel; //prefab of meteor
+    public GameObject impactArea; //game object for impact area
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,10 @@ public class MeteorShower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (impactArea.activeSelf == true)
+        {
+            impactArea.SetActive(false);
+        }
         if (amountToSpawn > 0) //&& LevelManager.instance.levelActive
         {
             spawnCounter -= Time.deltaTime;
