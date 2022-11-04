@@ -2,18 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor;
 
 public class ChangeBombTowStats : MonoBehaviour
 {
     public TMP_Text bombText;
     public GameObject bomb1, bomb2, bomb3;
 
+    //path of asset to re-create
+    private string towerPath = "Assets/Prefabs/Towers/Bomb Tower.prefab";
+    private string bombPath1 = "Assets/Prefabs/Projectiles/PumkinBomb.prefab";
+    private string bombPath2 = "Assets/Prefabs/Projectiles/PumkinBomb 1.prefab";
+    private string bombPath3 = "Assets/Prefabs/Projectiles/PumkinBomb 2.prefab";
+
 
     //change bomb tower cost
     public void bombCost(string cost) //take in text input from stat controller
     {
         int.TryParse(cost, out int Cost); //convert string to int
-        GetComponentInParent<SetStats>().bombTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<Tower>().cost = Cost;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
+
         bombText.text = "Bomb" + "\n" + "Tower" + "\n" + "(" + Cost + "G)"; //sets button text
     }
 
@@ -21,14 +37,22 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRange(string range)
     {
         float.TryParse(range, out float Range); //convert string to float
-        GetComponentInParent<SetStats>().bombTower.GetComponent<Tower>().range = Range; //changes prefab tower range
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<Tower>().range = Range; //changes prefab tower range
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<Tower>().range = Range;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
+            if (bombTow.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
             {
-                tower.GetComponent<Tower>().range = Range; //assigns the new range value to each tower in active session
+                bombTow.GetComponent<Tower>().range = Range; //assigns the new range value to each tower in active session
             }
         }
     }
@@ -37,14 +61,22 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRate(string rate)
     {
         float.TryParse(rate, out float Rate);
-        GetComponentInParent<SetStats>().bombTower.GetComponent<Tower>().fireRate = Rate;
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<Tower>().fireRate = Rate;
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<Tower>().fireRate = Rate;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
+            if (bombTow.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 0)
             {
-                tower.GetComponent<Tower>().fireRate = Rate; //assigns the new fire rate value to each tower in active session
+                bombTow.GetComponent<Tower>().fireRate = Rate; //assigns the new fire rate value to each tower in active session
             }
         }
     }
@@ -53,7 +85,15 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombDamage(string dam)
     {
         float.TryParse(dam, out float Dam); //convert string to float
-        bomb1.GetComponent<Bomb>().damageAmount = Dam; //changes prefab damage amount
+        //bomb1.GetComponent<Bomb>().damageAmount = Dam; //changes prefab damage amount
+
+        // Load the contents of the Prefab Asset.
+        GameObject bomb1 = PrefabUtility.LoadPrefabContents(bombPath1);
+        // Modify Prefab contents.
+        bomb1.GetComponent<Bomb>().damageAmount = Dam;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(bomb1, bombPath1, out bool success);
+        PrefabUtility.UnloadPrefabContents(bomb1);
 
         GameObject[] bombs = GameObject.FindGameObjectsWithTag("Bomb1"); //finds all pumpkin seeds active in session and assigns to array
         foreach (GameObject bomb in bombs)
@@ -66,12 +106,20 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombCost2(string cost2)
     {
         int.TryParse(cost2, out int Cost2); //convert string to float
-        GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade1 cost of tower to new cost
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade1 cost of tower to new cost
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            tower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //assigns the new upgrade cost to each tower in active session
+            bombTow.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //assigns the new upgrade cost to each tower in active session
         }
     }
 
@@ -79,16 +127,24 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRange2(string range2)
     {
         float.TryParse(range2, out float Range2); //convert string to float
-        GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            if(tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 1) //looks to see if active towers are upgraded to level 2
+            if(bombTow.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 1) //looks to see if active towers are upgraded to level 2
             {
-                tower.GetComponent<Tower>().range = Range2; //assigns the new range2 value to each tower upgraded lvl 1 tower in active session
+                bombTow.GetComponent<Tower>().range = Range2; //assigns the new range2 value to each tower upgraded lvl 1 tower in active session
             }
-            tower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //assigns the new range2 value to each tower in active session
+            bombTow.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //assigns the new range2 value to each tower in active session
         }
     }
 
@@ -96,16 +152,24 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRate2(string rate2)
     {
         float.TryParse(rate2, out float Rate2); //converts string to float
-        GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //sets level 2 fire rate
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //sets level 2 fire rate
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 1) //looks to see if active towers are upgraded to level 2
+            if (bombTow.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 1) //looks to see if active towers are upgraded to level 2
             {
-                tower.GetComponent<Tower>().fireRate = Rate2; //assigns the new range2 value to each tower upgraded lvl 1 tower in active session
+                bombTow.GetComponent<Tower>().fireRate = Rate2; //assigns the new range2 value to each tower upgraded lvl 1 tower in active session
             }
-            tower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //assigns the new fire rate value to each tower in active session
+            bombTow.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //assigns the new fire rate value to each tower in active session
         }
     }
 
@@ -113,7 +177,15 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombDamage2(string dam2)
     {
         float.TryParse(dam2, out float Dam2); //convert string to float
-        bomb2.GetComponent<Bomb>().damageAmount = Dam2; //changes prefab damage amount
+        //bomb2.GetComponent<Bomb>().damageAmount = Dam2; //changes prefab damage amount
+
+        // Load the contents of the Prefab Asset.
+        GameObject bomb2 = PrefabUtility.LoadPrefabContents(bombPath2);
+        // Modify Prefab contents.
+        bomb2.GetComponent<Bomb>().damageAmount = Dam2;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(bomb2, bombPath2, out bool success);
+        PrefabUtility.UnloadPrefabContents(bomb2);
 
         GameObject[] bombs = GameObject.FindGameObjectsWithTag("Bomb2"); //finds all level 2 bombs active in session and assigns to array
         foreach (GameObject bomb in bombs)
@@ -126,12 +198,20 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombCost3(string cost3)
     {
         int.TryParse(cost3, out int Cost3); //convert string to float
-        GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            tower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //assigns the new upgrade cost to each tower in active session
+            bombTow.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //assigns the new upgrade cost to each tower in active session
         }
     }
 
@@ -139,16 +219,24 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRange3(string range3)
     {
         float.TryParse(range3, out float Range3); //convert string to float
-        GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //looks to see if active towers are upgraded to level 3
+            if (bombTow.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //looks to see if active towers are upgraded to level 3
             {
-                tower.GetComponent<Tower>().range = Range3; //assigns the new range3 value to each lvl 3 tower in active session
+                bombTow.GetComponent<Tower>().range = Range3; //assigns the new range3 value to each lvl 3 tower in active session
             }
-            tower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //assigns the new range2 value to each tower in active session
+            bombTow.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //assigns the new range2 value to each tower in active session
         }
     }
 
@@ -156,16 +244,24 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRate3(string rate3)
     {
         float.TryParse(rate3, out float Rate3); //converts string to float
-        GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //sets level 3 fire rate of tower prefab
+        //GetComponentInParent<SetStats>().bombTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //sets level 3 fire rate of tower prefab
+
+        // Load the contents of the Prefab Asset.
+        GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
+        // Modify Prefab contents.
+        tower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(tower);
 
         GameObject[] bombTowers = GameObject.FindGameObjectsWithTag("BombTower"); //finds all bomb towers active in session and assigns to array
-        foreach (GameObject tower in bombTowers)
+        foreach (GameObject bombTow in bombTowers)
         {
-            if (tower.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //looks to see if active towers are upgraded to level 3
+            if (bombTow.GetComponent<TowerUpgradeController>().currentTowerUpgrade == 2) //looks to see if active towers are upgraded to level 3
             {
-                tower.GetComponent<Tower>().fireRate = Rate3; //assigns the new range3 value to each lvl 3 tower in active session
+                bombTow.GetComponent<Tower>().fireRate = Rate3; //assigns the new range3 value to each lvl 3 tower in active session
             }
-            tower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //assigns the new fire rate value to each tower in active session
+            bombTow.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //assigns the new fire rate value to each tower in active session
         }
     }
 
@@ -173,7 +269,15 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombDamage3(string dam3)
     {
         float.TryParse(dam3, out float Dam3); //convert string to float
-        bomb3.GetComponent<Bomb>().damageAmount = Dam3; //changes prefab damage amount
+        //bomb3.GetComponent<Bomb>().damageAmount = Dam3; //changes prefab damage amount
+
+        // Load the contents of the Prefab Asset.
+        GameObject bomb3 = PrefabUtility.LoadPrefabContents(bombPath3);
+        // Modify Prefab contents.
+        bomb3.GetComponent<Bomb>().damageAmount = Dam3;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(bomb3, bombPath3, out bool success);
+        PrefabUtility.UnloadPrefabContents(bomb3);
 
         GameObject[] bombs = GameObject.FindGameObjectsWithTag("Bomb3"); //finds all Lvl 3 upgraded bombs active in session and assigns to array
         foreach (GameObject bomb in bombs)
@@ -186,7 +290,15 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRadius1(string radius)
     {
         float.TryParse(radius, out float Radius); //convert string to float
-        bomb1.GetComponent<Bomb>().explodeRange = Radius; //changes prefab blast radius
+        //bomb1.GetComponent<Bomb>().explodeRange = Radius; //changes prefab blast radius
+
+        // Load the contents of the Prefab Asset.
+        GameObject bomb1 = PrefabUtility.LoadPrefabContents(bombPath1);
+        // Modify Prefab contents.
+        bomb1.GetComponent<Bomb>().explodeRange = Radius;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(bomb1, bombPath1, out bool success);
+        PrefabUtility.UnloadPrefabContents(bomb1);
 
         GameObject[] bombs = GameObject.FindGameObjectsWithTag("Bomb1"); //finds active bombs at level 1
         foreach (GameObject bomb in bombs)
@@ -199,7 +311,15 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRadius2(string radius)
     {
         float.TryParse(radius, out float Radius); //convert string to float
-        bomb2.GetComponent<Bomb>().explodeRange = Radius; //changes prefab blast radius
+        //bomb2.GetComponent<Bomb>().explodeRange = Radius; //changes prefab blast radius
+
+        // Load the contents of the Prefab Asset.
+        GameObject bomb2 = PrefabUtility.LoadPrefabContents(bombPath2);
+        // Modify Prefab contents.
+        bomb2.GetComponent<Bomb>().explodeRange = Radius;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(bomb2, bombPath2, out bool success);
+        PrefabUtility.UnloadPrefabContents(bomb2);
 
         GameObject[] bombs = GameObject.FindGameObjectsWithTag("Bomb2"); //finds active bombs at level 2
         foreach (GameObject bomb in bombs)
@@ -212,7 +332,15 @@ public class ChangeBombTowStats : MonoBehaviour
     public void bombRadius3(string radius)
     {
         float.TryParse(radius, out float Radius); //convert string to float
-        bomb3.GetComponent<Bomb>().explodeRange = Radius; //changes prefab blast radius
+        //bomb3.GetComponent<Bomb>().explodeRange = Radius; //changes prefab blast radius
+
+        // Load the contents of the Prefab Asset.
+        GameObject bomb3 = PrefabUtility.LoadPrefabContents(bombPath3);
+        // Modify Prefab contents.
+        bomb3.GetComponent<Bomb>().explodeRange = Radius;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(bomb3, bombPath3, out bool success);
+        PrefabUtility.UnloadPrefabContents(bomb3);
 
         GameObject[] bombs = GameObject.FindGameObjectsWithTag("Bomb3"); //finds active bombs at level 3
         foreach (GameObject bomb in bombs)

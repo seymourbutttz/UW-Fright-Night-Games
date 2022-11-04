@@ -316,7 +316,7 @@ MonoBehaviour:
   enemiesUpdated: 0
   rangeModel: {fileID: 8085714271689303795}
   noPlaceModel: {fileID: 3436121736142926724}
-  cost: 2
+  cost: 50
   upgrader: {fileID: 0}
 --- !u!114 &8492344930071035219
 MonoBehaviour:
