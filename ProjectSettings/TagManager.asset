@@ -15,6 +15,7 @@ TagManager:
   - Bomb1
   - Bomb2
   - Bomb3
+  - ShockTower
   layers:
   - Default
   - TransparentFX
