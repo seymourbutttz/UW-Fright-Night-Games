@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class changeCactus : MonoBehaviour
 {
@@ -8,39 +9,82 @@ public class changeCactus : MonoBehaviour
 
     public GameObject cactusPrefab; //alien prefab to edit
 
+    //path of asset to re-create
+    private string cactusPath = "Assets/Prefabs/Enemies/Enemy (Cactus).prefab";
+
     //changes base movement speed of enemy
     public void movementSpeed(string speed)
     {
         float.TryParse(speed, out float Speed); //converts string to float
-        cactusPrefab.GetComponent<EnemyController>().moveSpeed = Speed; //changes speed in the prefab
+        //cactusPrefab.GetComponent<EnemyController>().moveSpeed = Speed; //changes speed in the prefab
+
+        // Load the contents of the Prefab Asset.
+        GameObject cactus = PrefabUtility.LoadPrefabContents(cactusPath);
+        // Modify Prefab contents.
+        cactus.GetComponent<EnemyController>().moveSpeed = Speed;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(cactus, cactusPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(cactus);
     }
 
     //changes time between attacks for tall alien
     public void attackTime(string attacks)
     {
         float.TryParse(attacks, out float attackTime); //converts string to float
-        cactusPrefab.GetComponent<EnemyController>().timeBetweenAttacks = attackTime; //changes time between attacks in the prefab
+        //cactusPrefab.GetComponent<EnemyController>().timeBetweenAttacks = attackTime; //changes time between attacks in the prefab
+
+        // Load the contents of the Prefab Asset.
+        GameObject cactus = PrefabUtility.LoadPrefabContents(cactusPath);
+        // Modify Prefab contents.
+        cactus.GetComponent<EnemyController>().timeBetweenAttacks = attackTime;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(cactus, cactusPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(cactus);
     }
 
     //changes damage done by tall alien
     public void attackDamage(string damage)
     {
         float.TryParse(damage, out float attackDamage); //changes prefab damage amount
-        cactusPrefab.GetComponent<EnemyController>().damagePerAttack = attackDamage; //sets attack damage within prefab
+        //cactusPrefab.GetComponent<EnemyController>().damagePerAttack = attackDamage; //sets attack damage within prefab
+
+        // Load the contents of the Prefab Asset.
+        GameObject cactus = PrefabUtility.LoadPrefabContents(cactusPath);
+        // Modify Prefab contents.
+        cactus.GetComponent<EnemyController>().damagePerAttack = attackDamage;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(cactus, cactusPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(cactus);
     }
 
     //changes total health of tall alien
     public void health(string healthAmount)
     {
         int.TryParse(healthAmount, out int Health); //converts string to int
-        cactusPrefab.GetComponent<EnemyHealthController>().totalHealth = Health; //changes health of prefab
+        //cactusPrefab.GetComponent<EnemyHealthController>().totalHealth = Health; //changes health of prefab
+
+        // Load the contents of the Prefab Asset.
+        GameObject cactus = PrefabUtility.LoadPrefabContents(cactusPath);
+        // Modify Prefab contents.
+        cactus.GetComponent<EnemyHealthController>().totalHealth = Health;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(cactus, cactusPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(cactus);
     }
 
     //changes gold value of tall alien upon death
     public void goldValue(string gold)
     {
         int.TryParse(gold, out int Gold); //converts string to int
-        cactusPrefab.GetComponent<EnemyHealthController>().moneyOnDeath = Gold; //changes gold upon dealth in prefab
+        //cactusPrefab.GetComponent<EnemyHealthController>().moneyOnDeath = Gold; //changes gold upon dealth in prefab
+
+        // Load the contents of the Prefab Asset.
+        GameObject cactus = PrefabUtility.LoadPrefabContents(cactusPath);
+        // Modify Prefab contents.
+        cactus.GetComponent<EnemyHealthController>().moneyOnDeath = Gold;
+        // Save contents back to Prefab Asset and unload contents.
+        PrefabUtility.SaveAsPrefabAsset(cactus, cactusPath, out bool success);
+        PrefabUtility.UnloadPrefabContents(cactus);
     }
 
 }
