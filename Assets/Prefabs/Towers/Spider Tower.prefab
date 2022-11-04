@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 3
-  fireRate: 0.5
+  fireRate: 0.8
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 4160
@@ -216,10 +216,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerUpgrades:
   - range: 4
-    speed: 0.25
+    speed: 0.6
     cost: 175
   - range: 5
-    speed: 0.1
+    speed: 0.4
     cost: 200
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1

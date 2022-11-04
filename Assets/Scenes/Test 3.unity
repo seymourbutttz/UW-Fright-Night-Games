@@ -1637,15 +1637,15 @@ Transform:
   - {fileID: 360908925}
   - {fileID: 1412642929}
   - {fileID: 1964076332}
-  - {fileID: 851660865}
   - {fileID: 1023580737}
   - {fileID: 997147586}
-  - {fileID: 222982732}
   - {fileID: 327569570}
-  - {fileID: 1291889505}
-  - {fileID: 763719114}
-  - {fileID: 1735372065}
   - {fileID: 1696557790}
+  - {fileID: 1291889505}
+  - {fileID: 1735372065}
+  - {fileID: 763719114}
+  - {fileID: 851660865}
+  - {fileID: 222982732}
   - {fileID: 1712377520}
   - {fileID: 2081188516}
   - {fileID: 1650175416}
@@ -6301,7 +6301,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.8396226, g: 0.50917983, b: 0.48713955, a: 1}
+  m_Color: {r: 1, g: 0.37924537, b: 0.33490568, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
