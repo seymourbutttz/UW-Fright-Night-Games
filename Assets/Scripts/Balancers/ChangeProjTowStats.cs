@@ -8,13 +8,13 @@ public class ChangeProjTowStats : MonoBehaviour
 {
     public TMP_Text pumpkinText;
     public GameObject projectile1, projectile2, projectile3;
-
+#if UNITY_EDITOR
     //path of asset to re-create
     private string towerPath = "Assets/Prefabs/Towers/Pumpkin Tower.prefab";
     private string projPath1 = "Assets/Prefabs/Projectiles/Pumpkin Seed.prefab";
     private string projPath2 = "Assets/Prefabs/Projectiles/Pumpkin.prefab";
     private string projPath3 = "Assets/Prefabs/Projectiles/Pumpkin Upgrade.prefab";
-
+#endif
 
     //change starting money
     //must be run at the start of the level if you want to test starting gold. cannot change system prefab
@@ -29,8 +29,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinCost(string cost) //take in text input from stat controller
     {
         int.TryParse(cost, out int Cost); //convert string to int
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -38,6 +38,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
+#endif
 
         pumpkinText.text = "Pumpkin" + "\n" + "Tower" + "\n" + "(" + Cost + "G)"; //sets button text
     }
@@ -46,8 +47,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinRange(string range)
     {
         float.TryParse(range, out float Range); //convert string to float
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<Tower>().range = Range; //changes prefab tower range
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<Tower>().range = Range; //changes prefab tower range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -55,7 +56,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTow in pumpkinTowers)
         {
@@ -70,8 +71,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinRate(string rate)
     {
         float.TryParse(rate, out float Rate);
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<Tower>().fireRate = Rate;
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<Tower>().fireRate = Rate;
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -79,7 +80,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTow in pumpkinTowers)
         {
@@ -94,8 +95,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinBaseDamage(string dam)
     {
         float.TryParse(dam, out float Dam); //convert string to float
-        //projectile1.GetComponent<Projectile>().damageAmount = Dam; //changes prefab damage amount
-
+        projectile1.GetComponent<Projectile>().damageAmount = Dam; //changes prefab damage amount
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject projectile = PrefabUtility.LoadPrefabContents(projPath1);
         // Modify Prefab contents.
@@ -103,7 +104,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(projectile, projPath1, out bool success);
         PrefabUtility.UnloadPrefabContents(projectile);
-
+#endif
         GameObject[] seeds = GameObject.FindGameObjectsWithTag("Seed"); //finds all pumpkin seeds active in session and assigns to array
         foreach (GameObject seed in seeds)
         {
@@ -115,8 +116,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinCost2(string cost2)
     {
         int.TryParse(cost2, out int Cost2); //convert string to float
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade1 cost of tower to new cost
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade1 cost of tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -124,7 +125,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTower in pumpkinTowers)
         {
@@ -136,8 +137,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinRange2(string range2)
     {
         float.TryParse(range2, out float Range2); //convert string to float
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -145,7 +146,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTow in pumpkinTowers)
         {
@@ -161,8 +162,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinRate2(string rate2)
     {
         float.TryParse(rate2, out float Rate2); //converts string to float
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //sets level 2 fire rate
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //sets level 2 fire rate
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -170,7 +171,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTow in pumpkinTowers)
         {
@@ -186,16 +187,16 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinDamage2(string dam2)
     {
         float.TryParse(dam2, out float Dam2); //convert string to float
-        //projectile2.GetComponent<Projectile>().damageAmount = Dam2; //changes prefab damage amount
-
+        projectile2.GetComponent<Projectile>().damageAmount = Dam2; //changes prefab damage amount
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
-        GameObject projectile2 = PrefabUtility.LoadPrefabContents(projPath2);
+        GameObject projectileTwo = PrefabUtility.LoadPrefabContents(projPath2);
         // Modify Prefab contents.
-        projectile2.GetComponent<Projectile>().damageAmount = Dam2;
+        projectileTwo.GetComponent<Projectile>().damageAmount = Dam2;
         // Save contents back to Prefab Asset and unload contents.
-        PrefabUtility.SaveAsPrefabAsset(projectile2, projPath2, out bool success);
-        PrefabUtility.UnloadPrefabContents(projectile2);
-
+        PrefabUtility.SaveAsPrefabAsset(projectileTwo, projPath2, out bool success);
+        PrefabUtility.UnloadPrefabContents(projectileTwo);
+#endif
         GameObject[] pumpkins = GameObject.FindGameObjectsWithTag("Pumpkin"); //finds all pumpkin projectiles active in session and assigns to array
         foreach (GameObject pumpkin in pumpkins)
         {
@@ -207,8 +208,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinCost3(string cost3)
     {
         int.TryParse(cost3, out int Cost3); //convert string to float
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -216,7 +217,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTow in pumpkinTowers)
         {
@@ -228,8 +229,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinRange3(string range3)
     {
         float.TryParse(range3, out float Range3); //convert string to float
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -237,7 +238,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTow in pumpkinTowers)
         {
@@ -253,8 +254,8 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinRate3(string rate3)
     {
         float.TryParse(rate3, out float Rate3); //converts string to float
-        //GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //sets level 3 fire rate of tower prefab
-
+        GetComponentInParent<SetStats>().projectileTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //sets level 3 fire rate of tower prefab
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -262,7 +263,7 @@ public class ChangeProjTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] pumpkinTowers = GameObject.FindGameObjectsWithTag("ProjectileTower"); //finds all pumpkin towers active in session and assigns to array
         foreach (GameObject projTow in pumpkinTowers)
         {
@@ -278,16 +279,16 @@ public class ChangeProjTowStats : MonoBehaviour
     public void pumpkinDamage3(string dam3)
     {
         float.TryParse(dam3, out float Dam3); //convert string to float
-        //projectile3.GetComponent<Projectile>().damageAmount = Dam3; //changes prefab damage amount
-
+        projectile3.GetComponent<Projectile>().damageAmount = Dam3; //changes prefab damage amount
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
-        GameObject projectile3 = PrefabUtility.LoadPrefabContents(projPath3);
+        GameObject projectileThree = PrefabUtility.LoadPrefabContents(projPath3);
         // Modify Prefab contents.
-        projectile3.GetComponent<Projectile>().damageAmount = Dam3;
+        projectileThree.GetComponent<Projectile>().damageAmount = Dam3;
         // Save contents back to Prefab Asset and unload contents.
-        PrefabUtility.SaveAsPrefabAsset(projectile3, projPath3, out bool success);
-        PrefabUtility.UnloadPrefabContents(projectile3);
-
+        PrefabUtility.SaveAsPrefabAsset(projectileThree, projPath3, out bool success);
+        PrefabUtility.UnloadPrefabContents(projectileThree);
+#endif
         GameObject[] pumpkins = GameObject.FindGameObjectsWithTag("PumpkinUpgrade"); //finds all upgraded pumpkin projectiles active in session and assigns to array
         foreach (GameObject pumpkin in pumpkins)
         {

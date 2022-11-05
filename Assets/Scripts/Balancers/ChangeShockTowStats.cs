@@ -8,16 +8,16 @@ public class ChangeShockTowStats : MonoBehaviour
 {
  
     public TMP_Text shockText; //text on spider tower button
-
+#if UNITY_EDITOR
     //path of asset to re-create
     private string towerPath = "Assets/Prefabs/Towers/Shock Tower.prefab";
-
+#endif
     //change shock tower cost
     public void shockCost(string cost) //take in text input from stat controller
     {
         int.TryParse(cost, out int Cost); //convert string to int
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -25,7 +25,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         shockText.text = "Shock" + "\n" + "Tower" + "\n" + "(" + Cost + "G)"; //sets button text
     }
 
@@ -33,8 +33,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockRange(string range)
     {
         float.TryParse(range, out float Range); //convert string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<Tower>().range = Range; //changes prefab tower range
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<Tower>().range = Range; //changes prefab tower range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -42,7 +42,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -57,8 +57,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockDPS(string dps)
     {
         float.TryParse(dps, out float DPS);
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().DPS = DPS;
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().DPS = DPS;
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -66,7 +66,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -81,8 +81,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockCost2(string cost2)
     {
         int.TryParse(cost2, out int Cost2); //convert string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade 1 cost of tower to new cost
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade 1 cost of tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -90,7 +90,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -102,8 +102,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockRange2(string range2)
     {
         float.TryParse(range2, out float Range2); //convert string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -111,7 +111,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -127,8 +127,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockDPS2(string dps2)
     {
         float.TryParse(dps2, out float DPS2); //converts string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().DPSUpgrades[0] = DPS2; //sets level 2 DPS
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().DPSUpgrades[0] = DPS2; //sets level 2 DPS
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -136,7 +136,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -152,8 +152,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockCost3(string cost3)
     {
         int.TryParse(cost3, out int Cost3); //convert string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -161,7 +161,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -173,8 +173,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockRange3(string range3)
     {
         float.TryParse(range3, out float Range3); //convert string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -182,7 +182,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -198,8 +198,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockDPS3(string dps3)
     {
         float.TryParse(dps3, out float DPS3); //converts string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().DPSUpgrades[1] = DPS3; //sets level 3 dps of tower prefab
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().DPSUpgrades[1] = DPS3; //sets level 3 dps of tower prefab
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -207,7 +207,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -223,8 +223,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockChain1(string percentage)
     {
         float.TryParse(percentage, out float Percentage); //converts string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().chainDamage1 = Percentage; //sets chain 1 percentage of tower prefab
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().chainDamage1 = Percentage; //sets chain 1 percentage of tower prefab
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -232,7 +232,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {
@@ -248,8 +248,8 @@ public class ChangeShockTowStats : MonoBehaviour
     public void shockChain2(string percentage2)
     {
         float.TryParse(percentage2, out float Percentage2); //converts string to float
-        //GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().chainDamage2 = Percentage2; //sets chain 2 percentage of tower prefab
-
+        GetComponentInParent<SetStats>().shockTower.GetComponent<ShockTower>().chainDamage2 = Percentage2; //sets chain 2 percentage of tower prefab
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -257,7 +257,7 @@ public class ChangeShockTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] shockTowers = GameObject.FindGameObjectsWithTag("ShockTower"); //finds all shock towers active in session and assigns to array
         foreach (GameObject shockTow in shockTowers)
         {

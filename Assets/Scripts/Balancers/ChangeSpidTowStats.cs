@@ -8,16 +8,16 @@ public class ChangeSpidTowStats : MonoBehaviour
 {
  
     public TMP_Text spiderText; //text on spider tower button
-
+#if UNITY_EDITOR
     //path of asset to re-create
     private string towerPath = "Assets/Prefabs/Towers/Spider Tower.prefab";
-
+#endif
     //change spider tower cost
     public void spiderCost(string cost) //take in text input from stat controller
     {
         int.TryParse(cost, out int Cost); //convert string to int
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<Tower>().cost = Cost; //sets current cost of tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -25,7 +25,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         spiderText.text = "Spider" + "\n" + "Tower" + "\n" + "(" + Cost + "G)"; //sets button text
     }
 
@@ -33,8 +33,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderRange(string range)
     {
         float.TryParse(range, out float Range); //convert string to float
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<Tower>().range = Range; //changes prefab tower range
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<Tower>().range = Range; //changes prefab tower range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -42,7 +42,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
@@ -57,8 +57,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderRate(string rate)
     {
         float.TryParse(rate, out float Rate);
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<Tower>().fireRate = Rate;
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<Tower>().fireRate = Rate;
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -66,7 +66,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
@@ -82,8 +82,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderCost2(string cost2)
     {
         int.TryParse(cost2, out int Cost2); //convert string to float
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade 1 cost of tower to new cost
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].cost = Cost2; //sets upgrade 1 cost of tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -91,7 +91,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
@@ -103,8 +103,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderRange2(string range2)
     {
         float.TryParse(range2, out float Range2); //convert string to float
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].range = Range2; //changes prefab tower lvl 2 range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -112,7 +112,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
@@ -128,8 +128,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderRate2(string rate2)
     {
         float.TryParse(rate2, out float Rate2); //converts string to float
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //sets level 2 fire rate
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[0].speed = Rate2; //sets level 2 fire rate
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -137,7 +137,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
@@ -153,8 +153,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderCost3(string cost3)
     {
         int.TryParse(cost3, out int Cost3); //convert string to float
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].cost = Cost3; //sets upgrade lvl 3 cost of prefab tower to new cost
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -162,7 +162,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
@@ -174,8 +174,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderRange3(string range3)
     {
         float.TryParse(range3, out float Range3); //convert string to float
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].range = Range3; //changes prefab tower lvl 3 range
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -183,7 +183,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
@@ -199,8 +199,8 @@ public class ChangeSpidTowStats : MonoBehaviour
     public void spiderRate3(string rate3)
     {
         float.TryParse(rate3, out float Rate3); //converts string to float
-        //GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //sets level 3 fire rate of tower prefab
-
+        GetComponentInParent<SetStats>().spiderTower.GetComponent<TowerUpgradeController>().towerUpgrades[1].speed = Rate3; //sets level 3 fire rate of tower prefab
+#if UNITY_EDITOR
         // Load the contents of the Prefab Asset.
         GameObject tower = PrefabUtility.LoadPrefabContents(towerPath);
         // Modify Prefab contents.
@@ -208,7 +208,7 @@ public class ChangeSpidTowStats : MonoBehaviour
         // Save contents back to Prefab Asset and unload contents.
         PrefabUtility.SaveAsPrefabAsset(tower, towerPath, out bool success);
         PrefabUtility.UnloadPrefabContents(tower);
-
+#endif
         GameObject[] spiderTowers = GameObject.FindGameObjectsWithTag("SlowTower"); //finds all spider towers active in session and assigns to array
         foreach (GameObject spidTow in spiderTowers)
         {
