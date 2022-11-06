@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30029d5628321dc489a14da92c6b7cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3
+  range: 2
   fireRate: 0.8
   whatIsEnemy:
     serializedVersion: 2
@@ -215,11 +215,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerUpgrades:
-  - range: 4
+  - range: 3
     speed: 0.6
     cost: 175
-  - range: 5
-    speed: 0.4
+  - range: 4
+    speed: 0.5
     cost: 200
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1

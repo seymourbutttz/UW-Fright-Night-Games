@@ -369,12 +369,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerUpgrades:
-  - range: 3.5
+  - range: 3.25
     speed: 0.6
     cost: 200
-  - range: 4
+  - range: 3.5
     speed: 0.4
-    cost: 250
+    cost: 300
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1
   fireRateText: 'Upgrade

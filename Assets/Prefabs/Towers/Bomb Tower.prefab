@@ -5087,10 +5087,10 @@ MonoBehaviour:
   towerUpgrades:
   - range: 4
     speed: 2
-    cost: 250
+    cost: 300
   - range: 5
-    speed: 1
-    cost: 275
+    speed: 1.75
+    cost: 400
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1
   fireRateText: 'Upgrade

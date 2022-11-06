@@ -209,7 +209,7 @@ MonoBehaviour:
   moveSpeed: 1.4
   speedMod: 1
   isSlowed: 0
-  slowEffect: {fileID: 0}
+  slowEffect: {fileID: 8035845287328727319}
   reachedEnd: 0
   timeBetweenAttacks: 0.5
   damagePerAttack: 1
