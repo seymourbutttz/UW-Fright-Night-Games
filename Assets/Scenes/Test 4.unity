@@ -6588,9 +6588,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1185142046}
+  - {fileID: 908129191}
   - {fileID: 812306635}
   - {fileID: 1431279174}
-  - {fileID: 908129191}
   - {fileID: 105945052}
   - {fileID: 728373144}
   - {fileID: 1194307043}
@@ -10339,7 +10339,11 @@ MonoBehaviour:
     timeBetweenSpawns: 1
     timeToNextWave: 0
     shouldDisplayWave: 1
-  bossToSpawn: []
+  bossToSpawn:
+  - BossOrder:
+    - {fileID: 5869247226790548563, guid: b8b1126f1fa186148a581665ae4de62e, type: 3}
+    timeBetweenSpawns: 1
+    shouldDisplayWave: 0
   waitForFirstSpawn: 2
   timeToBossWave: 0
   spawnPoint: {fileID: 1712218562}
@@ -14949,6 +14953,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].timeBetweenSpawns
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].BossOrder.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].BossOrder.Array.data[0]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: b8b1126f1fa186148a581665ae4de62e, type: 3}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].BossOrder.Array.data[1]
+      value: 
+      objectReference: {fileID: 7077963272440005962, guid: a2429eaffa927624db6b721bf95d762c, type: 3}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: bossToSpawn.Array.data[0].BossOrder.Array.data[2]
+      value: 
+      objectReference: {fileID: 7077963272440005962, guid: a2429eaffa927624db6b721bf95d762c, type: 3}
     - target: {fileID: 8479615035271668479, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5

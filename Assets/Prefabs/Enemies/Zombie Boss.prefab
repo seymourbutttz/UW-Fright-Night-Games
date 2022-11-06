@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalHealth: 750
   healthBar: {fileID: 5869247227033954899}
-  moneyOnDeath: 150
+  moneyOnDeath: 100
 --- !u!114 &5869247226790548563
 MonoBehaviour:
   m_ObjectHideFlags: 0

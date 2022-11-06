@@ -49,12 +49,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcd8bae15f1359448b9956729685aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.15
+  moveSpeed: 1.1
   speedMod: 1
   isSlowed: 0
   slowEffect: {fileID: 7587144438024456861}
+  reachedEnd: 0
   timeBetweenAttacks: 0.5
   damagePerAttack: 2
+  theCastle: {fileID: 0}
   isFlying: 0
   flyHeight: 0
 --- !u!136 &2540298010312788649

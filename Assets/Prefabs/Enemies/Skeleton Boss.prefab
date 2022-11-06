@@ -531,9 +531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f2a71f68768c4ba6459c420de00ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 200
+  totalHealth: 250
   healthBar: {fileID: 7077963271146363793}
-  moneyOnDeath: 200
+  moneyOnDeath: 75
 --- !u!114 &7077963272440005962
 MonoBehaviour:
   m_ObjectHideFlags: 0

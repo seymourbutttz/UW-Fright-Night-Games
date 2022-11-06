@@ -371,10 +371,10 @@ MonoBehaviour:
   towerUpgrades:
   - range: 3.5
     speed: 0.6
-    cost: 125
+    cost: 200
   - range: 4
     speed: 0.4
-    cost: 150
+    cost: 250
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1
   fireRateText: 'Upgrade
