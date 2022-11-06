@@ -50,11 +50,11 @@ MonoBehaviour:
   moveSpeed: 180
   targetPoint: {x: 0, y: 0, z: 0}
   explodeEffect: {fileID: 7771196411356021909, guid: fe2b348cef394a3409e5f04d8e0838ee, type: 3}
-  damageAmount: 20
+  damageAmount: 10
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
-  explodeRange: 1.75
+  explodeRange: 1.5
 --- !u!1 &4695207209221280739
 GameObject:
   m_ObjectHideFlags: 0
