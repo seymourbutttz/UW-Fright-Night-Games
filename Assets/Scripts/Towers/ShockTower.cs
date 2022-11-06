@@ -25,6 +25,9 @@ public class ShockTower : MonoBehaviour
     private GameObject targetEnemy = null; //target enemy
     private GameObject enemy2, enemy3; //additional enemies
 
+    private float audioTime = 1; //length of audio file in seconds
+    private float audioCounter = 0;
+
     //[HideInInspector]
     //public List<EnemyController> enemiesInRange = new List<EnemyController>(); //list of enemies within range
 
@@ -100,6 +103,14 @@ public class ShockTower : MonoBehaviour
                 ChainAttack();
                 SecondChainAttack();
                 Electricity();
+            }
+            audioCounter -= Time.deltaTime;
+            Debug.Log(audioCounter);
+            if (audioCounter <= 0)
+            {
+                //Debug.Log("Audio play");
+                audioCounter = audioTime;
+                AudioManager.instance.PlaySFX(11);
             }
         }
     }
