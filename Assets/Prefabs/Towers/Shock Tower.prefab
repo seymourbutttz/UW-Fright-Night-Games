@@ -94,7 +94,7 @@ MonoBehaviour:
   enemiesUpdated: 0
   rangeModel: {fileID: 5544370550094008676}
   noPlaceModel: {fileID: 0}
-  cost: 100
+  cost: 150
   upgrader: {fileID: 0}
 --- !u!114 &4756814604175344341
 MonoBehaviour:
@@ -119,8 +119,8 @@ MonoBehaviour:
   lineRenderer: {fileID: 8169629284913640060}
   DPS: 5
   DPSUpgrades:
-  - 10
-  - 15
+  - 8
+  - 12
   shockEffect: {fileID: 0}
   chainDamage1: 0.5
   chainDamage2: 0.25
@@ -151,12 +151,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerUpgrades:
+  - range: 3.5
+    speed: 0
+    cost: 250
   - range: 4
     speed: 0
-    cost: 300
-  - range: 5
-    speed: 0
-    cost: 325
+    cost: 350
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1
   fireRateText: 'Upgrade

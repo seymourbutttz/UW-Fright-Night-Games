@@ -186,7 +186,7 @@ MonoBehaviour:
   enemiesUpdated: 0
   rangeModel: {fileID: 6669405261784507372}
   noPlaceModel: {fileID: 1279211645086239721}
-  cost: 145
+  cost: 150
   upgrader: {fileID: 0}
 --- !u!136 &7305704447854379172
 CapsuleCollider:
@@ -217,10 +217,10 @@ MonoBehaviour:
   towerUpgrades:
   - range: 3
     speed: 0.6
-    cost: 175
+    cost: 200
   - range: 4
     speed: 0.5
-    cost: 200
+    cost: 250
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1
   fireRateText: 'Upgrade
