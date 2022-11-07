@@ -11,6 +11,7 @@ public class TowerUpgradeController : MonoBehaviour
     public int currentTowerUpgrade; //current tower upgrade level
     public bool hasTowerUpgrade; //does the tower have another upgrade available?
 
+
     [TextArea]
     public string fireRateText;
         

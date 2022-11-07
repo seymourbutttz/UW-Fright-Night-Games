@@ -35,6 +35,9 @@ public class UIController : MonoBehaviour
     //debug script canvas
     public GameObject statScreen;
 
+    //play tutorial screens if true
+    public bool playTutorial = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +46,12 @@ public class UIController : MonoBehaviour
         bombText.text = "Bomb" + "\n" + "Tower" + "\n" + bombTower.GetComponent<Tower>().cost + "G";  //labels tower button with gold cost
         meteorText.text = "Meteor" + "\n" + "Shower" + "\n" + meteorShower.GetComponent<Spells>().cost + "G"; //labels spell button with gold cost
         shockText.text = "Shock" + "\n" + "Tower" + "\n" + shockTower.GetComponent<Tower>().cost + "G"; //labels shock button with gold cost;
+
+        if (playTutorial)
+        {
+            GetComponent<Tutorial>().activateTutorial();
+            Time.timeScale = 0f;
+        }
     }
 
     // Update is called once per frame
