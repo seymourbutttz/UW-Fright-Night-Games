@@ -19,6 +19,7 @@ public class TowerUpgradeController : MonoBehaviour
     void Start()
     {
         theTower = GetComponent<Tower>();
+        setSellCost(); 
     }
 
     public void UpgradeTower()
@@ -97,6 +98,12 @@ public class TowerUpgradeController : MonoBehaviour
         theTower.GetComponent<ShockTower>().DPS = theTower.GetComponent<ShockTower>().DPSUpgrades[currentTowerUpgrade];
     }
 
+    public void setSellCost()
+    {
+        towerUpgrades[0].sellCost = (theTower.cost + towerUpgrades[0].cost) / 2;
+        towerUpgrades[1].sellCost = (theTower.cost + towerUpgrades[0].cost + towerUpgrades[1].cost) / 2;
+    }
+
 }
 
 [System.Serializable]
@@ -106,4 +113,5 @@ public class UpgradeStage //array of upgrades
     public float range; //tower range
     public float speed; //tower speed
     public int cost; //cost of tower upgrade
+    public int sellCost; //cost to sell tower
 }

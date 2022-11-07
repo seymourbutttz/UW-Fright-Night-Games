@@ -20,7 +20,8 @@ public class Tower : MonoBehaviour
     public GameObject rangeModel;
     public GameObject noPlaceModel;
 
-    public int cost = 100;
+    public int cost;
+    public int sellPrice;
 
     [HideInInspector]
     public TowerUpgradeController upgrader;
@@ -31,6 +32,7 @@ public class Tower : MonoBehaviour
         checkCounter = checkTime;
 
         upgrader = GetComponent<TowerUpgradeController>();
+        sellPrice = cost / 2;
 
     }
 

@@ -38,11 +38,11 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pumpkinText.text = "Pumpkin" + "\n" + "Tower" + "\n" + "(" + pumpTower.GetComponent<Tower>().cost + "G)"; //labels tower button with gold cost
-        spiderText.text = "Spider" + "\n" + "Tower" + "\n" + "(" + spiderTower.GetComponent<Tower>().cost + "G)";  //labels tower button with gold cost
-        bombText.text = "Bomb" + "\n" + "Tower" + "\n" + "(" + bombTower.GetComponent<Tower>().cost + "G)";  //labels tower button with gold cost
-        meteorText.text = "Meteor" + "\n" + "Shower" + "\n" + "(" + meteorShower.GetComponent<Spells>().cost + "G)"; //labels spell button with gold cost
-        shockText.text = "Shock" + "\n" + "Tower" + "\n" + "(" + shockTower.GetComponent<Tower>().cost + "G)"; //labels shock button with gold cost;
+        pumpkinText.text = "Pumpkin" + "\n" + "Tower" + "\n" + pumpTower.GetComponent<Tower>().cost + "G"; //labels tower button with gold cost
+        spiderText.text = "Spider" + "\n" + "Tower" + "\n" + spiderTower.GetComponent<Tower>().cost + "G";  //labels tower button with gold cost
+        bombText.text = "Bomb" + "\n" + "Tower" + "\n" + bombTower.GetComponent<Tower>().cost + "G";  //labels tower button with gold cost
+        meteorText.text = "Meteor" + "\n" + "Shower" + "\n" + meteorShower.GetComponent<Spells>().cost + "G"; //labels spell button with gold cost
+        shockText.text = "Shock" + "\n" + "Tower" + "\n" + shockTower.GetComponent<Tower>().cost + "G"; //labels shock button with gold cost;
     }
 
     // Update is called once per frame
@@ -95,7 +95,7 @@ public class UIController : MonoBehaviour
 
     public void OpenTowerUpgradePanel()
     {
-        if (LevelManager.instance.levelActive)
+        if (LevelManager.instance.levelActive & !TowerManager.instance.isPlacing)
         {
             towerUpgradePanel.gameObject.SetActive(true);
             towerUpgradePanel.SetupPanel();
@@ -108,12 +108,13 @@ public class UIController : MonoBehaviour
 
         if (TowerManager.instance.selectedTower != null)
         {
-            TowerManager.instance.selectedTower.rangeModel.SetActive(false);
-            TowerManager.instance.selectedTower = null;
+             TowerManager.instance.selectedTower.rangeModel.SetActive(false);
+             TowerManager.instance.selectedTower = null;
         }
 
         TowerManager.instance.selectedTowerEffect.SetActive(false);
 
         notEnoughMoneyWarning.SetActive(false);
+        
     }
 }

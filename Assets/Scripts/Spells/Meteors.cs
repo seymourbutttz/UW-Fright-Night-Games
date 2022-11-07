@@ -42,7 +42,7 @@ public class Meteors : MonoBehaviour
         Instantiate(impact, transform.position, Quaternion.identity); //generates impact effect
 
         AudioManager.instance.PlaySFX(6); //generates explosion audio
-
+        Debug.Log("play audio");
         Destroy(gameObject); //destroys meteor
     }
 }

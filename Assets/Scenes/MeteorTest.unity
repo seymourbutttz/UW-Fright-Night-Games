@@ -10528,6 +10528,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[0]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[1]
+      value: 
+      objectReference: {fileID: 7077963272440005962, guid: a2429eaffa927624db6b721bf95d762c, type: 3}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[2]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
+    - target: {fileID: 1540869755, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: wavesToSpawn.Array.data[0].enemySpawnOrder.Array.data[3]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
     - target: {fileID: 8479615036434985943, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: nextLevel
       value: Test 2
@@ -10544,6 +10560,30 @@ PrefabInstance:
       propertyPath: theCastle
       value: 
       objectReference: {fileID: 719209670}
+    - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: enemiesToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
+    - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: enemiesToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
+    - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: enemiesToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
+    - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: enemiesToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
+    - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: enemiesToSpawn.Array.data[4]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
+    - target: {fileID: 8479615036577595814, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
+      propertyPath: enemiesToSpawn.Array.data[5]
+      value: 
+      objectReference: {fileID: 5869247226790548563, guid: 1fe527c387eaf414c8cc2a0fdbd20397, type: 3}
     - target: {fileID: 8479615036761564326, guid: a7dcc7074eb2ed842b7036b09688bd2f, type: 3}
       propertyPath: m_Name
       value: Systems

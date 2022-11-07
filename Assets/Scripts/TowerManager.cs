@@ -37,6 +37,7 @@ public class TowerManager : MonoBehaviour
     {
         if(isPlacing)
         {
+            UIController.instance.CloseTowerUpgradePanel(); //closes upgrade tower panel and deselects active tower
             indicator.position = GetGridPosition();
 
             RaycastHit hit;
@@ -123,7 +124,7 @@ public class TowerManager : MonoBehaviour
 
     public void MoveTowerSelectionEffect()
     {
-        if(selectedTower != null)
+        if(selectedTower != null & !isPlacing)
         {
             selectedTowerEffect.transform.position = selectedTower.transform.position;
             selectedTowerEffect.SetActive(true);
