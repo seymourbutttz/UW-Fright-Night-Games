@@ -26,6 +26,8 @@ public class AudioManager : MonoBehaviour
     private int currentBGM;
     private bool playingBGM;
 
+    private bool mute = false; //mute audio
+
     public AudioSource[] sfx;
 
     // Start is called before the first frame update
@@ -39,20 +41,27 @@ public class AudioManager : MonoBehaviour
     {
         if(playingBGM)
         {
-            if(bgm[currentBGM].isPlaying == false)
-            {
-                currentBGM++;
-                if(currentBGM >= bgm.Length)
-                {
-                    currentBGM = 0;
-                }
+            //if(bgm[currentBGM].isPlaying == false)
+            //{
+            //    currentBGM++;
+            //    if(currentBGM >= bgm.Length)
+            //    {
+            //        currentBGM = 0;
+            //    }
 
-                bgm[currentBGM].Play();
-            }
+            //    bgm[currentBGM].Play();
+            //}
 
             if(Input.GetKeyDown(KeyCode.S))
             {
-                bgm[currentBGM].Stop();
+                if (!mute)
+                {
+                    bgm[currentBGM].Stop();
+                    mute = true;
+                } else if (mute)
+                {
+                    bgm[currentBGM].Play();
+                }
             }
         }
     }
@@ -81,14 +90,15 @@ public class AudioManager : MonoBehaviour
         levelSelectMusic.Play();
     }
 
-    public void PlayBGM()
+    public void PlayBGM(int i)
     {
         StopMusic();
 
-        currentBGM = Random.Range(0, bgm.Length);
+        //currentBGM = Random.Range(0, bgm.Length);
 
-        bgm[currentBGM].Play();
+        bgm[i].Play();
         playingBGM = true;
+        currentBGM = i;
     }
 
     public void PlaySFX(int sfxToPlay)

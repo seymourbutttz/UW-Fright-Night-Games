@@ -31,11 +31,7 @@ public class LevelManager : MonoBehaviour
 
         levelActive = true;
 
-        AudioManager.instance.PlayBGM();
-        //if(SceneManager.GetActiveScene().name == "Test 2")
-        //{
-
-        //}
+        playAudio();
     }
 
     // Update is called once per frame
@@ -83,6 +79,35 @@ public class LevelManager : MonoBehaviour
 
                 UIController.instance.CloseTowerUpgradePanel();
             }
+        }
+    }
+
+    void playAudio()
+    {
+        //AudioManager.instance.PlayBGM();
+        if (SceneManager.GetActiveScene().name == "Test 1")
+        {
+            AudioManager.instance.PlayBGM(0);
+        }
+        else if (SceneManager.GetActiveScene().name == "Test 2")
+        {
+            AudioManager.instance.PlayBGM(1);
+        }
+        else if (SceneManager.GetActiveScene().name == "Test 3")
+        {
+            AudioManager.instance.PlayBGM(2);
+        }
+        else if (SceneManager.GetActiveScene().name == "Test 4")
+        {
+            AudioManager.instance.PlayBGM(3);
+        }
+        else if (SceneManager.GetActiveScene().name == "Test 5")
+        {
+            AudioManager.instance.PlayBGM(4);
+        }
+        else
+        {
+            AudioManager.instance.PlayBGM(Random.Range(0, AudioManager.instance.bgm.Length));
         }
     }
 }
