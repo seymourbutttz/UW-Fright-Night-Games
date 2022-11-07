@@ -16,11 +16,11 @@ public class StatController : MonoBehaviour
     {
         showConsole = !showConsole;
         Debug.Log(showConsole);
-        if (showConsole)
+        if (showConsole & UIController.instance.pauseScreen.activeSelf == false)
         {
             gameObject.GetComponent<UIController>().statScreen.SetActive(true);
             Time.timeScale = 0f;
-        } else
+        } else if(UIController.instance.pauseScreen.activeSelf == false)
         {
             gameObject.GetComponent<UIController>().statScreen.SetActive(false);
             Time.timeScale = 1f;

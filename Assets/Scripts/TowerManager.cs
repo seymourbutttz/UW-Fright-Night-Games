@@ -45,10 +45,18 @@ public class TowerManager : MonoBehaviour
                 indicator.gameObject.SetActive(false);
             } else if (Physics.Raycast(indicator.position + new Vector3(0f, -2f, 0f), Vector3.up, out hit, 10f, whatIsObstacle))
             {
-                indicator.gameObject.SetActive(false);
+                //indicator.gameObject.SetActive(false);
+                indicator.gameObject.GetComponent<Tower>().noPlaceModel.SetActive(true);
+                indicator.gameObject.GetComponent<Tower>().rangeModel.SetActive(false);
+                indicator.gameObject.GetComponent<Tower>().noPlaceModel.transform.localScale = new Vector3(activeTower.range, 1f, activeTower.range);
             }
             else
             {
+                if (indicator.gameObject.GetComponent<Tower>().noPlaceModel.activeSelf)
+                {
+                    indicator.gameObject.GetComponent<Tower>().noPlaceModel.SetActive(false);
+                    indicator.gameObject.GetComponent<Tower>().rangeModel.SetActive(true);
+                }
                 indicator.gameObject.SetActive(true);
 
                 UIController.instance.notEnoughMoneyWarning.SetActive(MoneyManager.instance.currentMoney < activeTower.cost);

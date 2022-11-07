@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -31,6 +32,10 @@ public class LevelManager : MonoBehaviour
         levelActive = true;
 
         AudioManager.instance.PlayBGM();
+        //if(SceneManager.GetActiveScene().name == "Test 2")
+        //{
+
+        //}
     }
 
     // Update is called once per frame
