@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
 
         Instantiate(impactEffect, transform.position, Quaternion.identity);
 
-        AudioManager.instance.PlaySFX(6);
+        //AudioManager.instance.PlaySFX(6);
 
         Destroy(gameObject);
     }

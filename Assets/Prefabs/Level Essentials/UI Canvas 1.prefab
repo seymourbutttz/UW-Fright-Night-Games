@@ -35,7 +35,7 @@ RectTransform:
   - {fileID: 9217672440380226630}
   - {fileID: 7529579257503120945}
   m_Father: {fileID: 6591708522659887342}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -94,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeTowerButton: {fileID: 7529579257503120950}
   upgradeText: {fileID: 7529579256871766844}
+  sellText: {fileID: 9217672441015814475}
 --- !u!1 &21653198343986500
 GameObject:
   m_ObjectHideFlags: 0
@@ -31153,7 +31154,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6591708522659887342}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -54338,10 +54339,10 @@ RectTransform:
   - {fileID: 6591708523335820186}
   - {fileID: 6591708524225509569}
   - {fileID: 6591708524052332875}
+  - {fileID: 6326560562648510118}
+  - {fileID: 1194349798}
   - {fileID: 6591708524205632455}
   - {fileID: 6591708523897855130}
-  - {fileID: 1194349798}
-  - {fileID: 6326560562648510118}
   - {fileID: 4601127176658740072}
   - {fileID: 3486099519664040051}
   m_Father: {fileID: 0}
@@ -54941,7 +54942,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6591708522659887342}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6591708523897855125
 MonoBehaviour:
@@ -55093,7 +55094,7 @@ RectTransform:
   - {fileID: 9217672440441344291}
   - {fileID: 5578028295241184467}
   m_Father: {fileID: 6591708522659887342}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -77387,15 +77388,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2635084915880286533, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_Name
-      value: Remove Tower Button
+      value: Sell Tower Button
       objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_text
-      value: 'Remove
+      value: 'Sell
 
-        Tower
-
-        (gain 50g)'
+        Tower'
       objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_fontSize
@@ -77412,6 +77411,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2635084915880286530, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
   m_PrefabInstance: {fileID: 6591708523343488260}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9217672441015814475 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
+  m_PrefabInstance: {fileID: 6591708523343488260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6591708523423305255
 PrefabInstance:
   m_ObjectHideFlags: 0
