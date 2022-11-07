@@ -164,10 +164,10 @@ MonoBehaviour:
   - {fileID: 5268485136922176688}
   useElectricity: 1
   lineRenderer: {fileID: 8169629284913640060}
-  DPS: 5
+  DPS: 4
   DPSUpgrades:
-  - 8
-  - 12
+  - 7
+  - 10
   shockEffect: {fileID: 0}
   chainDamage1: 0.5
   chainDamage2: 0.25
