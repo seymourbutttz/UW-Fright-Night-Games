@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_logs
       objectReference: {fileID: 0}
+    - target: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
 --- !u!1001 &17368186
@@ -247,6 +251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &17368187 stripped
@@ -265,7 +273,7 @@ GameObject:
   - component: {fileID: 35311222}
   - component: {fileID: 35311224}
   - component: {fileID: 35311223}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +361,7 @@ GameObject:
   - component: {fileID: 59930086}
   - component: {fileID: 59930088}
   - component: {fileID: 59930087}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,6 +438,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 29c7de7f415eb7e4fbc101870362102e, type: 3}
   m_PrefabInstance: {fileID: 1268251629}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &78068925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9095861283202096434, guid: a02abe99b557a624ca2316134bc4a270, type: 3}
+  m_PrefabInstance: {fileID: 2056217956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &78510766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: fa12a31e8ef2fc045a4c3c56e9b5b933, type: 3}
+  m_PrefabInstance: {fileID: 1834729456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &99292171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 938074580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &105410610
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +464,7 @@ GameObject:
   - component: {fileID: 105410611}
   - component: {fileID: 105410613}
   - component: {fileID: 105410612}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,6 +536,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105410610}
   m_Mesh: {fileID: 5362752393953957539, guid: 3ebf65d3a6489594ca09a35d85d43b0a, type: 3}
+--- !u!1 &108685080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
+  m_PrefabInstance: {fileID: 1476459919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &132456454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1252951468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &139644302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -568,6 +601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_logs
       objectReference: {fileID: 0}
+    - target: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
 --- !u!4 &139644303 stripped
@@ -585,6 +622,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -642,6 +687,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &151149869 stripped
@@ -659,6 +712,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -743,6 +804,14 @@ PrefabInstance:
     - target: {fileID: 3587490931708908391, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 15.338
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
@@ -849,6 +918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &160350274 stripped
@@ -866,6 +939,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9990e66d7c79d4049825312d0bef6405, type: 3}
       propertyPath: m_Name
       value: Jac_ O_Candle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9990e66d7c79d4049825312d0bef6405, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9990e66d7c79d4049825312d0bef6405, type: 3}
       propertyPath: m_RootOrder
@@ -913,6 +990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9990e66d7c79d4049825312d0bef6405, type: 3}
+--- !u!1 &166938415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 1958303810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &167293170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1097,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
   m_PrefabInstance: {fileID: 1275610085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &218327972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 570110364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &220900550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+  m_PrefabInstance: {fileID: 139644302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &220900551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220900550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7069895, y: 0.6732881, z: 2.172659}
+  m_Center: {x: -0.104887486, y: 0.24180855, z: -0.21317118}
 --- !u!4 &240607659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1529183203402686330, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
@@ -1024,6 +1129,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 29c7de7f415eb7e4fbc101870362102e, type: 3}
   m_PrefabInstance: {fileID: 954493416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &259126541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+  m_PrefabInstance: {fileID: 1191140986}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &288369935
 PrefabInstance:
@@ -1106,6 +1216,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1162,6 +1280,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &327339543 stripped
@@ -1179,6 +1305,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -1236,6 +1370,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &334913375 stripped
@@ -1253,6 +1395,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -1338,6 +1488,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 27.777
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &382165273 stripped
@@ -1361,7 +1519,7 @@ GameObject:
   - component: {fileID: 405169372}
   - component: {fileID: 405169374}
   - component: {fileID: 405169373}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere015 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1444,7 +1602,7 @@ GameObject:
   - component: {fileID: 417141644}
   - component: {fileID: 417141646}
   - component: {fileID: 417141645}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere019 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1527,6 +1685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Pine_Tree_03_stump
       objectReference: {fileID: 0}
+    - target: {fileID: 5899581772680663418, guid: 7d2041206c208f54991b199315b8f7a8, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6526937357192547264, guid: 7d2041206c208f54991b199315b8f7a8, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -1589,6 +1751,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -1645,6 +1815,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &425652481 stripped
@@ -1662,6 +1840,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -1719,6 +1905,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &431659340 stripped
@@ -1768,7 +1962,7 @@ GameObject:
   - component: {fileID: 443058401}
   - component: {fileID: 443058403}
   - component: {fileID: 443058402}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1851,7 +2045,7 @@ GameObject:
   - component: {fileID: 456980470}
   - component: {fileID: 456980472}
   - component: {fileID: 456980471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere016 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,12 +2184,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &463686020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2426846095409649158, guid: a917f6843cc222145828cefe2f799e67, type: 3}
   m_PrefabInstance: {fileID: 463686019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &463967544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 2045885421}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &477201090 stripped
 Transform:
@@ -2009,6 +2212,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537144733}
     m_Modifications:
+    - target: {fileID: 2169136229127665794, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428826327823032488, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791992649996317472, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7225362262138510385, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -2056,6 +2271,10 @@ PrefabInstance:
     - target: {fileID: 8002461263218542219, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
       propertyPath: m_Name
       value: PT_Generic_Rock_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002461263218542219, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
@@ -2126,6 +2345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &507056842 stripped
@@ -2133,6 +2356,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2426846095409649158, guid: a917f6843cc222145828cefe2f799e67, type: 3}
   m_PrefabInstance: {fileID: 507056841}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &508117371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 334913374}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &508117372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508117371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &521272481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2143,6 +2384,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -2199,6 +2448,14 @@ PrefabInstance:
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
@@ -2303,6 +2560,34 @@ Transform:
   m_Father: {fileID: 571672566}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &539523539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8002461263218542219, guid: 16cfe0f76e1afc24ca16a7080d66f082, type: 3}
+  m_PrefabInstance: {fileID: 499205850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &539523540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539523539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &541912030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1548593255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &559265562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1708967882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &562534280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2370,6 +2655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &562534281 stripped
@@ -2387,6 +2676,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -2444,6 +2741,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &570110365 stripped
@@ -2451,6 +2756,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 570110364}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &570110366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218327972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &571672565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2805,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &597628406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
+  m_PrefabInstance: {fileID: 662942636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &610280117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2497,6 +2820,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -2582,6 +2913,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 35.066
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &610280118 stripped
@@ -2645,6 +2984,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -2701,6 +3048,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &629808911 stripped
@@ -2713,6 +3068,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
   m_PrefabInstance: {fileID: 662942636}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &630883980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597628406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37050384, y: 0.32773405, z: 0.8685218}
+  m_Center: {x: 0.0044629113, y: -0.018456442, z: 0.42299122}
 --- !u!1 &630943939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,7 +3092,7 @@ GameObject:
   - component: {fileID: 630943940}
   - component: {fileID: 630943942}
   - component: {fileID: 630943941}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2825,6 +3193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull_Stick (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -2887,6 +3259,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -2943,12 +3323,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &680629007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 680629006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &696351789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 629808910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &696351790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696351789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &698136311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1040483265}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &703969524
 GameObject:
@@ -3006,6 +3417,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c9eb298a292d34f810921f6f8773a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &731025987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1707133551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &731080434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3016,6 +3432,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -3073,6 +3497,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &731080435 stripped
@@ -3090,6 +3522,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 30e6fef54c90fb649aca41d8359ac12c, type: 3}
       propertyPath: m_Name
       value: RockGroup_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 30e6fef54c90fb649aca41d8359ac12c, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30e6fef54c90fb649aca41d8359ac12c, type: 3}
       propertyPath: m_RootOrder
@@ -3166,7 +3602,7 @@ GameObject:
   - component: {fileID: 777438654}
   - component: {fileID: 777438656}
   - component: {fileID: 777438655}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3238,6 +3674,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777438653}
   m_Mesh: {fileID: 5362752393953957539, guid: 3ebf65d3a6489594ca09a35d85d43b0a, type: 3}
+--- !u!1 &812074856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 731080434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &812074857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812074856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &812306634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3362,6 +3816,10 @@ PrefabInstance:
     - target: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_logs (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
@@ -3517,6 +3975,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3601,12 +4067,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 103.034
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &841972643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 841972642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853444090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+  m_PrefabInstance: {fileID: 2004244635}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &857839634
 GameObject:
@@ -3619,7 +4098,7 @@ GameObject:
   - component: {fileID: 857839635}
   - component: {fileID: 857839637}
   - component: {fileID: 857839636}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3830,7 +4309,7 @@ GameObject:
   - component: {fileID: 869401601}
   - component: {fileID: 869401603}
   - component: {fileID: 869401602}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere019 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3902,6 +4381,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869401600}
   m_Mesh: {fileID: 4300004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+--- !u!1 &881639544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 980321109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &902453173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3944,7 +4428,7 @@ GameObject:
   - component: {fileID: 905277427}
   - component: {fileID: 905277429}
   - component: {fileID: 905277428}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere019 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4097,6 +4581,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -4181,6 +4673,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 33.383
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &927720059 stripped
@@ -4188,6 +4688,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 927720058}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &932784643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 17368186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &932784644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932784643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378004, y: 0.91605616, z: 0.9636305}
+  m_Center: {x: -0.033596877, y: 0.16585453, z: -0.051331468}
 --- !u!1001 &938074580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4198,6 +4716,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -4255,6 +4781,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &938074581 stripped
@@ -4262,6 +4796,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 938074580}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &938074582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99292171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &954493416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4408,12 +4955,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &980321110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2426846095409649158, guid: a917f6843cc222145828cefe2f799e67, type: 3}
   m_PrefabInstance: {fileID: 980321109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &980321111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881639544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378002, y: 0.91605616, z: 0.9636303}
+  m_Center: {x: -0.033596873, y: 0.16585453, z: -0.05133146}
+--- !u!1 &982822148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 562534280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &982822149
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982822148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378002, y: 0.91605616, z: 0.9636304}
+  m_Center: {x: -0.03359687, y: 0.16585453, z: -0.051331464}
+--- !u!1 &987329451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1910187527}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &992707284
 GameObject:
@@ -4426,7 +5013,7 @@ GameObject:
   - component: {fileID: 992707285}
   - component: {fileID: 992707287}
   - component: {fileID: 992707286}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4508,6 +5095,10 @@ PrefabInstance:
     - target: {fileID: 5899581772680663418, guid: 7d2041206c208f54991b199315b8f7a8, type: 3}
       propertyPath: m_Name
       value: PT_Pine_Tree_03_stump (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899581772680663418, guid: 7d2041206c208f54991b199315b8f7a8, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6526937357192547264, guid: 7d2041206c208f54991b199315b8f7a8, type: 3}
       propertyPath: m_RootOrder
@@ -4710,6 +5301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &1019325320 stripped
@@ -4727,6 +5322,30 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_Name
       value: Jac_ O_Lantern_Group (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_RootOrder
@@ -4790,6 +5409,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4846,6 +5473,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1040483266 stripped
@@ -4853,6 +5488,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1040483265}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1040483267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698136311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1048289994
 GameObject:
   m_ObjectHideFlags: 0
@@ -4864,7 +5512,7 @@ GameObject:
   - component: {fileID: 1048289995}
   - component: {fileID: 1048289997}
   - component: {fileID: 1048289996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4936,6 +5584,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048289994}
   m_Mesh: {fileID: 5362752393953957539, guid: 3ebf65d3a6489594ca09a35d85d43b0a, type: 3}
+--- !u!1 &1057888584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1424184225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1094144111
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,6 +5652,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9645557, y: 0.9230167, z: 1.5311712}
   m_Center: {x: 0.031973694, y: 0.46031067, z: 0.36372754}
+--- !u!65 &1103048858
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103048852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9645557, y: 0.9230167, z: 1.5311712}
+  m_Center: {x: 0.031973694, y: 0.46031067, z: 0.36372754}
+--- !u!1 &1104379864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 9990e66d7c79d4049825312d0bef6405, type: 3}
+  m_PrefabInstance: {fileID: 160453554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1116411006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5009,6 +5680,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -5066,6 +5745,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1116411007 stripped
@@ -5084,7 +5771,7 @@ GameObject:
   - component: {fileID: 1128189006}
   - component: {fileID: 1128189008}
   - component: {fileID: 1128189007}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5156,6 +5843,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128189005}
   m_Mesh: {fileID: 5362752393953957539, guid: 3ebf65d3a6489594ca09a35d85d43b0a, type: 3}
+--- !u!1 &1165934093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+  m_PrefabInstance: {fileID: 826643404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1177140282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5166,6 +5858,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -5223,6 +5923,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1177140283 stripped
@@ -5230,11 +5938,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1177140282}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1179993605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 1610038828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1185058666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9990e66d7c79d4049825312d0bef6405, type: 3}
   m_PrefabInstance: {fileID: 160453554}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1185058667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104379864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4484318, y: 0.39472786, z: 0.3883534}
+  m_Center: {x: 0.000000022351742, y: 0.1983083, z: 0.000000022351742}
 --- !u!1001 &1185142045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5301,6 +6027,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39f1b51a5ab598c479c1d87b306e9341, type: 3}
   m_PrefabInstance: {fileID: 1185142045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1185454574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 521272481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1185454575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185454574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1188246376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 841972642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1188246377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188246376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1191140986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5311,6 +6073,30 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_Name
       value: Jac_ O_Lantern_Group (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_RootOrder
@@ -5363,6 +6149,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
   m_PrefabInstance: {fileID: 1191140986}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1191140988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259126541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1193063709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1177140282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1193063710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193063709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1224568456
 GameObject:
   m_ObjectHideFlags: 0
@@ -5446,6 +6263,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224568456}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1227437104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 160350273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1227437105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227437104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378002, y: 0.91605616, z: 0.9636304}
+  m_Center: {x: -0.033596873, y: 0.16585453, z: -0.05133146}
+--- !u!1 &1239587089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 382165272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1239587090
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239587089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1248428710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 431659339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1248428711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248428710}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1252951468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5456,6 +6327,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -5553,8 +6432,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -29.037
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+--- !u!1 &1253615974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 507056841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1253615975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253615974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378001, y: 0.91605616, z: 0.96363026}
+  m_Center: {x: -0.03359687, y: 0.16585453, z: -0.051331457}
+--- !u!1 &1255090447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 463686019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1255090448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255090447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378001, y: 0.91605616, z: 0.9636302}
+  m_Center: {x: -0.03359687, y: 0.16585453, z: -0.051331453}
 --- !u!1001 &1268251629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5662,6 +6585,30 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_Name
       value: Jac_ O_Lantern_Group (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_RootOrder
@@ -5828,6 +6775,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293959316}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1322274386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 425652480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1322274387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322274386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1326835022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,7 +6804,7 @@ GameObject:
   - component: {fileID: 1326835023}
   - component: {fileID: 1326835025}
   - component: {fileID: 1326835024}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6077,6 +7042,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6047223, y: 0.19999999, z: 0.9999999}
   m_Center: {x: 0, y: 0.099999994, z: 0}
+--- !u!1 &1380656317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+  m_PrefabInstance: {fileID: 1384933016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1384933016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6087,6 +7057,30 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_Name
       value: Jac_ O_Lantern_Group (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_RootOrder
@@ -6139,6 +7133,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
   m_PrefabInstance: {fileID: 1384933016}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1384933018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380656317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1386582128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6189,6 +7196,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1252951468}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1389540111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132456454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1410126640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6438,6 +7458,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -6494,6 +7522,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1424184226 stripped
@@ -6501,6 +7537,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1424184225}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1424184227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057888584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1431279173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6650,6 +7699,11 @@ Transform:
   m_Father: {fileID: 571672566}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1450644015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 1495047480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1476459919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6660,6 +7714,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
       propertyPath: m_Name
       value: Skull_Stick
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
       propertyPath: m_RootOrder
@@ -6725,6 +7783,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7302934, y: 0.19999999, z: 1.0000001}
   m_Center: {x: 0, y: 0.099999994, z: 0}
+--- !u!1 &1494330724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 1019325319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1494330725
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494330724}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378002, y: 0.91605616, z: 0.9636303}
+  m_Center: {x: -0.033596873, y: 0.16585453, z: -0.05133146}
 --- !u!1001 &1495047480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6792,6 +7868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &1495047481 stripped
@@ -6799,6 +7879,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2426846095409649158, guid: a917f6843cc222145828cefe2f799e67, type: 3}
   m_PrefabInstance: {fileID: 1495047480}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1495047482
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450644015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378007, y: 0.91605616, z: 0.96363074}
+  m_Center: {x: -0.03359688, y: 0.16585453, z: -0.051331483}
 --- !u!1 &1510536868
 GameObject:
   m_ObjectHideFlags: 0
@@ -6893,6 +7986,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -6949,12 +8050,128 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1548593256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1548593255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1548593257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541912030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1555294065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5899581772680663418, guid: 7d2041206c208f54991b199315b8f7a8, type: 3}
+  m_PrefabInstance: {fileID: 421881026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1555294066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555294065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39552936, y: 1.1504762, z: 0.7270866}
+  m_Center: {x: 0.020702677, y: 0.05083403, z: 0.040295172}
+--- !u!1 &1561453188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30e6fef54c90fb649aca41d8359ac12c, type: 3}
+  m_PrefabInstance: {fileID: 745360246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1561453189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561453188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.46888858, y: 0.27257988, z: 0.49524215}
+  m_Center: {x: -0.10429966, y: 0.13590036, z: -0.14232247}
+--- !u!1 &1571179267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+  m_PrefabInstance: {fileID: 1022808439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1571179268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571179267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1571905686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+  m_PrefabInstance: {fileID: 1275610085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1571905687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571905686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1588954071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5899581772680663418, guid: 7d2041206c208f54991b199315b8f7a8, type: 3}
+  m_PrefabInstance: {fileID: 994821858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1588954072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588954071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3955293, y: 1.1504762, z: 0.72708654}
+  m_Center: {x: 0.020702675, y: 0.05083403, z: 0.04029517}
+--- !u!1 &1608561667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1617083338}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1610038828
 PrefabInstance:
@@ -7023,12 +8240,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &1610038829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2426846095409649158, guid: a917f6843cc222145828cefe2f799e67, type: 3}
   m_PrefabInstance: {fileID: 1610038828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1610038830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179993605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378002, y: 0.91605616, z: 0.9636304}
+  m_Center: {x: -0.03359687, y: 0.16585453, z: -0.051331464}
+--- !u!1 &1611909788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1817833962}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1615639151
 GameObject:
@@ -7041,7 +8280,7 @@ GameObject:
   - component: {fileID: 1615639152}
   - component: {fileID: 1615639154}
   - component: {fileID: 1615639153}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7124,6 +8363,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -7180,12 +8427,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1617083339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1617083338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1617083340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608561667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1626170825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1721873382}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1649243612
 PrefabInstance:
@@ -7281,7 +8554,7 @@ GameObject:
   - component: {fileID: 1674429256}
   - component: {fileID: 1674429258}
   - component: {fileID: 1674429257}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7398,6 +8671,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1680635469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 927720058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1680635470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680635469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1695461461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7471,6 +8762,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47bc2ad2303f56346a0fadb37ffc3774, type: 3}
+--- !u!1 &1700804260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 151149868}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1700804261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700804260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1707133551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7481,6 +8790,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -7538,6 +8855,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1707133552 stripped
@@ -7545,6 +8870,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1707133551}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1707133553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731025987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1708967882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7555,6 +8893,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -7612,6 +8958,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1708967883 stripped
@@ -7619,6 +8973,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1708967882}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1708967884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559265562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1710855893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 680629006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1710855894
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710855893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1721873382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7629,6 +9014,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -7686,6 +9079,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1721873383 stripped
@@ -7693,11 +9094,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1721873382}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1721873384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626170825}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1724628599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: aaf177498eb52274790cc9ae8050936d, type: 3}
   m_PrefabInstance: {fileID: 1476459919}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1724628600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108685080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37050384, y: 0.32773405, z: 0.8685218}
+  m_Center: {x: 0.0044629113, y: -0.018456442, z: 0.42299122}
 --- !u!1001 &1756114483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7708,6 +9135,30 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_Name
       value: Jac_ O_Lantern_Group
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_RootOrder
@@ -7772,6 +9223,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
   m_PrefabInstance: {fileID: 1756114483}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1780469967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+  m_PrefabInstance: {fileID: 1819033198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1802106022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7782,6 +9238,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -7867,6 +9331,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -18.458
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1802106023 stripped
@@ -7874,6 +9346,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1802106022}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1815837676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 610280117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1815837677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815837676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1817833962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7884,6 +9374,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -7969,6 +9467,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -89.072
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1817833963 stripped
@@ -7976,6 +9482,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1817833962}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1817833964
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611909788}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1819033198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8043,6 +9562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &1819033199 stripped
@@ -8050,6 +9573,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2426846095409649158, guid: a917f6843cc222145828cefe2f799e67, type: 3}
   m_PrefabInstance: {fileID: 1819033198}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1819033200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780469967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378005, y: 0.91605616, z: 0.96363056}
+  m_Center: {x: -0.03359688, y: 0.16585453, z: -0.05133147}
 --- !u!1 &1823564401
 GameObject:
   m_ObjectHideFlags: 0
@@ -8133,6 +9669,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823564401}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1831838205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+  m_PrefabInstance: {fileID: 6797961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1831838206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831838205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7069898, y: 0.6732881, z: 2.1726592}
+  m_Center: {x: -0.1048875, y: 0.24180855, z: -0.21317121}
 --- !u!4 &1833104765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
@@ -8148,6 +9702,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: fa12a31e8ef2fc045a4c3c56e9b5b933, type: 3}
       propertyPath: m_Name
       value: Tree5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fa12a31e8ef2fc045a4c3c56e9b5b933, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa12a31e8ef2fc045a4c3c56e9b5b933, type: 3}
       propertyPath: m_RootOrder
@@ -8212,6 +9770,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fa12a31e8ef2fc045a4c3c56e9b5b933, type: 3}
   m_PrefabInstance: {fileID: 1834729456}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1834729458
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78510766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6593714, y: 3.239902, z: 1.9795682}
+  m_Center: {x: -0.17664582, y: 1.619951, z: 0.16483203}
 --- !u!1001 &1845719681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8222,6 +9793,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -8307,6 +9886,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 55.354
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1845719682 stripped
@@ -8337,6 +9924,55 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3832132, y: 0.4650185, z: 0.88715357}
   m_Center: {x: -0.12327791, y: 0.23346859, z: 0.12588082}
+--- !u!65 &1849362700
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849362694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3832132, y: 0.4650185, z: 0.88715357}
+  m_Center: {x: -0.12327791, y: 0.23346859, z: 0.12588082}
+--- !u!1 &1860923220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 156533088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1860923221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860923220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1874677851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+  m_PrefabInstance: {fileID: 1937107358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1874677852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874677851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1894968542
 GameObject:
   m_ObjectHideFlags: 0
@@ -8373,6 +10009,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1529183203402686330, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
   m_PrefabInstance: {fileID: 826643404}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1902070989
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165934093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7069898, y: 0.6732881, z: 2.1726592}
+  m_Center: {x: -0.1048875, y: 0.24180855, z: -0.21317121}
+--- !u!1 &1903666638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1116411006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1903666639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903666638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1910187527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8383,6 +10050,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -8468,6 +10143,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -79.499
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &1910187528 stripped
@@ -8475,6 +10158,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 1910187527}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1910187529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987329451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1911102710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1802106022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1911102711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911102710}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1926827752
 GameObject:
   m_ObjectHideFlags: 0
@@ -8653,6 +10367,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jac_ O_Lantern_Group (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -8817,6 +10555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin_Scarecrow
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29834d999f46b044b9d288b85608c1e8, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 29834d999f46b044b9d288b85608c1e8, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -8935,6 +10677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_stump (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3091214299056557244, guid: a917f6843cc222145828cefe2f799e67, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a917f6843cc222145828cefe2f799e67, type: 3}
 --- !u!4 &1958303811 stripped
@@ -8942,6 +10688,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2426846095409649158, guid: a917f6843cc222145828cefe2f799e67, type: 3}
   m_PrefabInstance: {fileID: 1958303810}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1958303812
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166938415}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2378001, y: 0.91605616, z: 0.9636302}
+  m_Center: {x: -0.03359687, y: 0.16585453, z: -0.051331453}
+--- !u!1 &1960331357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 29834d999f46b044b9d288b85608c1e8, type: 3}
+  m_PrefabInstance: {fileID: 1943856439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1960331358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960331357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4120393, y: 0.7625371, z: 1.5137364}
+  m_Center: {x: 0.000000033720617, y: -0.045031603, z: 0.7543176}
 --- !u!1 &1965740959
 GameObject:
   m_ObjectHideFlags: 0
@@ -9036,6 +10813,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jac_ O_Lantern_Group (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -9087,6 +10888,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
   m_PrefabInstance: {fileID: 2004244635}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2004244637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853444090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2011736344
 GameObject:
   m_ObjectHideFlags: 0
@@ -9253,6 +11067,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016171342}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2037189370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+  m_PrefabInstance: {fileID: 1756114483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2037189371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037189370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2045885421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9263,6 +11095,14 @@ PrefabInstance:
     - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_dead (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913374063265039696, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
       propertyPath: m_RootOrder
@@ -9344,6 +11184,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.23275
       objectReference: {fileID: 0}
+    - target: {fileID: 5228048461891273600, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371512809955046320, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
 --- !u!4 &2045885422 stripped
@@ -9351,6 +11199,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3364213191016600219, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
   m_PrefabInstance: {fileID: 2045885421}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2045885423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463967544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2056217956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9406,6 +11267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Pine_Tree_03_logs
       objectReference: {fileID: 0}
+    - target: {fileID: 9095861283202096434, guid: a02abe99b557a624ca2316134bc4a270, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02abe99b557a624ca2316134bc4a270, type: 3}
 --- !u!4 &2056217957 stripped
@@ -9413,6 +11278,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8462594694668158856, guid: a02abe99b557a624ca2316134bc4a270, type: 3}
   m_PrefabInstance: {fileID: 2056217956}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2056217958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78068925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6797206, y: 0.43460387, z: 2.8424854}
+  m_Center: {x: -0.40495685, y: 0.17689925, z: -0.00083398813}
 --- !u!1 &2059149823
 GameObject:
   m_ObjectHideFlags: 0
@@ -9424,7 +11302,7 @@ GameObject:
   - component: {fileID: 2059149824}
   - component: {fileID: 2059149826}
   - component: {fileID: 2059149825}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere019 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9496,6 +11374,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059149823}
   m_Mesh: {fileID: 4300004, guid: 59d4aced538738c43ab33c49004b0951, type: 3}
+--- !u!1 &2067021705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+  m_PrefabInstance: {fileID: 2080907706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2070598424
 GameObject:
   m_ObjectHideFlags: 0
@@ -9507,7 +11390,7 @@ GameObject:
   - component: {fileID: 2070598425}
   - component: {fileID: 2070598427}
   - component: {fileID: 2070598426}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PT_Fruit_Tree_01_dead_LOD0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9579,6 +11462,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070598424}
   m_Mesh: {fileID: 5362752393953957539, guid: 3ebf65d3a6489594ca09a35d85d43b0a, type: 3}
+--- !u!1 &2076753152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 327339542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2076753153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076753152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2080907706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9634,6 +11535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PT_Fruit_Tree_01_logs (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2194115761931273664, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
 --- !u!4 &2080907707 stripped
@@ -9641,6 +11546,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1529183203402686330, guid: 3148b0057757c5e49a1d7284d605de90, type: 3}
   m_PrefabInstance: {fileID: 2080907706}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2080907708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067021705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7069898, y: 0.6732881, z: 2.1726592}
+  m_Center: {x: -0.1048875, y: 0.24180855, z: -0.21317121}
+--- !u!1 &2106516198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2736999718936250401, guid: 3ad58da949d5de343b7c21cee04361ce, type: 3}
+  m_PrefabInstance: {fileID: 1845719681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2106516199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106516198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2116145742
 GameObject:
   m_ObjectHideFlags: 0
@@ -9823,6 +11759,70 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5391037813162345961, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813162345961, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813162345961, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.882
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813722249206, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813722249206, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813722249206, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.563
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813833232870, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813833232870, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037813876469096, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814050755548, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814220417105, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814220417105, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814220417105, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.272
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814580889658, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.958
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814580889658, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814580889658, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.253
+      objectReference: {fileID: 0}
     - target: {fileID: 5391037814656261306, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9899,6 +11899,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.513
       objectReference: {fileID: 0}
+    - target: {fileID: 5391037814870992561, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.988
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814870992561, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814870992561, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.763
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814989247653, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814989247653, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037814989247653, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.001
+      objectReference: {fileID: 0}
     - target: {fileID: 5391037815055465246, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
       propertyPath: m_Camera
       value: 
@@ -9910,6 +11934,30 @@ PrefabInstance:
     - target: {fileID: 5391037815135571132, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037815258565192, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037815258565192, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037815258565192, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037815299914652, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037815299914652, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391037815299914652, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.482
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60456b14f65adf042914e62c8696fb50, type: 3}
