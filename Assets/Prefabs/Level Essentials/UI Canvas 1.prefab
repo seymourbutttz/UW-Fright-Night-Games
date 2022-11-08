@@ -80516,7 +80516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_fontSize
-      value: 22.3
+      value: 32.7
       objectReference: {fileID: 0}
     - target: {fileID: 2635084916389997647, guid: d10d5eccc8e152d4895b93e8a19d81a7, type: 3}
       propertyPath: m_sharedMaterial
