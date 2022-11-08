@@ -142,6 +142,7 @@ MonoBehaviour:
   rangeModel: {fileID: 5544370550094008676}
   noPlaceModel: {fileID: 1812860544440417753}
   cost: 150
+  sellPrice: 0
   upgrader: {fileID: 0}
 --- !u!114 &4756814604175344341
 MonoBehaviour:
@@ -201,9 +202,11 @@ MonoBehaviour:
   - range: 3.5
     speed: 0
     cost: 250
+    sellCost: 0
   - range: 4
     speed: 0
     cost: 350
+    sellCost: 0
   currentTowerUpgrade: 0
   hasTowerUpgrade: 1
   fireRateText: 'Upgrade
