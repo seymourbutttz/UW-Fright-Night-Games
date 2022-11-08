@@ -71,4 +71,9 @@ public class Tutorial : MonoBehaviour
         i--;
         Debug.Log(i);
     }
+
+    public void skipTutorial()
+    {
+        deactivateTutorial();
+    }
 }
