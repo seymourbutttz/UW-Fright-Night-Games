@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         AudioManager.instance.PlayMenuMusic();
+        //Screen.fullScreen = true;
     }
 
     // Update is called once per frame
