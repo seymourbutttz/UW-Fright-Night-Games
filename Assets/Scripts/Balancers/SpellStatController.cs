@@ -12,7 +12,7 @@ public class SpellStatController : MonoBehaviour
     public GameObject meteor; //meteor prefab
 #if UNITY_EDITOR
     //path of asset to re-create
-    private string spellPath = "Assets/Prefabs/Towers/MeteorShower.prefab";
+    private string spellPath = "Assets/Prefabs/Spells/MeteorShower.prefab";
     private string meteorPath = "Assets/Prefabs/Projectiles/Meteor.prefab";
 #endif
     //modifies the cost of a spell
